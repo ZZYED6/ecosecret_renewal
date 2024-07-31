@@ -336,7 +336,7 @@ main section {
   margin: 0 auto;
 }
 /* 섹션_타입별추천 */
-#rcm_box {
+#whatyouneed {
   overflow: hidden;
 }
 .sec_title {
@@ -383,29 +383,70 @@ main section {
   font-size: 16px;
   color: #898989;
 }
+/* 제품리스트 */
 .prd_box {
   width: 100%;
   height: fit-content;
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   margin: 70px 0 100px 0;
 }
 .prd_list {
+  border: 1px solid #efe8e1;
+  transition: 0.3s;
+  border-radius: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.list_S {
   width: 370px;
   height: 566px;
-  border: 1px solid #efe8e1;
+}
+.list_M {
+  width: 500px;
+  height: 714px;
+}
+.prd_list.list_S:hover {
+  border-radius: 135px 0 0 0;
+}
+.prd_list.list_M:hover {
+  border-radius: 240px 0 0 0;
 }
 .prd_img {
   width: 100%;
   height: 370px;
-  background-color: rgb(194, 224, 224);
   position: relative;
 }
-.choice_btn {
-  width: fit-content;
-  height: fit-content;
+.prd_img > a {
+  display: block;
   position: absolute;
   top: 0;
+  filter: brightness(1);
+  transition: 0.3s;
+}
+.prd_list:hover .prd_img > a {
+  filter: brightness(0.8);
+}
+.choice_btn_box_S {
+  width: fit-content;
+  height: fit-content;
+  display: none;
+}
+.choice_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 20px;
+  z-index: 5;
+}
+.prd_list:hover .choice_btn_box {
+  display: block;
+}
+.prd_img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .choice_btn span {
   display: inline-block;
@@ -414,7 +455,6 @@ main section {
   background-color: #efe8e1;
   cursor: pointer;
   border-radius: 50%;
-  margin: 10px 16px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -446,7 +486,6 @@ em {
   height: 28px;
   line-height: 28px;
   color: #898989;
-  background-color: aliceblue;
   box-sizing: border-box;
   padding: 0 8px;
   border-radius: 14px 0 14px 0;
