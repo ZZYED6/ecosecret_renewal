@@ -1,17 +1,6 @@
 @charset "utf-8";
 @import "./reset.css";
 
-/* 스크롤 스타일 */
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-thumb {
-  width: 10px;
-  background-color: #bdb8b4;
-}
-::-webkit-scrollbar-track {
-  background-color: #efe8e1;
-}
 body {
   font-family: "SUIT Variable", sans-serif;
   font-size: 14px;
@@ -22,17 +11,11 @@ body {
 .wrap {
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 #main_header {
   width: 100%;
   height: 180px;
   background-color: #fff;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999; */
 }
 /* 헤더 */
 .header_wrap {
@@ -625,43 +608,6 @@ em {
   overflow: hidden;
 }
 
-/* 브랜드 스토리 */
-#brand_story {
-  display: flex;
-}
-.brand_text_wrap {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 210px 20px 0px 30px;
-  margin-top: 210px;
-}
-.brand_txt {
-  text-align: center;
-}
-.brand_txt > h2 {
-  font-size: 42px;
-  line-height: 42px;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-.brand_txt > p {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
-  color: #898989;
-}
-.brand_img {
-  width: 940px;
-  height: 640px;
-  border-radius: 320px 0;
-  overflow: hidden;
-}
-.brand_img video {
-  max-width: 100%;
-  transform: scale(1.6);
-}
 /* footer */
 .footer_inner {
   width: 1600px;
@@ -699,5 +645,3 @@ em {
   top: 4px;
   right: -10px;
 }
-
-/* floating icons */
