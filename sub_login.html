@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEAUTY SECRET? Here, ecosecret</title>
+    <link rel="icon" href="./img/icon/favicon_io/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/sub_login.css" />
+    <link
+    href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="main_header">
+        <div class="header_wrap">
+          <div class="header_top-con">
+            <!-- 상단 로고 -->
+            <h1>
+              <a href="/" class="bg-Header_logo"></a>
+            </h1>
+            <!-- 상단 멤버십 메뉴 -->
+            <div class="top_member">
+              <a href="#">로그인</a>
+              <a href="#">주문배송</a>
+              <a href="#">고객센터</a>
+            </div>
+          </div>
+          <div class="header_bottom-con">
+            <!-- 메인 메뉴 -->
+            <nav id="gnb">
+              <ul>
+                <!-- 사이드 메뉴 연결 -->
+                <li class="snb_button">
+                  <a href="#" class="snb_open-icon"></a>
+                </li>
+                <li>
+                  <a href="#">브랜드</a>
+                </li>
+                <li>
+                  <a href="#">상품</a>
+                  <!-- 메인 2차 메뉴 -->
+                  <div class="submenu_box">
+                    <div class="gnb_submenu">
+                      <div class="submenu_wrap">
+                        <ul class="submenu_con">
+                          <div class="submenu-title">유형별</div>
+                          <li>
+                            <a href="#" class="submenu-detail_1">스킨/토너</a>
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_2">클렌징</a>
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_3">마스크팩</a>
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_4">선케어</a>
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_5">헤어/바디</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="submenu_wrap">
+                        <ul class="submenu_con">
+                          <div class="submenu-title">기능별</div>
+                          <li>
+                            <a href="#" class="submenu-detail_6">수분/보습</a>
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_7"
+                              >유수분 밸런스</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_8"
+                              >트러블/민감성</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_9"
+                              >주름개선/미백</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" class="submenu-detail_10"
+                              >자외선 차단</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+                <li>
+                  <a href="#">고객리뷰</a>
+                </li>
+                <li>
+                  <a href="#">멤버십</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="member_action">
+              <div class="product_search">
+                <label for="search" class="search_bar">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="검색어를 입력하세요."
+                  />
+                </label>
+              </div>
+              <a href="#" class="shopping-icon"></a>
+              <a href="#" class="user-icon"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 로그인 섹션 -->
+      <main id="login_con">
+        <div class="con_wrap">
+          <div class="con_title_wrap">
+            <div class="title_box title_box_a">일반회원 로그인</div>
+            <div class="title_box title_box_b">비회원 주문조회</div>
+          </div>
+          <div class="login_sec_wrap">
+            <!-- 일반회원 -->
+            <section class="member_con">
+              <form action="#" method="post" id="member_form" class="member">
+                      <div class="login_list"> 
+                          <!-- 아이디 -->
+                          <div class="user_info">
+                            <label for="user_id" class="user_id">
+                              <input
+                                type="text"
+                                name="user_id"
+                                id="user_id"
+                                placeholder="아이디"
+                                minlength="5"
+                                maxlength="12"
+                                autofocus
+                                required
+                              />
+                            </label>
+                          </div>
+                          <!-- 패스워드 -->
+                          <div class="user_info">
+                            <label for="user_pw" class="user_pw">
+                              <input
+                                type="password"
+                                name="user_pw"
+                                id="user_pw"
+                                placeholder="비밀번호"
+                                minlength="6"
+                                maxlength="10"
+                                required
+                              />
+                            </label>
+                          </div>
+                          <!-- 로그인 유지 체크박스 -->
+                          <div class="user_state">
+                            <div class="user_check_box">
+                              <input
+                              type="checkbox"
+                              name="user_check"
+                              id="user_check"
+                              checked
+                              />
+                              <label for="user_check" class="user_check">로그인 유지
+                              </label>
+                            </div>
+                            <!-- 로그인 정보 찾기 -->
+                            <div class="user_find">
+                              <a href="#">아이디 찾기</a>
+                              <a href="#">비밀번호 찾기</a>
+                              <a href="#">회원가입</a>
+                            </div>
+                          </div>
+                          <!-- 로그인 버튼 -->
+                          <button class="submit_btn">로그인</button>
+                      </div>
+                      <!-- 간편 로그인 -->
+                      <div class="simple_login">
+                          <button class="kakao_btn"><span>카카오로 로그인</span></button>
+                          <button class="naver_btn"><span>네이버로 로그인</span></button>
+                      </div>
+              </form>
+              <div class="member_benefit">
+                  <a href="#">
+                      <span>회원 가입하시고 다양한 혜택 받으세요!</span>
+                      <div class="benefit_wrap">
+                              <div class="benefit1">
+                                  <img src="./img/icon/web_icons/samples_icon.png" alt="샘플 증정">
+                                  <span>구매 시</br>샘플 3개 증정</span>
+                              </div>
+                              <div class="benefit2">
+                                <img src="./img/icon/web_icons/Ticket-2--Streamline-Core.svg.png" alt="할인쿠폰">
+                                  <span>가입 즉시</br>10% 할인쿠폰</span>
+                              </div>
+                              <div class="benefit3">
+                                  <img src="./img/icon/web_icons/Shipping-Truck--Streamline-Plump.svg.png" alt="무료배송">
+                                  <span>3만원 이상 구매시</br>무료배송</span>
+                              </div>
+                              <div class="benefit4">
+                                <img src="./img/icon/web_icons/Cake--Streamline-Plump.svg.png" alt="생일 할인 쿠폰">
+                                  <span>생일 할인 쿠폰</br>증정</span>
+                              </div>
+                      </div>
+                  </a>
+              </div>
+            </section>
+            <!-- 비회원 -->
+            <section class="nonMember_con">
+              <form action="#" method="post" id="member_form" class="member">
+                  <div class="login_list"> 
+                      <!-- 주문자명 -->
+                      <div class="user_info">
+                        <label for="user_id" class="nonMember_name">
+                          <input
+                            type="text"
+                            name="user_id"
+                            id="user_id"
+                            placeholder="주문자명"
+                            minlength="5"
+                            maxlength="12"
+                            autofocus
+                            required
+                          />
+                        </label>
+                      </div>
+                      <!-- 주문번호 -->
+                      <div class="user_info">
+                        <label for="user_id" class="nonMember_num">
+                          <input
+                            type="text"
+                            name="user_id"
+                            id="user_id"
+                            placeholder="주문번호"
+                            minlength="5"
+                            maxlength="12"
+                            autofocus
+                            required
+                          />
+                        </label>
+                      </div>
+                      <!-- 주문자 비밀번호 -->
+                      <div class="user_info">
+                        <label for="user_pw" class="nonMember_pw">
+                          <input
+                            type="password"
+                            name="user_pw"
+                            id="user_pw"
+                            placeholder="비회원 주문 비밀번호"
+                            minlength="6"
+                            maxlength="10"
+                            required
+                          />
+                        </label>
+                      </div>
+                      <!-- 로그인 버튼 -->
+                      <button class="submit_btn">비회원 주문조회</button>
+                  </div>
+              </form>
+              <div class="member_benefit">
+                  <a href="#">
+                      <span>회원 가입하시고 다양한 혜택 받으세요!</span>
+                      <div class="benefit_wrap">
+                          <div class="benefit1">
+                              <img src="./img/icon/web_icons/samples_icon.png" alt="샘플 증정">
+                              <span>구매 시</br>샘플 3개 증정</span>
+                          </div>
+                          <div class="benefit2">
+                            <img src="./img/icon/web_icons/Ticket-2--Streamline-Core.svg.png" alt="할인쿠폰">
+                              <span>가입 즉시</br>10% 할인쿠폰</span>
+                          </div>
+                          <div class="benefit3">
+                              <img src="./img/icon/web_icons/Shipping-Truck--Streamline-Plump.svg.png" alt="무료배송">
+                              <span>3만원 이상 구매시</br>무료배송</span>
+                          </div>
+                          <div class="benefit4">
+                            <img src="./img/icon/web_icons/Cake--Streamline-Plump.svg.png" alt="생일 할인 쿠폰">
+                              <span>생일 할인 쿠폰</br>증정</span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer>
+        <div class="footer_inner">
+          <div class="footer_logo">
+            <a href=""><img src="./img/icon/web_icons/footer-logo.png" alt="footer_logo" /></a>
+          </div>
+          <div class="footer_con">
+            <span>(주)콜더마</span>
+            <p>
+              대표자: 이현경 | 개인정보관리책임자 : 이현경 | 주소 : 서울특별시
+              송파구 석촌호수로 268 콜더마 | 사업자등록번호 : 132-86-05932 |
+              통신판매업신고 : 제2018-서울서대문-0873호
+              <a href="#">[사업자정보확인]</a>
+            </p>
+          </div>
+          <div class="footer_con">
+            <p>안전거래를 위해 페이먼트 구매안전(에스크로)에 가입하여 서비스를 제공하고 있습니다.</br>
+              COPYRIGHT &copy; ECOSECRET ALL RIGHTS RESERVED.</p>
+          </div>
+          <div class="footer_menu">
+            <ul class="policy_list">
+              <li>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">이용약관</a>
+                <a href="#">이용안내</a>
+                <a href="#">사이트맵</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
