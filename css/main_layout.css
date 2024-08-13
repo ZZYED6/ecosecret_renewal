@@ -291,16 +291,18 @@ section {
   width: 45%;
   height: auto;
 }
-.main_txt > h2 {
-  font-size: 45px;
-  line-height: 56px;
-  font-weight: 800;
-  margin-bottom: 20px;
+.main_txt > span {
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  margin-bottom: 10px;
   color: #fff;
 }
-.main_txt > p {
-  font-size: 18px;
-  line-height: 28px;
+.main_txt > h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
   color: #fff;
 }
 .more_btn {
