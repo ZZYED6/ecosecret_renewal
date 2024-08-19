@@ -312,8 +312,8 @@ h1 > .bg-Header_logo {
   height: fit-content;
 }
 /* 전체 리뷰 리스트 */
-.full_review {
-  width: 85%;
+#full_review {
+  width: 83vw;
   height: auto;
   margin: 0 auto;
 }
@@ -347,16 +347,18 @@ h1 > .bg-Header_logo {
   border-bottom: 0.3px solid rgba(137, 137, 137, 0.5);
 }
 .item > div {
-  height: fit-content;
   box-sizing: border-box;
   padding: 10px 40px;
 }
 .item_img {
-  width: 15%;
+  width: 20%;
   height: fit-content;
+  text-align: center;
 }
 .item_img img {
-  width: 100%;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
 }
 .item_name {
   width: 100%;
@@ -365,9 +367,10 @@ h1 > .bg-Header_logo {
   white-space: nowrap;
   text-align: center;
   color: #898989;
+  margin-top: 10px;
 }
 .item_rating {
-  width: 70%;
+  width: 65%;
   margin-right: 30px;
 }
 .rating_box {
@@ -383,7 +386,7 @@ h1 > .bg-Header_logo {
 }
 .rating_box .rating_text {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 25px;
   font-weight: 800;
 }
 .item_rating > p {
@@ -397,8 +400,110 @@ h1 > .bg-Header_logo {
 }
 .item_info {
   width: 15%;
+  border-left: 1px solid rgba(137, 137, 137, 0.2);
+  color: #898989;
+}
+.item_info > div {
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+.item_info b {
+  font-weight: 800;
+}
+.item_info > button {
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid rgba(137, 137, 137, 0.3);
+  border-radius: 15px;
+  box-sizing: border-box;
+  gap: 5px;
+  padding: 3px 14px 3px 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.btn_img {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon/web_icons/thumbs-up.png);
+}
+.btn_count {
+  font-family: "SUIT Variable", sans-serif;
+  color: #676767;
+  font-weight: 600;
+  line-height: 25px;
 }
 
-.item > div:last-child {
-  border-left: 1px solid rgba(137, 137, 137, 0.2);
+/* 포토 리뷰 */
+#photo_review {
+  width: 83vw;
+  height: auto;
+  margin: 0 auto;
+}
+.photo_review_list {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+.photo_item {
+  width: 370px;
+  height: fit-content;
+  box-sizing: border-box;
+  border: 1px solid #efe8e1;
+}
+.photo_item div {
+  box-sizing: border-box;
+}
+.photo_item > a > img {
+  width: 100%;
+  height: 100%;
+}
+.photo_item_info {
+  color: #676767;
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+.photo_txt span {
+  font-weight: 600;
+}
+.photo_txt p {
+  width: 100%;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 5px;
+}
+.photo_name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 0.3px solid #898989;
+}
+.photo_name > img {
+  width: 80px;
+  height: fit-content;
+}
+.rating_box_s h4 {
+  color: #898989;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.rating_box_s .star {
+  width: 90px;
+  height: 18px;
+  margin-top: 10px;
+  background: url(../img/icon/web_icons/star_s.png) repeat-x;
 }
