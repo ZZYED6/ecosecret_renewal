@@ -266,6 +266,7 @@ h1 > .bg-Header_logo {
 #main_box {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 section {
   width: 100%;

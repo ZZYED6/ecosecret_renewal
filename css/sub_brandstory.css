@@ -66,7 +66,7 @@ h1 > .bg-Header_logo {
   color: #898989;
   font-weight: 600;
   line-height: 20px;
-  margin: 17px 10px 0px;
+  margin: 17px 0px 0px 18px;
   position: relative;
 }
 .top_member > a::after {
@@ -277,10 +277,44 @@ h1 > .bg-Header_logo {
 /* 메인 영역 */
 #main_box {
   width: 100%;
-  height: 500px;
+  height: auto;
+  overflow: hidden;
   background-color: aliceblue;
 }
 section {
   width: 100%;
+}
+#significance {
+  width: 100%;
+  height: auto;
+}
+#significance > .txt_wrap {
+  width: 80vw;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
   position: relative;
+  top: 40vh;
+  z-index: 55;
+}
+.txt_wrap h2 {
+  font-size: 70px;
+  margin-bottom: 6vh;
+  font-weight: 800;
+}
+.txt_wrap p {
+  font-size: 22px;
+  line-height: 40px;
+}
+#significance > video {
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  top: -23vh;
+  overflow: hidden;
+  filter: brightness(0.5);
 }

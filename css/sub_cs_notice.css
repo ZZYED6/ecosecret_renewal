@@ -22,6 +22,7 @@ body {
 #cs_notice_con {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 .con_wrap {
   width: 1600px;
