@@ -87,6 +87,42 @@ section {
   color: #898989;
   text-align: center;
 }
+.btn_wrap {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+.btn_wrap button {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.order_btn_wrap {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+.order_btn_wrap > button:nth-child(1) {
+  background-color: #373c22;
+  color: #efe8e1;
+  border: none;
+}
+.order_btn_wrap > button:nth-child(2) {
+  background-color: #898989;
+  color: #fff;
+  border: none;
+}
+.continue_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
 
 /* 하단 이용안내 섹션 */
 #shopping_info h3 {
