@@ -1,0 +1,192 @@
+@charset "utf-8";
+@import "./reset.css";
+
+/* 스크롤 스타일 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #bdb8b4;
+}
+::-webkit-scrollbar-track {
+  background-color: #efe8e1;
+}
+body {
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #373c22;
+}
+.wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#main_header {
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+}
+
+/* 헤더 */
+
+/* 메인 */
+#mypage_con {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.con_wrap {
+  width: 100%;
+  height: fit-content;
+  margin: 80px auto;
+}
+.con_title_wrap {
+  width: 200px;
+  height: fit-content;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.con_title_wrap .title_box {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: 2px solid #373c22;
+}
+/* 마이페이지 내용 */
+#myinfo {
+  width: 100%;
+  height: auto;
+  background-color: #efe8e1;
+}
+#myinfo div {
+  box-sizing: border-box;
+}
+.info_wrap {
+  width: 83vw;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.user_info {
+  width: 36%;
+  display: flex;
+  margin: 0 30px;
+}
+.user_info > img {
+  width: 120px;
+  height: 120px;
+}
+.user_info > div {
+  margin-left: 40px;
+}
+.user_info span {
+  display: block;
+  font-size: 22px;
+  line-height: 32px;
+}
+.user_info span > strong,
+b {
+  font-weight: 800;
+}
+.user_info span > b {
+  color: #189cc6;
+}
+.more_btn {
+  width: fit-content;
+  height: 40px;
+  color: #373c22;
+  font-weight: 800;
+  padding: 0 15px;
+  margin-top: 15px;
+  border: 1px solid #373c22;
+  transition: 0.3s;
+}
+.more_btn > a {
+  color: #373c22;
+}
+.more_btn > a::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 7px;
+  margin-left: 10px;
+  background: url(../img/icon/web_icons/es_sprites.png) no-repeat -10px -134px;
+}
+.more_btn:hover {
+  background-color: #373c22;
+}
+.more_btn:hover > a {
+  color: #efe8e1;
+}
+.more_btn:hover > a::after {
+  width: 24px;
+  height: 24px;
+  background: url(../img/icon/web_icons/es_sprites.png) no-repeat -10px -90px;
+}
+.box_wrap {
+  width: 64%;
+  display: flex;
+  gap: 20px;
+}
+.benefit_box {
+  flex: 1 1 0;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px 0;
+}
+.benefit_box > img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+.benefit_box > span {
+  font-weight: 600;
+}
+.benefit_box .bf_name {
+  font-size: 20px;
+}
+.benefit_box .bf_detail {
+  font-size: 28px;
+  margin-top: 10px;
+}
+#orderinfo div {
+  box-sizing: border-box;
+}
+#myshop {
+  width: 83vw;
+  height: auto;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+.box_wrap {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+.myshop_box {
+  flex: 1 0 16%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b4b4b4;
+  padding: 40px 0;
+}
