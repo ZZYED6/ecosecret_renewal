@@ -62,7 +62,7 @@ body {
   font-weight: 800;
   border-bottom: 2px solid #373c22;
 }
-/* 마이페이지 내용 */
+/* myinfo */
 #myinfo {
   width: 100%;
   height: auto;
@@ -73,15 +73,16 @@ body {
 }
 .info_wrap {
   width: 83vw;
-  height: 50vh;
+  height: 340px;
   margin: 0 auto;
   display: flex;
   align-items: center;
 }
 .user_info {
-  width: 36%;
+  width: 66%;
   display: flex;
-  margin: 0 30px;
+  margin-right: 20px;
+  justify-content: center;
 }
 .user_info > img {
   width: 120px;
@@ -137,9 +138,10 @@ b {
   background: url(../img/icon/web_icons/es_sprites.png) no-repeat -10px -90px;
 }
 .box_wrap {
-  width: 64%;
+  width: 60%;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .benefit_box {
   flex: 1 1 0;
@@ -161,19 +163,33 @@ b {
 .benefit_box .bf_name {
   font-size: 20px;
 }
-.benefit_box .bf_detail {
+.benefit_box > a {
+  color: #373c22;
   font-size: 28px;
-  margin-top: 10px;
+  font-weight: 600;
+  margin-top: 15px;
 }
 #orderinfo div {
   box-sizing: border-box;
 }
+
 #myshop {
   width: 83vw;
   height: auto;
   margin: 0 auto;
-  background-color: aliceblue;
 }
+#myshop h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+#myshop > h3 > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+/* 주문 처리 현황 */
 .box_wrap {
   width: 100%;
   height: fit-content;
@@ -182,11 +198,66 @@ b {
   gap: 20px;
 }
 .myshop_box {
+  font-size: 18px;
+  font-weight: 600;
   flex: 1 0 16%;
-  height: fit-content;
+  height: 12vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #b4b4b4;
-  padding: 40px 0;
+  justify-content: center;
+  border: 1px solid #efe8e1;
+}
+.myshop_box:first-child {
+  background-color: #efe8e1;
+}
+.myshop_box > .order_detail {
+  color: #373c22;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.myshop_box.issue_box {
+  font-weight: 600;
+  flex: 1 0 16%;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 14px;
+  border: 1px solid #efe8e1;
+}
+.myshop_box.issue_box > div > a {
+  color: #373c22;
+  font-weight: 600;
+}
+.myshop_box > .modi {
+  color: #373c22;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.myshop_box > .modi > img {
+  margin-bottom: 10px;
+}
+.logout_btn {
+  width: 148px;
+  height: 36px;
+  border: 1px solid #ddd;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.logout_btn > a {
+  color: #898989;
 }
