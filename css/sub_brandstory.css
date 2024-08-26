@@ -129,7 +129,7 @@ h1 > .bg-Header_logo {
   transform-origin: center;
   transition: transform 0.25s ease;
 }
-#gnb > ul > li:not(:first-child):hover > a::after {
+#gnb > ul > li:hover > a::after {
   transform: translateX(-50%) scaleX(1);
 }
 
@@ -284,37 +284,46 @@ h1 > .bg-Header_logo {
 section {
   width: 100%;
 }
-#significance {
-  width: 100%;
-  height: auto;
-}
-#significance > .txt_wrap {
-  width: 80vw;
+#significance .signi_text {
+  width: 83vw;
   height: 100%;
-  color: #fff;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0 auto;
   position: relative;
-  top: 40vh;
+  margin: 0 auto;
   z-index: 55;
 }
-.txt_wrap h2 {
-  font-size: 70px;
+.signi_text h2 {
+  font-size: 200px;
+  line-height: 200px;
   margin-bottom: 6vh;
-  font-weight: 800;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
 }
-.txt_wrap p {
-  font-size: 22px;
-  line-height: 40px;
+.signi_text p {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 36px;
+  position: absolute;
+  bottom: 10vw;
+  right: 20px;
+  color: #fff;
+  text-align: right;
 }
-#significance > video {
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  position: relative;
+.signi_video {
+  position: absolute;
+  top: 0;
   left: 0;
-  top: -23vh;
+}
+.signi_video > video {
+  box-sizing: border-box;
   overflow: hidden;
   filter: brightness(0.5);
+}
+#concept {
+  width: 100%;
+  height: 3000px;
+  background-color: rgb(226, 238, 220);
 }

@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+/* 스크롤 스타일 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #bdb8b4;
+}
+::-webkit-scrollbar-track {
+  background-color: #efe8e1;
+}
+body {
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #373c22;
+}
+#cs_contact_con {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.con_wrap {
+  width: 100%;
+  height: fit-content;
+  margin: 80px auto;
+}
+
+/* 컨텐츠 공통 선택 타이틀 */
+.con_wrap ul {
+  width: 750px;
+  height: 60px;
+  height: fit-content;
+  display: flex;
+  box-sizing: border-box;
+  margin: 40px auto;
+}
+.title_box {
+  flex: 1 1 0;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+.title_box.box_a {
+  border-bottom: 2px solid rgba(137, 137, 137, 0.5);
+}
+.title_box.box_b {
+  border-bottom: 2px solid #373c22;
+}
+.title_box.box_c {
+  border-bottom: 2px solid rgba(137, 137, 137, 0.5);
+}
+.title_box > a {
+  display: block;
+}
+.title_a {
+  color: rgba(137, 137, 137, 0.5);
+}
+.title_b {
+  color: #373c22;
+}
+.title_c {
+  color: rgba(137, 137, 137, 0.5);
+}

@@ -25,7 +25,7 @@ body {
   overflow: hidden;
 }
 .con_wrap {
-  width: 83vw;
+  width: 100%;
   height: fit-content;
   margin: 80px auto;
 }
@@ -70,8 +70,9 @@ body {
 
 /* 공지사항 게시판 */
 .cs_notice_board {
-  width: 100%;
+  width: 83vw;
   height: fit-content;
+  margin: 0 auto;
 }
 .cs_notice_board > table {
   width: 100%;
