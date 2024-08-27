@@ -230,7 +230,6 @@ h1 > .bg-Header_logo {
   height: 24px;
   display: inline-block;
   content: "";
-  /* background-color: aquamarine; */
   position: absolute;
   top: 6px;
   left: 184px;
@@ -278,52 +277,71 @@ h1 > .bg-Header_logo {
 #main_box {
   width: 100%;
   height: auto;
-  overflow: hidden;
-  background-color: aliceblue;
 }
 section {
-  width: 100%;
+  padding-top: 40px;
+  position: relative;
 }
-#significance .signi_text {
-  width: 83vw;
+section .con_wrap {
+  width: 100%;
   height: 100%;
   position: relative;
   margin: 0 auto;
+}
+#our_story .con_wrap {
+  width: 83vw;
+  height: 79vh;
+}
+.text_wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   z-index: 55;
 }
-.signi_text h2 {
-  font-size: 200px;
-  line-height: 200px;
-  margin-bottom: 6vh;
-  font-weight: 600;
+.text_wrap h2 {
+  width: 100%;
   position: absolute;
-  top: 0;
-  left: 20px;
-  color: rgba(255, 255, 255, 0.5);
-  text-align: left;
+  top: 100px;
+  left: 0;
+  opacity: 0.7;
 }
-.signi_text p {
-  display: inline-block;
-  font-size: 20px;
-  line-height: 36px;
+.story_text {
+  width: 100%;
+  color: #676767;
+  font-size: 18px;
+  line-height: 28px;
+  /* font-weight: 600; */
   position: absolute;
-  bottom: 10vw;
-  right: 20px;
-  color: #fff;
-  text-align: right;
-}
-.signi_video {
-  position: absolute;
-  top: 0;
+  bottom: 100px;
   left: 0;
 }
-.signi_video > video {
-  box-sizing: border-box;
-  overflow: hidden;
-  filter: brightness(0.5);
+.story_text > p {
+  margin-bottom: 10px;
 }
-#concept {
+.story_img {
   width: 100%;
-  height: 3000px;
+  height: 100%;
+}
+.story_img > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#concept .con_wrap {
+  width: 100%;
+  height: 150vh;
   background-color: rgb(226, 238, 220);
+}
+#concept h2 {
+  width: 100%;
+  height: fit-content;
+  text-align: right;
+  margin-top: 100px;
+  opacity: 0.7;
+}
+.concept_box {
+  width: 100%;
+}
+.concept_box > img {
+  width: 100%;
 }
