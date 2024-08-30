@@ -303,13 +303,16 @@ h1 > .bg-Header_logo {
 .text_wrap {
   flex: 1 1 0;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .text_wrap p {
   width: 100%;
   color: #676767;
   font-size: 20px;
   line-height: 36px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .story_img {
   flex: 1 1 0;
@@ -408,16 +411,20 @@ h1 > .bg-Header_logo {
 /* significant */
 #significant {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   margin: 0 auto;
 }
+.signi_bg {
+  position: absolute;
+  top: 0;
+}
 .signi_wrap {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 30%;
 }
 .signi_wrap h3 {
   margin-bottom: 60px;
@@ -429,57 +436,60 @@ h1 > .bg-Header_logo {
 .signi_wrap p b {
   font-weight: 800;
 }
+.signi_wrap > p::before {
+  content: "";
+  display: block;
+  margin: 50px auto;
+  width: 2px;
+  height: 100px;
+  background-color: #373c22;
+}
 
 /* keyword */
 #keyword {
-  width: 100%;
-  height: auto;
   position: relative;
-  margin: 0 auto;
+  margin: 100px 0;
 }
 #keyword .con_wrap {
   width: 83vw;
-  margin: 0 auto;
-}
-.keyword_align {
-  width: 100%;
-  height: 100vh;
+  height: 80vh;
   position: relative;
-  margin-top: 40px;
-}
-.keyword_box_2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 890px;
-  height: 882px;
-  background-image: url(../img/contents/brandstory/key_img_2.jpg);
-  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
   text-align: center;
-  color: #fff;
 }
-.keyword_box_1 {
+.key_text {
+  flex: 1 1 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.key_text span {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.key_text p {
+  width: 100%;
+  color: #676767;
+  font-size: 20px;
+  line-height: 36px;
+}
+.key_img {
+  flex: 1 1 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.key_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  width: 890px;
-  height: 882px;
-  background-image: url(../img/contents/brandstory/key_img_1.jpg);
-  background-repeat: no-repeat;
-  text-align: center;
-  color: #fff;
-}
-.keyword_box_2 .key_text {
-  margin-top: 744px;
-}
-.keyword_box_1 .key_text {
-  margin-top: 80px;
-}
-.key_text h6 {
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 40px;
-}
-.key_text p {
-  font-size: 24px;
+  filter: brightness(1);
 }
