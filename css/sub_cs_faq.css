@@ -31,7 +31,7 @@ body {
 }
 
 /* 컨텐츠 공통 선택 타이틀 */
-.con_wrap ul {
+.title {
   width: 750px;
   height: 60px;
   height: fit-content;
@@ -67,3 +67,5 @@ body {
 .title_c {
   color: rgba(137, 137, 137, 0.5);
 }
+
+/* FAQ */

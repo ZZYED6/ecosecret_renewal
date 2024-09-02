@@ -11,6 +11,9 @@
       href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
       rel="stylesheet"
     />
+    <!-- slickslide CSS -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
   </head>
   <body>
     <div class="wrap">
@@ -111,36 +114,87 @@
                     id="search"
                     placeholder="검색어를 입력하세요."
                   />
-                  <input type="image" class="search_img" src="./img/icon/web_icons/Search.png" >
+                  <input
+                    type="image"
+                    class="search_img"
+                    src="./img/icon/web_icons/Search.png"
+                  />
                 </label>
               </div>
               <div class="user-icon"><a href="#"></a></div>
               <div class="shopping-icon"><a href="#"></a></div>
-              <div class="snb_open-icon"><a href="#"></a></div>    
+              <div class="snb_open-icon"><a href="#"></a></div>
             </div>
           </div>
         </div>
       </header>
       <main id="main_box">
-        <!-- 메인 비주얼 -->
-        <section id="main_visual">
-          <div class="main_title">
-            <div class="main_txt">
-              <span>
-                BEATY SECRET? Here, ecosecret.
-              </span>
-              <h2>자연에서 온 건강한 원료의 시크릿을 </br>
-              바로 여기, 에코시크릿에서 만나보세요.</h2>
+        <section id="main_visual_slide">
+          <!-- 메인 비주얼 1-->
+          <div id="main_visual">
+            <div class="main_title">
+              <div class="main_txt">
+                <span> BEATY SECRET? Here, ecosecret. </span>
+                <h2>
+                  자연에서 온 건강한 원료의 시크릿을
+                  <br />
+                  바로 여기, 에코시크릿에서 만나보세요.
+                </h2>
+              </div>
+              <div class="more_btn">
+                <a href="#">더 알아보기</a>
+              </div>
             </div>
-            <div class="more_btn">
-              <a href="#">더 알아보기</a>
+            <div class="main_img">
+              <img
+                src="./img/main_visual/main_visual_비베터클레이.jpg"
+                alt="메인_비베터클레이"
+              />
             </div>
           </div>
-          <div class="main_img">
-            <img
-              src="./img/main_visual/main_visual_비베터클레이.jpg"
-              alt="메인_비베터클레이"
-            />
+          <!-- 메인 비주얼 2-->
+          <div id="main_visual">
+            <div class="main_title">
+              <div class="main_txt">
+                <span> BEATY SECRET? Here, ecosecret. </span>
+                <h2>
+                  자연에서 온 건강한 원료의 시크릿을
+                  <br />
+                  바로 여기, 에코시크릿에서 만나보세요.
+                </h2>
+              </div>
+              <div class="more_btn">
+                <a href="#">더 알아보기</a>
+              </div>
+            </div>
+            <div class="main_img">
+              <img
+                src="./img/main_visual/main_visual_비베터클레이.jpg"
+                alt="메인_비베터클레이"
+              />
+            </div>
+          </div>
+          <!-- 메인 비주얼 3-->
+          <div id="main_visual">
+            <div class="main_title">
+              <div class="main_txt">
+                <span> BEATY SECRET? Here, ecosecret. </span>
+                <h2>
+                  자연에서 온 건강한 원료의 시크릿을
+                  <br />
+                  바로 여기, 에코시크릿에서 만나보세요.
+                </h2>
+              </div>
+              <div class="more_btn">
+                <a href="#">더 알아보기</a>
+              </div>
+            </div>
+            <div class="main_img">
+              <img
+                src="./img/main_visual/main_visual_비베터클레이.jpg"
+                alt="메인_비베터클레이"
+              />
+            </div>
           </div>
         </section>
         <!-- 섹션_타입별추천 -->
@@ -370,13 +424,44 @@
           </div>
         </section>
         <!-- 섹션_이벤트배너 -->
-        <section id="event_banner">
-          <div class="event_text_wrap">
-            <h3 class="event_title">리뷰 포인트와 쿠폰팩 증정</h3>
-            <span class="event_text"> 에코시크릿 공식몰 회원 혜택 </span>
+        <div class="arrow_wrap">
+          <div class="prevArrow">
+            <img
+              src="./img/icon/web_icons_svg/main_arrow_left.svg"
+              alt="prev"
+            />
           </div>
-          <div class="event_img">
-            <img src="./img/contents/event/event_banner_1.jpg" alt="이벤트1" />
+          <div class="nextArrow">
+            <img
+              src="./img/icon/web_icons_svg/main_arrow_right.svg"
+              alt="next"
+            />
+          </div>
+        </div>
+        <section id="event_banner_slider">
+          <div id="event_con">
+            <div class="event_text_wrap">
+              <h3 class="event_title">리뷰 포인트와 쿠폰팩 증정</h3>
+              <span class="event_text"> 에코시크릿 공식몰 회원 혜택 </span>
+            </div>
+            <div class="event_img">
+              <img
+                src="./img/contents/event/event_banner_1.jpg"
+                alt="이벤트1"
+              />
+            </div>
+          </div>
+          <div id="event_con">
+            <div class="event_text_wrap">
+              <h3 class="event_title">리뷰 포인트와 쿠폰팩 증정</h3>
+              <span class="event_text"> 에코시크릿 공식몰 회원 혜택 </span>
+            </div>
+            <div class="event_img">
+              <img
+                src="./img/contents/event/event_banner_1.jpg"
+                alt="이벤트1"
+              />
+            </div>
           </div>
         </section>
         <!-- 섹션_베스트아이템 -->
@@ -532,7 +617,9 @@
             <div class="brand_txt">
               <h2>Brand Story</h2>
               <p>
-                에코시크릿은 자연에서 얻은 원료를 바탕으로</br>피부에 순한 제품을 제공함으로써 건강한 아름다움을 추구합니다.</br>에코시크릿의 뷰티 시크릿을 알아보세요.
+                에코시크릿은 자연에서 얻은 원료를 바탕으로<br />피부에 순한
+                제품을 제공함으로써 건강한 아름다움을 추구합니다.<br />에코시크릿의
+                뷰티 시크릿을 알아보세요.
               </p>
             </div>
             <div class="more_btn">
@@ -540,7 +627,9 @@
             </div>
           </div>
           <div class="brand_img">
-            <video src="./img/video/v_flower.mp4" autoplay muted loop>이 비디오는 해당 브라우저를 지원하지 않습니다.</video>
+            <video src="./img/video/v_flower.mp4" autoplay muted loop>
+              이 비디오는 해당 브라우저를 지원하지 않습니다.
+            </video>
           </div>
         </section>
       </main>
@@ -548,7 +637,11 @@
       <footer>
         <div class="footer_inner">
           <div class="footer_logo">
-            <a href=""><img src="./img/icon/web_icons/footer-logo.png" alt="footer_logo" /></a>
+            <a href=""
+              ><img
+                src="./img/icon/web_icons/footer-logo.png"
+                alt="footer_logo"
+            /></a>
           </div>
           <div class="footer_con">
             <span>(주)콜더마</span>
@@ -560,8 +653,11 @@
             </p>
           </div>
           <div class="footer_con">
-            <p>안전거래를 위해 페이먼트 구매안전(에스크로)에 가입하여 서비스를 제공하고 있습니다.</br>
-              COPYRIGHT &copy; ECOSECRET ALL RIGHTS RESERVED.</p>
+            <p>
+              안전거래를 위해 페이먼트 구매안전(에스크로)에 가입하여 서비스를
+              제공하고 있습니다.<br />
+              COPYRIGHT &copy; ECOSECRET ALL RIGHTS RESERVED.
+            </p>
           </div>
           <div class="footer_menu">
             <ul class="policy_list">
@@ -577,5 +673,8 @@
       </footer>
     </div>
   </body>
-  <script></script>
+  <!-- js -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/main.js"></script>
 </html>

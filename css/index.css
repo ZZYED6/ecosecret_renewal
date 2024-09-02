@@ -278,32 +278,35 @@ h1 > .bg-Header_logo {
 #main_box {
   width: 100%;
   height: auto;
-  overflow: hidden;
+  position: relative;
 }
 section {
   width: 100%;
   position: relative;
 }
 /* 메인 비주얼 */
-#main_visual {
+#main_visual_slide {
   width: 100%;
   height: 78vh;
-  border-radius: 400px 0;
+  border-radius: 37vh 0;
   overflow: hidden;
 }
-.main_title {
-  margin: 0 auto;
-  width: 84vw;
+#main_visual {
+  width: 100%;
+  height: 100%;
   position: relative;
-  top: 40%;
-  left: 0%;
+}
+.main_title {
+  width: 84vw;
+  top: 50%;
+  margin-top: -63px;
+  left: 160px;
   z-index: 10;
+  position: absolute;
 }
 .main_img {
   width: 100%;
   height: 100%;
-  position: relative;
-  top: -20vh;
 }
 .main_txt {
   width: 45%;
@@ -362,15 +365,15 @@ section {
   width: 100%;
   overflow: hidden;
 }
-.sec_inner_wrap {
-  width: 1600px;
-  height: auto;
-  margin: 0 auto;
-}
 
 /* 섹션_타입별추천 */
 #whatyouneed {
   overflow: hidden;
+}
+.sec_inner_wrap {
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
 }
 .sec_title {
   width: 1600px;
@@ -621,17 +624,43 @@ em {
 }
 
 /* 섹션_이벤트배너 */
-#event_banner {
+.arrow_wrap {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+.prevArrow {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  z-index: 10;
+  top: 5vh;
+  left: 40px;
+}
+.nextArrow {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  z-index: 10;
+  top: 5vh;
+  right: 40px;
+}
+#event_banner_slider {
   width: 100%;
   height: 20vh;
+}
+#event_con {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .event_text_wrap {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   text-align: center;
-  position: relative;
-  top: 6vh;
+  position: absolute;
+  top: 5vh;
   z-index: 10;
   color: #fff;
 }
@@ -650,10 +679,8 @@ em {
   width: fit-content;
   height: fit-content;
   overflow: hidden;
-  position: relative;
-  top: -20vh;
+  position: absolute;
 }
-
 /* 브랜드 스토리 */
 #brand_story {
   display: flex;
