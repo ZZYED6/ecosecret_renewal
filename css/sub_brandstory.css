@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "./reset.css";
+@import "./common.css";
 @import url(./common.css);
 @import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
 
@@ -15,26 +16,27 @@
   color: #ddd;
   margin-bottom: 80px;
 }
-
+section {
+  margin: 150px 0;
+}
 /* our_story */
 #our_story {
   position: relative;
-  margin-top: 50px;
 }
 #our_story .con_wrap {
   width: 83vw;
-  height: 79vh;
+  height: 60vh;
   position: relative;
   margin: 0 auto;
   display: flex;
-  gap: 80px;
+  gap: 130px;
 }
 .text_wrap {
   flex: 1 1 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .text_wrap p {
   width: 100%;
@@ -63,7 +65,6 @@
 #concept {
   width: 100%;
   height: 100%;
-  margin-top: 200px;
 }
 #concept .title_sec {
   width: 83vw;
@@ -71,7 +72,7 @@
 }
 #concept .con_wrap {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   position: relative;
   margin: 0 auto;
 }
@@ -86,7 +87,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.8);
+  filter: brightness(1);
   /* filter: opacity(50%); */
   transform: scale(1);
   transition: 0.5s;
@@ -95,6 +96,7 @@
 .concept_bg > img:hover {
   /* filter: opacity(1); */
   transform: scale(1.05);
+  filter: brightness(0.7);
 }
 .align_box {
   width: 470px;
@@ -104,7 +106,7 @@
   width: 100%;
   height: fit-content;
   position: absolute;
-  bottom: 20%;
+  bottom: 43%;
   display: flex;
   align-items: center;
 }
@@ -137,10 +139,19 @@
   margin: 7px 18px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.moving {
+  transition: all 3s ease;
+  transform: translateY(500px); /* 아래로 이동 */
+}
+
 /* significant */
 #significant {
   width: 100%;
-  height: 100vh;
+  height: 84vh;
   position: relative;
   margin: 0 auto;
 }
@@ -159,35 +170,37 @@
   margin-bottom: 60px;
 }
 .signi_wrap p {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 40px;
 }
 .signi_wrap p b {
   font-weight: 800;
 }
-.signi_wrap > p::before {
+/* .signi_wrap > p::before {
   content: "";
   display: block;
   margin: 50px auto;
   width: 2px;
   height: 100px;
   background-color: #373c22;
-}
+} */
 
 /* keyword */
 #keyword {
+  width: 100%;
+  height: 80vh;
   position: relative;
   margin: 100px 0;
 }
 #keyword .con_wrap {
   width: 83vw;
-  height: 80vh;
-  position: relative;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   gap: 80px;
   text-align: center;
 }
+
 .key_text {
   flex: 1 1 0;
   height: 100%;
@@ -195,17 +208,17 @@
   flex-direction: column;
   justify-content: center;
 }
-.key_text span {
+.change_text span {
   font-size: 36px;
-  line-height: 60px;
+  line-height: 80px;
   font-weight: 800;
   margin-top: 20px;
 }
-.key_text p {
+.change_text p {
   width: 100%;
   color: #676767;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 30px;
 }
 .key_img {
   flex: 1 1 0;

@@ -1,34 +1,6 @@
 @charset "utf-8";
-@import url(./reset.css);
-
-/* 스크롤 스타일 */
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-thumb {
-  width: 10px;
-  background-color: #bdb8b4;
-}
-::-webkit-scrollbar-track {
-  background-color: #efe8e1;
-}
-body {
-  font-family: "SUIT Variable", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #373c22;
-}
-#cs_contact_con {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-.con_wrap {
-  width: 100%;
-  height: fit-content;
-  margin: 80px auto;
-}
+@import "./reset.css";
+@import "./common.css";
 
 /* 컨텐츠 공통 선택 타이틀 */
 .title {

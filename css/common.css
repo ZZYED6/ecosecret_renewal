@@ -276,6 +276,11 @@ h1 > .bg-Header_logo {
 }
 
 /* footer */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgba(239, 232, 225, 0.5);
+}
 .footer_inner {
   width: 83vw;
   box-sizing: border-box;

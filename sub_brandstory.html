@@ -11,6 +11,8 @@
       href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
       rel="stylesheet"
     />
+    <!-- AOS 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrap">
@@ -131,19 +133,25 @@
         <section id="our_story">
           <div class="con_wrap">
             <div class="text_wrap">
-              <h2>Our story.</h2>
-              <p>
+              <h2 data-aos="fade-down" data-aos-duration="500">Our story.</h2>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
                 에코시크릿은 한국의 건강한 자연 원료에서 영감을 얻어, 2013년도
-                창립되었습니다.<br />천연성분이 풍부하게 함유되어 피부에 순한
-                제품을 제공함으로써 건강한 아름다움을 추구합니다.
-                <br />
+                창립되었습니다.
                 <br />
                 세계 뷰티 시장을 선도하는 K-Beauty 기술과 건강한 자연 원료의
                 만남으로 개발된 제품들을 통해 에코시크릿만의 뷰티 시크릿을
                 제공하고 있습니다.
               </p>
             </div>
-            <div class="story_img">
+            <div
+              class="story_img"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <video src="./img/video/v_brand.mp4" autoplay muted loop>
                 이 비디오는 해당 브라우저를 지원하지 않습니다.
               </video>
@@ -151,14 +159,20 @@
           </div>
         </section>
         <section id="concept">
-          <div class="title_sec"><h2>Concept.</h2></div>
+          <div class="title_sec">
+            <h2 data-aos="fade-down" data-aos-duration="500">Concept.</h2>
+          </div>
           <div class="con_wrap">
             <div class="concept_bg">
-              <img src="./img/contents/brandstory/img_eco_3.jpg" alt="eco_bg" />
+              <img src="./img/contents/brandstory/img_eco.jpg" alt="eco_bg" />
             </div>
             <div class="align_box">
               <div class="concept_box">
-                <img src="./img/contents/brandstory/txt_eco.svg" alt="eco" />
+                <img
+                  id="txt_eco"
+                  src="./img/contents/brandstory/txt_eco.svg"
+                  alt="eco"
+                />
                 <span class="text_con line_1">자연에서 온 건강한 원료</span>
               </div>
             </div>
@@ -166,7 +180,7 @@
           <div class="con_wrap">
             <div class="concept_bg">
               <img
-                src="./img/contents/brandstory/img_secret_2.jpg"
+                src="./img/contents/brandstory/img_secret.jpg"
                 alt="secret_bg"
               />
             </div>
@@ -174,6 +188,7 @@
               <div class="concept_box">
                 <span class="text_con line_2">뷰티 노하우</span>
                 <img
+                  id="txt_secret"
                   src="./img/contents/brandstory/txt_secret.svg"
                   alt="secret"
                 />
@@ -183,13 +198,25 @@
         </section>
         <section id="significant">
           <div class="signi_bg">
-           <img src="./img/contents/brandstory/signi_bg.png" alt="signi_bg" width="800">
+            <img
+              src="./img/contents/brandstory/signi_bg.png"
+              alt="signi_bg"
+              width="800"
+            />
           </div>
           <div class="signi_wrap">
-            <h3>
+            <h3
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
               <img src="/img/contents/brandstory/Main_logo.svg" alt="logo" />
             </h3>
-            <p>
+            <p
+              data-aos="zoom-in-down"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <b>'천연에 가장 가까운 것이 가장 이롭다'</b>라는 신조 아래,<br />
               자연에서 얻은 원료를 바탕으로 유쾌하고 신선한 뷰티비결을
               제공하여<br />
@@ -198,23 +225,85 @@
           </div>
         </section>
         <section id="keyword">
-          <div class="keyword_wrap">
-            <div class="con_wrap">
-              <div class="key_text">
-                <h2>Keyword.</h2>
+          <div class="con_wrap">
+            <div class="key_text">
+              <h2 data-aos="fade-down" data-aos-duration="500">Keyword.</h2>
+              <div
+                class="change_text"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
                 <span>NATURAL & HEALTHY</span>
                 <p>
-                  자연에서 오는 원료 그대로의 효능을 담아 <br/>
-                  건강한 아름다움 추구합니다.
+                  자연에서 오는 원료 그대로의 효능을 담아<br />
+                  건강한 아름다움을 선사합니다.
                 </p>
               </div>
-              <div class="key_img">
-                <img src="./img/contents/brandstory/key_img_1.jpg" alt="/key_img_1">
-              </div>
             </div>
+            <div class="key_img">
+              <img
+                src="./img/contents/brandstory/key_img_1.jpg"
+                alt="/key_img_1"
+              />
+            </div>
+          </div>
         </section>
-        
       </main>
+      <!-- footer -->
+      <footer>
+        <div class="footer_inner">
+          <div class="footer_logo">
+            <a href=""
+              ><img
+                src="./img/icon/web_icons/footer-logo.png"
+                alt="footer_logo"
+            /></a>
+          </div>
+          <div class="footer_con">
+            <span>(주)콜더마</span>
+            <p>
+              대표자: 이현경 | 개인정보관리책임자 : 이현경 | 주소 : 서울특별시
+              송파구 석촌호수로 268 콜더마 | 사업자등록번호 : 132-86-05932 |
+              통신판매업신고 : 제2018-서울서대문-0873호
+              <a href="#">[사업자정보확인]</a>
+            </p>
+          </div>
+          <div class="footer_con">
+            <p>
+              안전거래를 위해 페이먼트 구매안전(에스크로)에 가입하여 서비스를
+              제공하고 있습니다.<br />
+              COPYRIGHT &copy; ECOSECRET ALL RIGHTS RESERVED.
+            </p>
+          </div>
+          <div class="footer_menu">
+            <ul class="policy_list">
+              <li>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">이용약관</a>
+                <a href="#">이용안내</a>
+                <a href="#">사이트맵</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="floating_btn_wrap">
+          <a href="#">
+            <img src="./img/icon/web_icons/Message-square.png" alt="message" />
+          </a>
+          <a href="#">
+            <img src="./img/icon/web_icons/arrow-top.png" alt="top" />
+          </a>
+        </div>
+      </footer>
     </div>
   </body>
+  <!-- js -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/sub_brandstory.js"></script>
+  <!-- AOS 연결 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
