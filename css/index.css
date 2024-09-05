@@ -218,7 +218,7 @@ section {
 .prd_txt_wrap {
   width: 100%;
   height: 34%;
-  padding: 2vw;
+  padding: 24px;
   box-sizing: border-box;
 }
 .prd_txt_wrap span,
@@ -250,7 +250,7 @@ em {
 }
 .item_name {
   width: fit-content;
-  height: fit-content;
+  height: 53px;
   margin-top: 15px;
 }
 .item_price_box {

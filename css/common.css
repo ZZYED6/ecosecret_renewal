@@ -24,6 +24,9 @@ body {
   height: auto;
   overflow: hidden;
 }
+.con_wrap {
+  margin: 100px 0;
+}
 #main_header {
   width: 100%;
   height: 180px;
@@ -273,6 +276,40 @@ h1 > .bg-Header_logo {
 }
 .snb_open-icon {
   background-position: -10px -310px;
+}
+
+/* 서브 페이지 공통 카테고리 */
+/* 컨텐츠 공통 선택 타이틀 */
+.con_title {
+  width: 750px;
+  height: 60px;
+  height: fit-content;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px auto;
+  margin-bottom: 60px;
+}
+.con_title li {
+  flex: 1 1 0;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+.con_title li {
+  border-bottom: 2px solid rgba(137, 137, 137, 0.5);
+}
+.con_title li > a {
+  display: block;
+}
+.con_title li a {
+  color: rgba(137, 137, 137, 0.5);
+}
+.con_title li.active {
+  border-bottom: 2px solid #373c22;
+}
+.con_title li.active a {
+  color: #373c22;
 }
 
 /* footer */

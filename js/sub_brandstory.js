@@ -17,7 +17,7 @@ $(function () {
       setTimeout(function () {
         // 2. "secret"이 분리되어 아래로 이동
         $("#txt_secret").addClass("moving");
-      }, 500);
+      }, 300);
     } else {
       // 스크롤이 위로 올라가서 triggerPoint보다 작을 때 원래 상태로 복귀
       $("#txt_eco").removeClass("moving");

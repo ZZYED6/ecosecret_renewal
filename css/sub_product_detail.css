@@ -2,12 +2,6 @@
 @import "./reset.css";
 @import "./common.css";
 
-section {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
 /* 상품 디테일 페이지 */
 #product_info_wrap {
   width: 83vw;
@@ -165,7 +159,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
 }
 /* .sales_btn_wrap button:first-child > span::after {
   content: "";
@@ -186,9 +180,12 @@ section {
   color: #efe8e1;
   background-color: #373c22;
 }
+.sales_btn_wrap button:hover {
+  filter: brightness(0.9);
+}
 
 /* 쇼핑 정보 4개 카테고리 */
-.shopping_info_category {
+.con_title {
   width: 83vw;
   height: 60px;
   height: fit-content;
@@ -196,37 +193,65 @@ section {
   box-sizing: border-box;
   margin: 40px auto;
 }
-.title_box {
+.con_title li {
   flex: 1 1 0;
   line-height: 60px;
   text-align: center;
   font-size: 20px;
   font-weight: 800;
 }
-.title_box.box_a {
+.con_title li {
   border-bottom: 2px solid rgba(137, 137, 137, 0.5);
 }
-.title_box.box_b {
-  border-bottom: 2px solid #373c22;
-}
-.title_box.box_c {
-  border-bottom: 2px solid rgba(137, 137, 137, 0.5);
-}
-.title_box.box_d {
-  border-bottom: 2px solid rgba(137, 137, 137, 0.5);
-}
-.title_box > a {
+.con_title li > a {
   display: block;
 }
-.title_a {
+.con_title li a {
   color: rgba(137, 137, 137, 0.5);
 }
-.title_b {
+.con_title li.active {
+  border-bottom: 2px solid #373c22;
+}
+.con_title li.active a {
   color: #373c22;
 }
-.title_c {
-  color: rgba(137, 137, 137, 0.5);
+
+/* 카테고리 세부 내용 */
+.shopping_info_detail {
+  width: 100%;
+  height: 100%;
 }
-.title_d {
-  color: rgba(137, 137, 137, 0.5);
+
+/* detail_1 상세 정보 */
+/* detail_2 리뷰 */
+/* detail_3 쇼핑가이드 */
+.detail_3 .payment_info {
+  width: 83vw;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 100px;
+  background-color: #f8f8f8;
 }
+.payment_info div {
+  box-sizing: border-box;
+  margin: 20px;
+  line-height: 24px;
+}
+.payment_info div:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(137, 137, 137, 0.5);
+}
+.payment_info h4 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.payment_info span {
+  color: #676767;
+}
+.payment_info b {
+  font-weight: 800;
+}
+/* detail_4 상품문의 */

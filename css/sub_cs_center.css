@@ -1,0 +1,264 @@
+@charset "utf-8";
+@import "./reset.css";
+@import "./common.css";
+
+/* cs 카테고리 내용 섹션 */
+/* 공지사항 게시판 */
+.cs_notice_board {
+  width: 83vw;
+  height: fit-content;
+  margin: 0 auto;
+}
+.cs_notice_board > table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+  color: #676767;
+}
+thead {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-top: 0.6px solid rgba(137, 137, 137, 0.7);
+  border-bottom: 0.6px solid rgba(137, 137, 137, 0.7);
+  background-color: rgba(239, 232, 225, 0.3);
+}
+tbody {
+  width: 100%;
+  height: fit-content;
+}
+tbody tr {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 0.3px solid rgba(137, 137, 137, 0.5);
+}
+tbody tr:last-child {
+  border-bottom: 0.6px solid rgba(137, 137, 137, 0.7);
+}
+tbody tr > td:nth-child(2) {
+  text-align: left;
+  padding-left: 20px;
+}
+tbody tr > td:nth-child(2) > a {
+  color: #676767;
+}
+tbody > tr:first-child > td:nth-child(1) {
+  font-weight: 800;
+}
+tbody > tr:first-child > td:nth-child(2) {
+  font-weight: 800;
+}
+.pagenum_box {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+.pagenum_box > a {
+  width: 24px;
+  height: 24px;
+}
+.pagenum_box > ol {
+  width: fit-content;
+  height: 24px;
+  display: flex;
+  gap: 20px;
+  margin: 0 16px;
+}
+.pagenum {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.pagenum .this_p {
+  display: block;
+  width: 16px;
+  color: #676767;
+  border-bottom: 1px solid #373c22;
+}
+.pagenum .other_p {
+  display: block;
+  width: 16px;
+  color: rgba(137, 137, 137, 0.8);
+}
+.search_box {
+  width: 100%;
+  height: fit-content;
+}
+.search_box > p {
+  height: fit-content;
+  text-align: center;
+}
+.search_box select {
+  font-family: "SUIT Variable", sans-serif;
+  width: 5vw;
+  height: 4vh;
+  font-size: 14px;
+  font-weight: 600;
+  color: #676767;
+  box-sizing: border-box;
+  padding: 0 5px;
+  border: 1px solid rgba(137, 137, 137, 0.5);
+}
+.search_box input {
+  font-family: "SUIT Variable", sans-serif;
+  width: 15vw;
+  height: 4vh;
+  font-size: 14px;
+  font-weight: 600;
+  color: #676767;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 1px solid rgba(137, 137, 137, 0.5);
+}
+.search_box a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 4vw;
+  height: 100%;
+  font-size: 14px;
+  line-height: 4vh;
+  background-color: #676767;
+  color: #fff;
+}
+
+/* 자주 묻는 질문 내용 */
+.detail_2 div {
+  width: 83vw;
+  height: 3000px;
+  margin: 0 auto;
+  background-color: beige;
+}
+/* 1:1 문의 방법 */
+.contact_method {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.info_scope {
+  width: 100%;
+  height: fit-content;
+  background-color: #efe8e1;
+  position: relative;
+}
+.info_wrap {
+  width: 83vw;
+  height: 220px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.contact_info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact_info img {
+  width: 80px;
+  height: 80px;
+}
+.contact_info span {
+  display: block;
+  line-height: 28px;
+  font-size: 16px;
+}
+.contact_info:last-child > div span:last-child {
+  text-decoration: underline;
+}
+
+.contact_info span > strong {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 800;
+}
+.contact_method form {
+  width: 40%;
+  height: auto;
+  position: relative;
+  margin: 80px auto;
+}
+.contact_method form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.contact_method form input::placeholder {
+  color: #ddd;
+}
+.form_scope {
+  width: 100%;
+  height: fit-content;
+}
+.form_scope form {
+  width: 40%;
+  height: auto;
+  position: relative;
+}
+.input_box label {
+  color: #676767;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+.input_box label span:not(.attatch_f)::after {
+  content: "*";
+  color: #db4f00;
+}
+.input_box input {
+  position: absolute;
+  right: 0;
+  width: 80%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #3f3d56;
+}
+.input_box input:focus {
+  border: 1px solid #373c22;
+}
+.input_box textarea {
+  width: 100%;
+  height: 30vh;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #3f3d56;
+  font-family: "roboto", sans-serif;
+}
+.input_box textarea:focus {
+  border: 1px solid #373c22;
+}
+input[type="file"] {
+  font-family: "SUIT Variable", sans-serif;
+  line-height: 40px;
+  display: block;
+  border: 1px solid #ddd;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0 10px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.form_scope form button {
+  width: 100px;
+  height: 34px;
+  border: none;
+  background-color: #373c22;
+  color: #efe8e1;
+  font-weight: 800;
+  cursor: pointer;
+  float: right;
+}
