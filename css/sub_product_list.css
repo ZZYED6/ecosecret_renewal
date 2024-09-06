@@ -2,47 +2,27 @@
 @import "./reset.css";
 @import "./common.css";
 
-#product_list {
-  width: 100%;
-  height: auto;
-}
-
-/* 섹션_타입별추천 */
-.sec_inner_wrap {
-  width: 83vw;
-  height: auto;
-  margin: 0 auto;
-}
-.by_btn_group {
-  display: flex;
-  gap: 40px;
-  height: fit-content;
-  padding: 10px;
-  background-color: #efe8e1;
-  /* border-bottom: 1px solid #373c22; */
-}
-.by_btn_group a {
-  color: #898989;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 44px;
-}
+/* 세부 카테고리 버튼 */
 .btn_box {
   width: 100%;
   height: fit-content;
 }
 .type_btn_group {
   width: 100%;
+  height: fit-content;
+  margin: 0 auto;
 }
-.type_btn_list {
+.type_btn_group ul {
   width: 100%;
   height: 44px;
   display: flex;
+  justify-content: center;
   gap: 40px;
   text-align: center;
+  background-color: #efe8e1;
+  margin-bottom: 20px;
 }
-
-.type_btn_list li a {
+.type_btn_group > ul li a {
   /* 클릭 전 버튼의 폰트컬러 */
   display: block;
   float: left;
@@ -52,18 +32,35 @@
   color: #898989;
   transition: 0.3s;
 }
-.type_btn_list li.active a {
+.type_btn_group > ul li.active a {
   font-weight: 800;
   color: #373c22;
+}
+
+/* 정렬 */
+.select_wrap {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.select_wrap select {
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  color: #898989;
+  border: 1px solid rgba(137, 137, 137, 0.5);
 }
 
 /* 제품 리스트 내용 중 공통 속성 */
 .prd_list {
   width: 100%;
   height: fit-content;
-  margin: 70px 0 100px 0;
+  margin: 20px 0 100px 0;
 }
-.prd_list > li {
+.prd_list li {
   /* 타입별 추천 리스트 적용 */
   display: flex;
   justify-content: space-between;

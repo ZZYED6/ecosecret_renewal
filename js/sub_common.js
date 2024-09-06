@@ -29,4 +29,24 @@ $(function () {
     // 클릭한 버튼에 해당하는 카테고리 내용만 표시
     $(".detail_" + index).show();
   });
+
+  //faq
+  $.fn.extend({
+    faq: function () {
+      let ts = $(this);
+      $.each(ts, function (i, o) {
+        $("button", o).on("click", tabmenu);
+        function tabmenu() {
+          if ($(this).parent().next().is(":hidden")) {
+            $("li > div:visible", o).hide();
+            $(this).parent().next().show();
+          } else {
+            $("li > div:visible", o).hide();
+          }
+        }
+      });
+    },
+  });
+
+  $(".faq").faq();
 });

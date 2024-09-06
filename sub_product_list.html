@@ -125,20 +125,20 @@
           </div>
         </div>
       </header>
-      <main class="con_wrap">
-        <div class="sec_inner_wrap">
+      <main id="product_list">
+        <div class="con_wrap">
           <!-- 타입별 선택 버튼 -->
           <div class="btn_box">
-            <div class="by_btn_group">
-              <div class="b_btn_1">
-                <a href="#">유형별</a>
-              </div>
-              <div class="b_btn_2">
-                <a href="#">기능별</a>
-              </div>
-            </div>
+            <ul class="con_title t_2row">
+              <li class="title_box_1">
+                <a href="#">단계별</a>
+              </li>
+              <li class="title_box_2">
+                <a href="#">피부고민별</a>
+              </li>
+            </ul>
             <div class="type_btn_group">
-              <ul class="type_btn_list">
+              <ul class="type_btn_list_1">
                 <li class="t_btn_1">
                   <a href="#">스킨케어</a>
                 </li>
@@ -155,402 +155,668 @@
                   <a href="#">헤어/바디</a>
                 </li>
               </ul>
-              <ul class="type_btn_list">
-                <li class="t_btn_6">
+              <ul class="type_btn_list_2">
+                <li class="t_btn_1">
                   <a href="#">수분/보습</a>
                 </li>
-                <li class="t_btn_7">
+                <li class="t_btn_2">
                   <a href="#">유수분 밸런스</a>
                 </li>
-                <li class="t_btn_8">
+                <li class="t_btn_3">
                   <a href="#">트러블/민감성</a>
                 </li>
-                <li class="t_btn_9">
+                <li class="t_btn_4">
                   <a href="#">주름개선/미백</a>
                 </li>
-                <li class="t_btn_10">
+                <li class="t_btn_5">
                   <a href="#">자외선 차단</a>
                 </li>
               </ul>
             </div>
           </div>
+          <!-- 정렬 -->
+          <div class="select_wrap">
+            <select>
+              <option value="0" selected>인기순</option>
+              <option value="1">혜택순</option>
+              <option value="2">금액높은순</option>
+              <option value="3">금액낮은순</option>
+            </select>
+          </div>
           <!-- 제품 리스트 -->
-          <ul class="prd_list">
-            <!-- 스킨케어 -->
-            <li class="t_list_1">
-              <!-- 아이템 1 -->
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="./sub_product_detail.html">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_400/대표_프레시미알로에젤_400.jpg"
-                      alt="알로에젤"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+          <div class="prd_list">
+            <ul class="step_list">
+              <!-- 스킨케어 -->
+              <li class="t_list_1">
+                <!-- 아이템 1 -->
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="./sub_product_detail.html">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_400/대표_프레시미알로에젤_400.jpg"
+                        alt="알로에젤"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row"
+                        >프레시 미 알로에 젤 200ml</a
+                      >
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>7,600원</strong>
+                        <span>9,500원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
                     </div>
                   </div>
                 </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#진정</span>
-                    <span>#수부지전용</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row">프레시 미 알로에 젤 200ml</a>
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>7,600원</strong>
-                      <span>9,500원</span>
-                    </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
-                  </div>
-                </div>
-              </div>
-              <!-- 아이템 2 -->
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="#">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_400/대표_화이트씨로션_400.jpg"
-                      alt="화이트씨로션"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+                <!-- 아이템 2 -->
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_400/대표_화이트씨로션_400.jpg"
+                        alt="화이트씨로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#미백</span>
-                    <span>#기능성</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row">화이트 C 멀베리 로션 150ml</a>
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>9,600원</strong>
-                      <span>12,000원</span>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#미백</span>
+                      <span>#기능성</span>
                     </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
-                  </div>
-                </div>
-              </div>
-              <!-- 아이템 3 -->
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="#">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_400/대표_허깅미선크림_400.jpg"
-                      alt="허깅미선크림"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+                    <div class="item_name">
+                      <a href="#" class="name_4row"
+                        >화이트 C 멀베리 로션 150ml</a
+                      >
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
                     </div>
                   </div>
                 </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#자외선 차단</span>
-                    <span>#혼합자차</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row"
-                      >허깅 미 선플라워 라이트 선크림 50ml</a
-                    >
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>11,200원</strong>
-                      <span>14,000원</span>
-                    </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
-                  </div>
-                </div>
-              </div>
-              <!-- 아이템 4 -->
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="#">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_400/대표_사티바페이셜오일_400.jpg"
-                      alt="사티바페이셜오일"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+                <!-- 아이템 3 -->
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_400/대표_허깅미선크림_400.jpg"
+                        alt="허깅미선크림"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#주름개선</span>
-                    <span>#기능성</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row"
-                      >모이스처라이즈 미 아베나 사티바 페이셜 오일 30ml</a
-                    >
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>17,600원</strong>
-                      <span>22,000원</span>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#자외선 차단</span>
+                      <span>#혼합자차</span>
                     </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!-- 클렌징 -->
-            <li class="t_list_2">
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="#">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_1000/대표_알로에로션_1000.jpg"
-                      alt="알로에로션"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+                    <div class="item_name">
+                      <a href="#" class="name_4row"
+                        >허깅 미 선플라워 라이트 선크림 50ml</a
+                      >
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>11,200원</strong>
+                        <span>14,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
                     </div>
                   </div>
                 </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#진정</span>
-                    <span>#수부지전용</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row">클렌징 50ml</a>
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>9,600원</strong>
-                      <span>12,000원</span>
-                    </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
-                  </div>
-                </div>
-              </div>
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="#">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_1000/대표_알로에로션_1000.jpg"
-                      alt="알로에로션"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+                <!-- 아이템 4 -->
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_400/대표_사티바페이셜오일_400.jpg"
+                        alt="사티바페이셜오일"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#진정</span>
-                    <span>#수부지전용</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row">클렌징 50ml</a>
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>9,600원</strong>
-                      <span>12,000원</span>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#주름개선</span>
+                      <span>#기능성</span>
                     </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
-                  </div>
-                </div>
-              </div>
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="#">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_1000/대표_알로에로션_1000.jpg"
-                      alt="알로에로션"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+                    <div class="item_name">
+                      <a href="#" class="name_4row"
+                        >모이스처라이즈 미 아베나 사티바 페이셜 오일 30ml</a
+                      >
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>17,600원</strong>
+                        <span>22,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
                     </div>
                   </div>
                 </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#진정</span>
-                    <span>#수부지전용</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row">클렌징 50ml</a>
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>9,600원</strong>
-                      <span>12,000원</span>
-                    </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
-                  </div>
-                </div>
-              </div>
-              <div class="prd_item item_4row">
-                <div class="img_thumbnail img_4row">
-                  <a href="#">
-                    <img
-                      class="thumb"
-                      src="./img/product/product_1000/대표_알로에로션_1000.jpg"
-                      alt="알로에로션"
-                      width="370"
-                      height="370"
-                    />
-                  </a>
-                  <div class="choice_btn_box">
-                    <div class="choice_btn btn_4row">
-                      <span class="choice_icon1">
-                        <img
-                          src="./img/icon/web_icons/Heart-empty.png"
-                          alt="찜하기전"
-                        />
-                      </span>
-                      <span class="choice_icon2">
-                        <img
-                          src="./img/icon/web_icons/Shopping-bag.png"
-                          alt="장바구니담기"
-                        />
-                      </span>
+              </li>
+              <!-- 클렌징 -->
+              <li class="t_list_2">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="prd_txt_wrap">
-                  <div class="hash_tag_box">
-                    <span>#진정</span>
-                    <span>#수부지전용</span>
-                  </div>
-                  <div class="item_name">
-                    <a href="#" class="name_4row">클렌징 50ml</a>
-                  </div>
-                  <div class="item_price_box price_4row">
-                    <div class="price_detail_4row">
-                      <strong>9,600원</strong>
-                      <span>12,000원</span>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
                     </div>
-                    <div class="price_dc_4row"><em>20%</em></div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">클렌징입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <!-- 집중케어 -->
+              <li class="t_list_3">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">집중케어입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- 마스크팩 -->
+              <li class="t_list_4">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">마스크팩입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- 헤어/바디 -->
+              <li class="t_list_5">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">헤어/바디입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="concern_list">
+              <!-- 수분/보습 -->
+              <li class="t_list_1">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">수분/보습입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- 유수분 밸런스 -->
+              <li class="t_list_2">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">수분/보습입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- 트러블/민감성 -->
+              <li class="t_list_3">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">수분/보습입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- 주름개선/미백 -->
+              <li class="t_list_4">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">수분/보습입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- 자외선 차단 -->
+              <li class="t_list_5">
+                <div class="prd_item item_4row">
+                  <div class="img_thumbnail img_4row">
+                    <a href="#">
+                      <img
+                        class="thumb"
+                        src="./img/product/product_1000/대표_알로에로션_1000.jpg"
+                        alt="알로에로션"
+                        width="370"
+                        height="370"
+                      />
+                    </a>
+                    <div class="choice_btn_box">
+                      <div class="choice_btn btn_4row">
+                        <span class="choice_icon1">
+                          <img
+                            src="./img/icon/web_icons/Heart-empty.png"
+                            alt="찜하기전"
+                          />
+                        </span>
+                        <span class="choice_icon2">
+                          <img
+                            src="./img/icon/web_icons/Shopping-bag.png"
+                            alt="장바구니담기"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prd_txt_wrap">
+                    <div class="hash_tag_box">
+                      <span>#진정</span>
+                      <span>#수부지전용</span>
+                    </div>
+                    <div class="item_name">
+                      <a href="#" class="name_4row">수분/보습입니다.</a>
+                    </div>
+                    <div class="item_price_box price_4row">
+                      <div class="price_detail_4row">
+                        <strong>9,600원</strong>
+                        <span>12,000원</span>
+                      </div>
+                      <div class="price_dc_4row"><em>20%</em></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </main>
       <!-- footer -->

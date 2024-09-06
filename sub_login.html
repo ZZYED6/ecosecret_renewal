@@ -125,16 +125,21 @@
           </div>
         </div>
       </header>
-      <!-- 로그인 섹션 -->
       <main id="login_con">
         <div class="con_wrap">
-          <div class="con_title_wrap">
-            <div class="title_box title_box_a">일반회원 로그인</div>
-            <div class="title_box title_box_b">비회원 주문조회</div>
-          </div>
-          <div class="login_sec_wrap">
+          <!-- 로그인 분류 타이틀 -->
+          <ul class="con_title t_2row">
+            <li class="title_box_1">
+              <a href="#">일반회원 로그인</a>
+            </li>
+            <li class="title_box_2">
+              <a href="#">비회원 주문조회</a>
+            </li>
+          </ul>
+          <!-- 로그인 구분 -->
+          <ul class="con_detail">
             <!-- 일반회원 -->
-            <section class="member_con">
+            <li class="detail_1">
               <form action="#" method="post" id="member_form" class="member">
                 <div class="login_list">
                   <!-- 아이디 -->
@@ -234,18 +239,18 @@
                   </div>
                 </a>
               </div>
-            </section>
+            </li>
             <!-- 비회원 -->
-            <section class="nonMember_con">
-              <form action="#" method="post" id="member_form" class="member">
+            <li class="detail_2">
+              <form action="#" method="post" id="member_form" class="nonMember">
                 <div class="login_list">
                   <!-- 주문자명 -->
                   <div class="user_info">
-                    <label for="user_id" class="nonMember_name">
+                    <label for="user_name" class="nonMember_name">
                       <input
                         type="text"
-                        name="user_id"
-                        id="user_id"
+                        name="user_name"
+                        id="user_name"
                         placeholder="주문자명"
                         minlength="5"
                         maxlength="12"
@@ -256,11 +261,11 @@
                   </div>
                   <!-- 주문번호 -->
                   <div class="user_info">
-                    <label for="user_id" class="nonMember_num">
+                    <label for="user_num" class="nonMember_num">
                       <input
                         type="text"
-                        name="user_id"
-                        id="user_id"
+                        name="user_num"
+                        id="user_num"
                         placeholder="주문번호"
                         minlength="5"
                         maxlength="12"
@@ -322,8 +327,8 @@
                   </div>
                 </a>
               </div>
-            </section>
-          </div>
+            </li>
+          </ul>
         </div>
       </main>
       <!-- footer -->
@@ -366,4 +371,7 @@
       </footer>
     </div>
   </body>
+  <!-- js -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/sub_common.js"></script>
 </html>

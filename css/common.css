@@ -24,8 +24,15 @@ body {
   height: auto;
   overflow: hidden;
 }
+main {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 80px auto;
+}
 .con_wrap {
-  margin: 100px 0;
+  width: 83vw;
+  margin: 0 auto;
 }
 #main_header {
   width: 100%;
@@ -281,13 +288,18 @@ h1 > .bg-Header_logo {
 /* 서브 페이지 공통 카테고리 */
 /* 컨텐츠 공통 선택 타이틀 */
 .con_title {
-  width: 750px;
   height: 60px;
   height: fit-content;
   display: flex;
   box-sizing: border-box;
   margin: 0px auto;
   margin-bottom: 60px;
+}
+.con_title.t_2row {
+  width: 400px;
+}
+.con_title.t_3row {
+  width: 50%;
 }
 .con_title li {
   flex: 1 1 0;
@@ -316,7 +328,7 @@ h1 > .bg-Header_logo {
 footer {
   width: 100%;
   height: auto;
-  background-color: rgba(239, 232, 225, 0.5);
+  background-color: #f8f8f8;
 }
 .footer_inner {
   width: 83vw;

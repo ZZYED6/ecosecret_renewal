@@ -2,6 +2,9 @@
 @import "./reset.css";
 @import "./common.css";
 
+#product_info {
+  margin-top: 0;
+}
 /* 상품 디테일 페이지 */
 #product_info_wrap {
   width: 83vw;
@@ -223,6 +226,15 @@
 }
 
 /* detail_1 상세 정보 */
+.detail_1 .product_detail_view {
+  width: 83vw;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 100px;
+  background-color: #f8f8f8;
+}
 /* detail_2 리뷰 */
 /* detail_3 쇼핑가이드 */
 .detail_3 .payment_info {

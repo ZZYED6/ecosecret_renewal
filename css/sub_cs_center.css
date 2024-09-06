@@ -130,7 +130,7 @@ tbody > tr:first-child > td:nth-child(2) {
 /* 자주 묻는 질문 내용 */
 .detail_2 div {
   width: 83vw;
-  height: 3000px;
+  height: auto;
   margin: 0 auto;
   background-color: beige;
 }
@@ -169,9 +169,9 @@ tbody > tr:first-child > td:nth-child(2) {
   line-height: 28px;
   font-size: 16px;
 }
-.contact_info:last-child > div span:last-child {
+/* .contact_info:last-child > div span:last-child {
   text-decoration: underline;
-}
+} */
 
 .contact_info span > strong {
   font-size: 20px;
