@@ -1,7 +1,6 @@
 @charset "utf-8";
-@import "./reset.css";
-@import "./common.css";
-@import url(./common.css);
+@import "../common_css/reset.css";
+@import "../common_css/common.css";
 @import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
 
 /* 메인 영역 */

@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import "./reset.css";
-@import "./common.css";
+@import "../common_css/reset.css";
+@import "../common_css/common.css";
 
 /* 세부 카테고리 버튼 */
 .btn_box {

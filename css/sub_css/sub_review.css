@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import "./reset.css";
-@import "./common.css";
+@import "../common_css/reset.css";
+@import "../common_css/common.css";
 
 /* 전체 리뷰 리스트 */
 .select_wrap {
@@ -68,7 +68,7 @@
 .rating_box .star {
   width: 120px;
   height: 24px;
-  background: url(../img/icon/web_icons/star.png) repeat-x;
+  background: url(../../img/icon/web_icons/star.png) repeat-x;
 }
 .rating_box .rating_text {
   font-size: 16px;
@@ -113,7 +113,7 @@
 .btn_img {
   width: 24px;
   height: 24px;
-  background-image: url(../img/icon/web_icons/thumbs-up.png);
+  background-image: url(../../img/icon/web_icons/thumbs-up.png);
 }
 .btn_count {
   font-family: "SUIT Variable", sans-serif;
@@ -191,5 +191,5 @@
   width: 90px;
   height: 18px;
   margin-top: 10px;
-  background: url(../img/icon/web_icons/star_s.png) repeat-x;
+  background: url(../../img/icon/web_icons/star_s.png) repeat-x;
 }

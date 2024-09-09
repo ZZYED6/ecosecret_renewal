@@ -65,7 +65,7 @@ h1 > .bg-Header_logo {
   display: block;
   width: 280px;
   height: 42px;
-  background: url("../img/icon/web_icons/es_sprites.png") no-repeat -10px -1058px;
+  background: url("../../img/icon/web_icons/es_sprites.png") no-repeat -10px -1058px;
 }
 /* 상단 멤버십 메뉴 */
 .top_member {
@@ -148,7 +148,7 @@ h1 > .bg-Header_logo {
   font-weight: 800;
   padding-top: 10px;
   padding-left: 5px;
-  background-image: url(../img/icon/web_icons/popup_frame.png);
+  background-image: url(../../img/icon/web_icons/popup_frame.png);
   background-repeat: no-repeat;
   position: absolute;
   top: -2px;
@@ -263,7 +263,7 @@ h1 > .bg-Header_logo {
   width: 24px;
   height: 24px;
   margin: 6px 0;
-  background-image: url(../img/icon/web_icons/es_sprites.png);
+  background-image: url(../../img/icon/web_icons/es_sprites.png);
   background-repeat: no-repeat;
 }
 .member_action > div > a {
@@ -342,7 +342,8 @@ h1 > .bg-Header_logo {
   width: 24px;
   height: 24px;
   font-size: 0;
-  background: url(../img/icon/web_icons/es_sprites.png) -10px -393px no-repeat;
+  background: url(../../img/icon/web_icons/es_sprites.png) -10px -393px
+    no-repeat;
 }
 .nav_1 > li {
   color: #373c22;

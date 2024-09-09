@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import "./reset.css";
-@import "./common.css";
+@import "../common_css/reset.css";
+@import "../common_css/common.css";
 
 #product_info {
   margin-top: 0;
@@ -97,7 +97,7 @@
   height: 24px;
 }
 .product_detail .item_icons > div {
-  background-image: url(../img/icon/web_icons/es_sprites.png);
+  background-image: url(../../img/icon/web_icons/es_sprites.png);
   background-repeat: no-repeat;
 }
 .product_detail .item_icons .wish_icon {
@@ -172,7 +172,7 @@
   top: 19px;
   right: 92px;
   position: absolute;
-  background-image: url(../img/icon/web_icons/es_sprites.png);
+  background-image: url(../../img/icon/web_icons/es_sprites.png);
   background-repeat: no-repeat;
   background-position: -10px -574px;
 } */

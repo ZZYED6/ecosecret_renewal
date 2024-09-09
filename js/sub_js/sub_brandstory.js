@@ -34,7 +34,7 @@ $(function () {
       );
 
       // key_img 이미지 변경
-      $(".key_img img").attr("src", "./img/contents/brandstory/key_img_2.jpg");
+      $(".key_img img").attr("src", "../img/contents/brandstory/key_img_2.jpg");
       $(".key_img img").attr("alt", "key_img_2");
     } else {
       // 원래 내용으로 되돌리기
@@ -44,7 +44,7 @@ $(function () {
       );
 
       // 원래 이미지로 되돌리기
-      $(".key_img img").attr("src", "./img/contents/brandstory/key_img_1.jpg");
+      $(".key_img img").attr("src", "../img/contents/brandstory/key_img_1.jpg");
       $(".key_img img").attr("alt", "key_img_1");
     }
   });

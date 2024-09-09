@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEAUTY SECRET? Here, ecosecret</title>
-    <link rel="icon" href="./img/icon/favicon_io/favicon.ico" />
+    <link rel="icon" href="../img/icon/favicon_io/favicon.ico" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/sub_brandstory.css" />
+    <link rel="stylesheet" href="../css/sub_css/sub_review.css" />
     <link
       href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
       rel="stylesheet"
     />
-    <!-- AOS 연결 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrap">
@@ -117,7 +115,7 @@
                   <input
                     type="image"
                     class="search_img"
-                    src="./img/icon/web_icons/Search.png"
+                    src="../img/icon/web_icons/Search.png"
                   />
                 </label>
               </div>
@@ -175,13 +173,17 @@
                       </ul>
                     </li>
                     <li><a href="./sub_event.html">이벤트</a></li>
-                    <li><a href="./sub_review.html">고객리뷰</a></li>
+                    <li>
+                      <a href="./sub_product_list_step.html">고객리뷰</a>
+                    </li>
                     <li><a href="./sub_membership.html">멤버십</a></li>
                   </ul>
                   <ul class="nav_2">
                     <li><a href="./sub_login.html">로그인</a></li>
                     <li><a href="./sub_mypage.html">주문배송</a></li>
-                    <li><a href="./sub_cs_center.html">고객센터</a></li>
+                    <li>
+                      <a href="./sub_cs_center.html">고객센터</a>
+                    </li>
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">개인정보 취급방침</a></li>
                   </ul>
@@ -191,127 +193,127 @@
           </div>
         </div>
       </header>
-      <!-- 메인 영역 -->
-      <main id="main_box">
-        <section id="our_story">
-          <div class="con_wrap">
-            <div class="text_wrap">
-              <h2 data-aos="fade-down" data-aos-duration="500">Our story.</h2>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              >
-                에코시크릿은 한국의 건강한 자연 원료에서 영감을 얻어, 2013년도
-                창립되었습니다.
-                <br />
-                세계 뷰티 시장을 선도하는 K-Beauty 기술과 건강한 자연 원료의
-                만남으로 개발된 제품들을 통해 에코시크릿만의 뷰티 시크릿을
-                제공하고 있습니다.
-              </p>
-            </div>
-            <div
-              class="story_img"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            >
-              <video src="./img/video/v_brand.mp4" autoplay muted loop>
-                이 비디오는 해당 브라우저를 지원하지 않습니다.
-              </video>
-            </div>
+      <main id="review_con">
+        <div class="con_wrap">
+          <!-- 리뷰별 타이틀 -->
+          <ul class="con_title t_2row">
+            <li class="title_box_1">
+              <a href="#">텍스트 리뷰</a>
+            </li>
+            <li class="title_box_2">
+              <a href="#">포토 리뷰</a>
+            </li>
+          </ul>
+          <div class="select_wrap">
+            <select>
+              <option value="0">카테고리별 보기</option>
+              <option value="1">스킨케어</option>
+              <option value="2">클렌징</option>
+              <option value="3">집중케어</option>
+              <option value="4">마스크팩</option>
+              <option value="5">헤어/바디</option>
+              <option value="6">수분/보습</option>
+              <option value="7">유수분 밸런스</option>
+              <option value="8">트러블/민감성</option>
+              <option value="9">주름개선/미백</option>
+              <option value="10">자외선 차단</option>
+            </select>
+            <select>
+              <option value="0">최신순</option>
+              <option value="1" selected>별점순</option>
+              <option value="2">추천순</option>
+            </select>
           </div>
-        </section>
-        <section id="concept">
-          <div class="title_sec">
-            <h2 data-aos="fade-down" data-aos-duration="500">Concept.</h2>
-          </div>
-          <div class="con_wrap">
-            <div class="concept_bg">
-              <img src="./img/contents/brandstory/img_eco.jpg" alt="eco_bg" />
-            </div>
-            <div class="align_box">
-              <div class="concept_box">
-                <img
-                  id="txt_eco"
-                  src="./img/contents/brandstory/txt_eco.svg"
-                  alt="eco"
-                />
-                <span class="text_con line_1">자연에서 온 건강한 원료</span>
-              </div>
-            </div>
-          </div>
-          <div class="con_wrap">
-            <div class="concept_bg">
-              <img
-                src="./img/contents/brandstory/img_secret.jpg"
-                alt="secret_bg"
-              />
-            </div>
-            <div class="align_box">
-              <div class="concept_box">
-                <span class="text_con line_2">뷰티 노하우</span>
-                <img
-                  id="txt_secret"
-                  src="./img/contents/brandstory/txt_secret.svg"
-                  alt="secret"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="significant">
-          <div class="signi_bg">
-            <img
-              src="./img/contents/brandstory/signi_bg.png"
-              alt="signi_bg"
-              width="800"
-            />
-          </div>
-          <div class="signi_wrap">
-            <h3
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-            >
-              <img src="/img/contents/brandstory/Main_logo.svg" alt="logo" />
-            </h3>
-            <p
-              data-aos="zoom-in-down"
-              data-aos-delay="700"
-              data-aos-duration="700"
-            >
-              <b>'천연에 가장 가까운 것이 가장 이롭다'</b>라는 신조 아래,<br />
-              자연에서 얻은 원료를 바탕으로 유쾌하고 신선한 뷰티비결을
-              제공하여<br />
-              고객이 자신만의 아름다움을 표현하는데 도움을 드리고자 합니다.
-            </p>
-          </div>
-        </section>
-        <section id="keyword">
-          <div class="con_wrap">
-            <div class="key_text">
-              <h2 data-aos="fade-down" data-aos-duration="500">Keyword.</h2>
-              <div
-                class="change_text"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              >
-                <span>NATURAL & HEALTHY</span>
-                <p>
-                  자연에서 오는 원료 그대로의 효능을 담아<br />
-                  건강한 아름다움을 선사합니다.
-                </p>
-              </div>
-            </div>
-            <div class="key_img">
-              <img
-                src="./img/contents/brandstory/key_img_1.jpg"
-                alt="/key_img_1"
-              />
-            </div>
-          </div>
-        </section>
+          <!-- 전체 리뷰 -->
+          <ul class="con_detail">
+            <!-- 텍스트 리뷰 -->
+            <li class="detail_1">
+              <ul class="review_list">
+                <li class="item">
+                  <div class="item_img">
+                    <a href="#"
+                      ><img
+                        src="../img/product/product_150/대표_알로에로션_150.jpg"
+                        alt="대표이미지"
+                    /></a>
+                    <div class="item_name">프레시미 알로에 로션 200ml</div>
+                  </div>
+                  <div class="item_rating">
+                    <div class="rating_box">
+                      <div class="star"></div>
+                      <div class="rating_text">최고에요</div>
+                    </div>
+                    <p>
+                      보통 알로에 겔 많이 쓰시잖아요. 알로에 겔 화장하기전에 늘
+                      발랐는데 이번에 한통 다써서 사야지 마음 먹고 있었는데
+                      알로에 크림을 접하게 된거에요! 첨에는 알로에 겔로
+                      착각했는데 보니까 크림인고에요~ 그래서 화장전이라 바로
+                      발라봤는데 바르자마자 촉촉함이 올라오는게 느껴졌어요
+                      끈적함전혀없고 촉촉하고 부드러워서 오히려 화장하기전에
+                      발라요!! 너무 순하고 마무리감이 좋아서 맨날 쓴답니다.
+                      알로에 젤은 얼굴에 도포했을 때 시원한 느낌만 들고 촉촉함은
+                      그닥 못느꼈는데 에코시크릿의 알로에 젤 크림은 얼굴에
+                      도포하자마자 촉촉해요!!
+                    </p>
+                  </div>
+                  <div class="item_info">
+                    <div>
+                      <span><b>김**</b>의 리뷰입니다.</span>
+                    </div>
+                    <div><b>피부타입 </b><span>건성</span></div>
+                    <div><b>나이대 </b><span>30대</span></div>
+                    <button type="button">
+                      <div class="btn_img"></div>
+                      <span class="btn_count">1</span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="con_detail">
+            <!-- 포토 리뷰 -->
+            <li class="detail_2">
+              <ul class="photo_review_list">
+                <li class="photo_item">
+                  <a href="#">
+                    <img
+                      src="../img/contents/photo_review/photo_review_ex.png"
+                      alt="포토리뷰"
+                    />
+                    <div class="photo_item_info">
+                      <div class="photo_txt">
+                        <span>김**</span>
+                        <p>
+                          보통 알로에 겔 많이 쓰시잖아요. 알로에 겔 화장하기전에
+                          늘 발랐는데 이번에 한통 다써서 사야지 마음 먹고
+                          있었는데 알로에 크림을 접하게 된거에요! 첨에는 알로에
+                          겔로 착각했는데 보니까 크림인고에요~ 그래서 화장전이라
+                          바로 발라봤는데 바르자마자 촉촉함이 올라오는게
+                          느껴졌어요 끈적함전혀없고 촉촉하고 부드러워서 오히려
+                          화장하기전에 발라요!! 너무 순하고 마무리감이 좋아서
+                          맨날 쓴답니다. 알로에 젤은 얼굴에 도포했을 때 시원한
+                          느낌만 들고 촉촉함은 그닥 못느꼈는데 에코시크릿의
+                          알로에 젤 크림은 얼굴에 도포하자마자 촉촉해요!!
+                        </p>
+                      </div>
+                      <div class="photo_name">
+                        <img
+                          src="../img/product/product_150/대표_알로에로션_150.jpg"
+                          alt="썸네일이미지"
+                        />
+                        <div class="rating_box_s">
+                          <h4>프레시미 알로에 로션 200ml</h4>
+                          <div class="star"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </main>
       <!-- footer -->
       <footer>
@@ -319,7 +321,7 @@
           <div class="footer_logo">
             <a href=""
               ><img
-                src="./img/icon/web_icons/footer-logo.png"
+                src="../img/icon/web_icons/footer-logo.png"
                 alt="footer_logo"
             /></a>
           </div>
@@ -353,22 +355,17 @@
         </div>
         <div id="floating_btn_wrap">
           <a href="#">
-            <img src="./img/icon/web_icons/Message-square.png" alt="message" />
+            <img src="../img/icon/web_icons/Message-square.png" alt="message" />
           </a>
           <a href="#">
-            <img src="./img/icon/web_icons/arrow-top.png" alt="top" />
+            <img src="../img/icon/web_icons/arrow-top.png" alt="top" />
           </a>
         </div>
       </footer>
     </div>
   </body>
   <!-- js -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/sub_brandstory.js"></script>
-  <script src="./js/side_nav_box.js"></script>
-  <!-- AOS 연결 -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="../js/common_js/jquery.min.js"></script>
+  <script src="../js/common_js/side_nav_box.js"></script>
+  <script src="../js/sub_js/sub_common.js"></script>
 </html>

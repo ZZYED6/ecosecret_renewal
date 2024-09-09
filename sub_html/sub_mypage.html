@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEAUTY SECRET? Here, ecosecret</title>
-    <link rel="icon" href="./img/icon/favicon_io/favicon.ico" />
+    <link rel="icon" href="../img/icon/favicon_io/favicon.ico" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/sub_membership.css" />
+    <link rel="stylesheet" href="../css/sub_css/sub_mypage.css" />
     <link
       href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
       rel="stylesheet"
@@ -106,7 +106,7 @@
                 <input
                   type="image"
                   class="search_img"
-                  src="./img/icon/web_icons/Search.png"
+                  src="../img/icon/web_icons/Search.png"
                 />
               </label>
             </div>
@@ -164,13 +164,17 @@
                     </ul>
                   </li>
                   <li><a href="./sub_event.html">이벤트</a></li>
-                  <li><a href="./sub_review.html">고객리뷰</a></li>
+                  <li>
+                    <a href="./sub_product_list_step.html">고객리뷰</a>
+                  </li>
                   <li><a href="./sub_membership.html">멤버십</a></li>
                 </ul>
                 <ul class="nav_2">
                   <li><a href="./sub_login.html">로그인</a></li>
                   <li><a href="./sub_mypage.html">주문배송</a></li>
-                  <li><a href="./sub_cs_center.html">고객센터</a></li>
+                  <li>
+                    <a href="./sub_cs_center.html">고객센터</a>
+                  </li>
                   <li><a href="#">이용약관</a></li>
                   <li><a href="#">개인정보 취급방침</a></li>
                 </ul>
@@ -180,184 +184,134 @@
         </div>
       </div>
     </header>
-    <main id="membership_con">
+    <main id="mypage_con">
       <div class="con_wrap">
-        <!-- 멤버십소개 분류 타이틀 -->
-        <ul class="con_title t_2row">
-          <li class="title_box_1">
-            <a href="#">멤버십 혜택</a>
-          </li>
-          <li class="title_box_2">
-            <a href="#">구매 금액별 사은품</a>
-          </li>
-        </ul>
-        <!-- 멤버십소개 내용 -->
-        <ul class="con_detail">
-          <li class="detail_1">
-            <section id="member_benefit">
-              <h2>회원 가입시 드리는 혜택</h2>
-              <div class="wrap_box">
-                <div class="new_benefit_wrap">
-                  <div class="benefit_item">
-                    <img
-                      src="./img/icon/web_icons_svg/Samples.svg"
-                      width="96"
-                      alt="bf_item1"
-                    />
-                    <strong>Free Samples</strong>
-                    <span>구매 시 샘플 3종 증정</span>
-                  </div>
-                  <div class="benefit_item">
-                    <img
-                      src="./img/icon/web_icons_svg/Discount_coupon.svg"
-                      width="96"
-                      alt="bf_item2"
-                    />
-                    <strong>Discount Coupon</strong>
-                    <span>가입 즉시 10% 할인쿠폰</span>
-                  </div>
-                  <div class="benefit_item">
-                    <img
-                      src="./img/icon/web_icons_svg/Shipping-Truck.svg"
-                      width="96"
-                      alt="bf_item3"
-                    />
-                    <strong>Free Delivery</strong>
-                    <span>3만원 이상 구매시 무료배송</span>
-                  </div>
-                  <div class="benefit_item">
-                    <img
-                      src="./img/icon/web_icons_svg/Birthday.svg"
-                      width="96"
-                      alt="bf_item4"
-                    />
-                    <strong>Birthday Coupon</strong>
-                    <span>생일 할인 쿠폰 증정</span>
-                  </div>
+        <div class="con_title_wrap">
+          <div class="title_box">마이페이지</div>
+        </div>
+        <section id="myinfo">
+          <div class="info_wrap">
+            <div class="user_info">
+              <img src="../img/icon/web_icons/Grade_Blue.png" alt="블루등급" />
+              <div>
+                <span>환영합니다!</span>
+                <span
+                  ><strong>김지윤님</strong>은 현재 <b>블루 등급</b>입니다.
+                </span>
+                <div class="more_btn">
+                  <a href="#">나의 등급 혜택 알아보기</a>
                 </div>
               </div>
-            </section>
-            <section id="membership_info">
-              <div class="wrap_box">
-                <div class="grade_wrap">
-                  <div class="grade_item">
-                    <div class="grade_box">
-                      <img
-                        src="./img/icon/web_icons/Grade_White.png"
-                        alt="화이트등급"
-                      />
-                      <span class="g_white">화이트 등급</span>
-                    </div>
-                    <div class="grade_info white_box">
-                      <span><b>회원가입시</b></span>
-                      <span
-                        ><b>3%</b><br />
-                        포인트 적립
-                      </span>
-                      <span
-                        >첫 구매 10%<br />
-                        할인쿠폰 지급</span
-                      >
-                      <span
-                        >10%<br />
-                        생일 할인 쿠폰 지급</span
-                      >
-                    </div>
-                  </div>
-                  <div class="grade_item">
-                    <div class="grade_box">
-                      <img
-                        src="./img/icon/web_icons/Grade_Blue.png"
-                        alt="블루등급"
-                      />
-                      <span class="g_blue">블루 등급</span>
-                    </div>
-                    <div class="grade_info blue_box">
-                      <span><b>2회 구매시</b></span>
-                      <span
-                        ><b>5%</b><br />
-                        포인트 적립
-                      </span>
-                      <span
-                        >매월 5%<br />
-                        할인쿠폰 지급</span
-                      >
-                      <span
-                        >15%<br />
-                        생일 할인 쿠폰 지급</span
-                      >
-                    </div>
-                  </div>
-                  <div class="grade_item">
-                    <div class="grade_box red_box">
-                      <img
-                        src="./img/icon/web_icons/Grade_Red.png"
-                        alt="레드등급"
-                      />
-                      <span class="g_red">레드 등급</span>
-                    </div>
-                    <div class="grade_info red_box">
-                      <span><b>200,000원 누적시</b></span>
-                      <span
-                        ><b>7%</b><br />
-                        포인트 적립
-                      </span>
-                      <span
-                        >매월 5%, 10%<br />
-                        할인쿠폰 지급</span
-                      >
-                      <span
-                        >20%<br />
-                        생일 할인 쿠폰 지급</span
-                      >
-                    </div>
-                  </div>
-                  <div class="grade_item">
-                    <div class="grade_box">
-                      <img
-                        src="./img/icon/web_icons/Grade_Gold.png"
-                        alt="골드등급"
-                      />
-                      <span class="g_gold">골드 등급</span>
-                    </div>
-                    <div class="grade_info gold_box">
-                      <span><b>500,000원 누적시</b></span>
-                      <span
-                        ><b>5%</b><br />
-                        포인트 적립
-                      </span>
-                      <span
-                        >매월 10%, 15%<br />
-                        할인쿠폰 지급</span
-                      >
-                      <span
-                        >30%<br />
-                        생일 할인 쿠폰 지급</span
-                      >
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="box_wrap">
+              <div class="benefit_box">
+                <img
+                  src="../img/icon/web_icons/Discs_maincolor.png"
+                  alt="포인트적립"
+                />
+                <span class="bf_name">포인트 적립</span>
+                <a href="#"><span class="bf_detail">3,000원</span></a>
               </div>
-              <div class="issue_info">
-                <ul>
-                  <li>
-                    *매월 1일, 최근 6개월간 누적 실 결제 금액을 기준으로 등급이
-                    변경됩니다.
-                  </li>
-                  <li>
-                    *포인트는 현금과 동일하게 사용하실 수 있으며, 구매 금액이
-                    3만원 이상일 때 사용 가능합니다.
-                  </li>
-                  <li>
-                    *멤버십 등급 산정 기준 및 등급별 혜택은 회사 사정에 따라
-                    변경/대체 될 수 있습니다.
-                  </li>
-                  <li>*포인트 유효기한은 1년이며 이후 자동 소멸됩니다.</li>
-                </ul>
+              <div class="benefit_box">
+                <img
+                  src="../img/icon/web_icons/Discount_coupon_maincolor.png"
+                  alt="포인트적립"
+                />
+                <span class="bf_name">쿠폰</span>
+                <a href="#"><span class="bf_detail">1 개</span></a>
               </div>
-            </section>
-          </li>
-        </ul>
+              <div class="benefit_box">
+                <img
+                  src="../img/icon/web_icons/Shipping_Truck_maincolor.png"
+                  alt="포인트적립"
+                />
+                <span class="bf_name">주문/배송</span>
+                <a href="#"><span class="bf_detail">1 건</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="myshop">
+          <h3>나의 주문 처리 현황 <span>&#40;최근 6개월 기준&#41;</span></h3>
+          <div class="box_wrap">
+            <div class="myshop_box">
+              <a href="#" class="order_detail">1</a>
+              <span class="order_name">상품준비중</span>
+            </div>
+            <div class="myshop_box">
+              <a href="#" class="order_detail">0</a>
+              <span class="order_name">배송준비중</span>
+            </div>
+            <div class="myshop_box">
+              <a href="#" class="order_detail">0</a>
+              <span class="order_name">배송중</span>
+            </div>
+            <div class="myshop_box">
+              <a href="#" class="order_detail">0</a>
+              <span class="order_name">배송완료</span>
+            </div>
+            <div class="myshop_box issue_box">
+              <div>
+                <span class="order_detail">취소 : </span>
+                <a href=""><span class="order_name">0</span></a>
+              </div>
+              <div>
+                <span class="order_detail">교환 : </span>
+                <a href="#"><span class="order_name">0</span></a>
+              </div>
+              <div>
+                <span class="order_detail">반품 : </span>
+                <a href="#"><span class="order_name">0</span></a>
+              </div>
+            </div>
+          </div>
+          <h3>나의 정보 관리</h3>
+          <div class="box_wrap">
+            <div class="myshop_box">
+              <a href="#" class="modi">
+                <img
+                  src="../img/icon/web_icons/User_round_maincolor.png"
+                  alt="User_round"
+                />회원 정보 수정
+              </a>
+            </div>
+            <div class="myshop_box">
+              <a href="#" class="modi">
+                <img
+                  src="../img/icon/web_icons/Shopping_tag_maincolor.png"
+                  alt="User_round"
+                />쇼핑 정보
+              </a>
+            </div>
+            <div class="myshop_box">
+              <a href="#" class="modi">
+                <img
+                  src="../img/icon/web_icons/Gift_maincolor.png"
+                  alt="User_round"
+                />혜택 관리
+              </a>
+            </div>
+            <div class="myshop_box">
+              <a href="#" class="modi">
+                <img
+                  src="../img/icon/web_icons/Question_maincolor.png"
+                  alt="User_round"
+                />문의 내역
+              </a>
+            </div>
+            <div class="myshop_box">
+              <a href="#" class="modi">
+                <img
+                  src="../img/icon/web_icons/Text_maincolor.png"
+                  alt="User_round"
+                />게시글 관리
+              </a>
+            </div>
+          </div>
+          <div class="logout_btn">
+            <a href="#">로그아웃</a>
+          </div>
+        </section>
       </div>
     </main>
     <!-- footer -->
@@ -365,7 +319,7 @@
       <div class="footer_inner">
         <div class="footer_logo">
           <a href=""
-            ><img src="./img/icon/web_icons/footer-logo.png" alt="footer_logo"
+            ><img src="../img/icon/web_icons/footer-logo.png" alt="footer_logo"
           /></a>
         </div>
         <div class="footer_con">
@@ -398,16 +352,16 @@
       </div>
       <div id="floating_btn_wrap">
         <a href="#">
-          <img src="./img/icon/web_icons/Message-square.png" alt="message" />
+          <img src="../img/icon/web_icons/Message-square.png" alt="message" />
         </a>
         <a href="#">
-          <img src="./img/icon/web_icons/arrow-top.png" alt="top" />
+          <img src="../img/icon/web_icons/arrow-top.png" alt="top" />
         </a>
       </div>
     </footer>
   </body>
   <!-- js -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/sub_common.js"></script>
-  <script src="./js/side_nav_box.js"></script>
+  <script src="../js/common_js/jquery.min.js"></script>
+  <script src="../js/sub_js/sub_common.js"></script>
+  <script src="../js/common_js/side_nav_box.js"></script>
 </html>

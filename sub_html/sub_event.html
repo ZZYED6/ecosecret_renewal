@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEAUTY SECRET? Here, ecosecret</title>
-    <link rel="icon" href="./img/icon/favicon_io/favicon.ico" />
+    <link rel="icon" href="../img/icon/favicon_io/favicon.ico" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/sub_login.css" />
-    <link
-      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/sub_css/sub_event.css" />
   </head>
   <body>
     <div class="wrap">
@@ -115,7 +111,7 @@
                   <input
                     type="image"
                     class="search_img"
-                    src="./img/icon/web_icons/Search.png"
+                    src="../img/icon/web_icons/Search.png"
                   />
                 </label>
               </div>
@@ -173,13 +169,17 @@
                       </ul>
                     </li>
                     <li><a href="./sub_event.html">이벤트</a></li>
-                    <li><a href="./sub_review.html">고객리뷰</a></li>
+                    <li>
+                      <a href="./sub_product_list_step.html">고객리뷰</a>
+                    </li>
                     <li><a href="./sub_membership.html">멤버십</a></li>
                   </ul>
                   <ul class="nav_2">
                     <li><a href="./sub_login.html">로그인</a></li>
                     <li><a href="./sub_mypage.html">주문배송</a></li>
-                    <li><a href="./sub_cs_center.html">고객센터</a></li>
+                    <li>
+                      <a href="./sub_cs_center.html">고객센터</a>
+                    </li>
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">개인정보 취급방침</a></li>
                   </ul>
@@ -189,209 +189,80 @@
           </div>
         </div>
       </header>
-      <main id="login_con">
+      <main id="event_con">
         <div class="con_wrap">
-          <!-- 로그인 분류 타이틀 -->
+          <!-- 이벤트별 타이틀 -->
           <ul class="con_title t_2row">
             <li class="title_box_1">
-              <a href="#">일반회원 로그인</a>
+              <a href="#">진행중 이벤트</a>
             </li>
             <li class="title_box_2">
-              <a href="#">비회원 주문조회</a>
+              <a href="#">종료된 이벤트</a>
             </li>
           </ul>
-          <!-- 로그인 구분 -->
           <ul class="con_detail">
-            <!-- 일반회원 -->
+            <!-- 진행중 이벤트 -->
             <li class="detail_1">
-              <form action="#" method="post" id="member_form" class="member">
-                <div class="login_list">
-                  <!-- 아이디 -->
-                  <div class="user_info">
-                    <label for="user_id" class="user_id">
-                      <input
-                        type="text"
-                        name="user_id"
-                        id="user_id"
-                        placeholder="아이디"
-                        minlength="5"
-                        maxlength="12"
-                        autofocus
-                        required
-                      />
-                    </label>
+              <div class="event_list">
+                <div class="event_box">
+                  <a href="#">
+                    <img
+                      src="../img/contents/event/이벤트배너_공식몰.jpg"
+                      width="780"
+                      height="448"
+                      alt="공식몰 이벤트"
+                  /></a>
+                  <div>
+                    <span class="event_period">상시 이벤트</span>
+                    <h3 class="event_title">리뷰 포인트와 쿠폰팩 증정!</h3>
                   </div>
-                  <!-- 패스워드 -->
-                  <div class="user_info">
-                    <label for="user_pw" class="user_pw">
-                      <input
-                        type="password"
-                        name="user_pw"
-                        id="user_pw"
-                        placeholder="비밀번호"
-                        minlength="6"
-                        maxlength="10"
-                        required
-                      />
-                    </label>
-                  </div>
-                  <!-- 로그인 유지 체크박스 -->
-                  <div class="user_state">
-                    <div class="user_check_box">
-                      <input
-                        type="checkbox"
-                        name="user_check"
-                        id="user_check"
-                        checked
-                      />
-                      <label for="user_check" class="user_check"
-                        >로그인 유지
-                      </label>
-                    </div>
-                    <!-- 로그인 정보 찾기 -->
-                    <div class="user_find">
-                      <a href="#">아이디 찾기</a>
-                      <a href="#">비밀번호 찾기</a>
-                      <a href="#">회원가입</a>
-                    </div>
-                  </div>
-                  <!-- 로그인 버튼 -->
-                  <button class="submit_btn">로그인</button>
                 </div>
-                <!-- 간편 로그인 -->
-                <div class="simple_login">
-                  <button class="kakao_btn">
-                    <span>카카오로 로그인</span>
-                  </button>
-                  <button class="naver_btn">
-                    <span>네이버로 로그인</span>
-                  </button>
-                </div>
-              </form>
-              <div class="member_benefit">
-                <a href="#">
-                  <span>회원 가입하시고 다양한 혜택 받으세요!</span>
-                  <div class="benefit_wrap">
-                    <div class="benefit1">
-                      <img
-                        src="./img/icon/web_icons/samples_icon.png"
-                        alt="샘플 증정"
-                      />
-                      <span>구매 시<br />샘플 3종 증정</span>
-                    </div>
-                    <div class="benefit2">
-                      <img
-                        src="./img/icon/web_icons/Ticket-2--Streamline-Core.svg.png"
-                        alt="할인쿠폰"
-                      />
-                      <span>가입 즉시<br />10% 할인쿠폰</span>
-                    </div>
-                    <div class="benefit3">
-                      <img
-                        src="./img/icon/web_icons/Shipping-Truck--Streamline-Plump.svg.png"
-                        alt="무료배송"
-                      />
-                      <span>3만원 이상 구매시<br />무료배송</span>
-                    </div>
-                    <div class="benefit4">
-                      <img
-                        src="./img/icon/web_icons/Cake--Streamline-Plump.svg.png"
-                        alt="생일 할인 쿠폰"
-                      />
-                      <span>생일 할인 쿠폰<br />증정</span>
-                    </div>
+                <div class="event_box">
+                  <img
+                    src="../img/contents/event/이벤트배너_카카오.jpg"
+                    width="780"
+                    height="448"
+                    alt="카카오 플친 이벤트"
+                  />
+                  <div>
+                    <span class="event_period">24.07.11(목)~24.07.31(수)</span>
+                    <h3 class="event_title">
+                      카카오 플러스친구 쿠폰 증정 이벤트
+                    </h3>
                   </div>
-                </a>
+                </div>
+              </div>
+              <div class="event_list">
+                <div class="event_box">
+                  <img
+                    src="../img/contents/event/이벤트배너_공식몰.jpg"
+                    width="780"
+                    height="448"
+                    alt="공식몰 이벤트"
+                  />
+                  <div>
+                    <span class="event_period">상시 이벤트</span>
+                    <h3 class="event_title">리뷰 포인트와 쿠폰팩 증정!</h3>
+                  </div>
+                </div>
+                <div class="event_box">
+                  <img
+                    src="../img/contents/event/이벤트배너_카카오.jpg"
+                    width="780"
+                    height="448"
+                    alt="카카오 플친 이벤트"
+                  />
+                  <div>
+                    <span class="event_period">24.07.11(목)~24.07.31(수)</span>
+                    <h3 class="event_title">
+                      카카오 플러스친구 쿠폰 증정 이벤트
+                    </h3>
+                  </div>
+                </div>
               </div>
             </li>
-            <!-- 비회원 -->
-            <li class="detail_2">
-              <form action="#" method="post" id="member_form" class="nonMember">
-                <div class="login_list">
-                  <!-- 주문자명 -->
-                  <div class="user_info">
-                    <label for="user_name" class="nonMember_name">
-                      <input
-                        type="text"
-                        name="user_name"
-                        id="user_name"
-                        placeholder="주문자명"
-                        minlength="5"
-                        maxlength="12"
-                        autofocus
-                        required
-                      />
-                    </label>
-                  </div>
-                  <!-- 주문번호 -->
-                  <div class="user_info">
-                    <label for="user_num" class="nonMember_num">
-                      <input
-                        type="text"
-                        name="user_num"
-                        id="user_num"
-                        placeholder="주문번호"
-                        minlength="5"
-                        maxlength="12"
-                        autofocus
-                        required
-                      />
-                    </label>
-                  </div>
-                  <!-- 주문자 비밀번호 -->
-                  <div class="user_info">
-                    <label for="user_pw" class="nonMember_pw">
-                      <input
-                        type="password"
-                        name="user_pw"
-                        id="user_pw"
-                        placeholder="비회원 주문 비밀번호"
-                        minlength="6"
-                        maxlength="10"
-                        required
-                      />
-                    </label>
-                  </div>
-                  <!-- 로그인 버튼 -->
-                  <button class="submit_btn">비회원 주문조회</button>
-                </div>
-              </form>
-              <div class="member_benefit">
-                <a href="#">
-                  <span>회원 가입하시고 다양한 혜택 받으세요!</span>
-                  <div class="benefit_wrap">
-                    <div class="benefit1">
-                      <img
-                        src="./img/icon/web_icons/samples_icon.png"
-                        alt="샘플 증정"
-                      />
-                      <span>구매 시<br />샘플 3종 증정</span>
-                    </div>
-                    <div class="benefit2">
-                      <img
-                        src="./img/icon/web_icons/Ticket-2--Streamline-Core.svg.png"
-                        alt="할인쿠폰"
-                      />
-                      <span>가입 즉시<br />10% 할인쿠폰</span>
-                    </div>
-                    <div class="benefit3">
-                      <img
-                        src="./img/icon/web_icons/Shipping-Truck--Streamline-Plump.svg.png"
-                        alt="무료배송"
-                      />
-                      <span>3만원 이상 구매시<br />무료배송</span>
-                    </div>
-                    <div class="benefit4">
-                      <img
-                        src="./img/icon/web_icons/Cake--Streamline-Plump.svg.png"
-                        alt="생일 할인 쿠폰"
-                      />
-                      <span>생일 할인 쿠폰<br />증정</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </li>
+            <!-- 종료된 이벤트 -->
+            <li class="detail_2"></li>
           </ul>
         </div>
       </main>
@@ -401,7 +272,7 @@
           <div class="footer_logo">
             <a href=""
               ><img
-                src="./img/icon/web_icons/footer-logo.png"
+                src="../img/icon/web_icons/footer-logo.png"
                 alt="footer_logo"
             /></a>
           </div>
@@ -433,11 +304,19 @@
             </ul>
           </div>
         </div>
+        <div id="floating_btn_wrap">
+          <a href="#">
+            <img src="../img/icon/web_icons/Message-square.png" alt="message" />
+          </a>
+          <a href="#">
+            <img src="../img/icon/web_icons/arrow-top.png" alt="top" />
+          </a>
+        </div>
       </footer>
     </div>
   </body>
   <!-- js -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/sub_common.js"></script>
-  <script src="./js/side_nav_box.js"></script>
+  <script src="../js/common_js/jquery.min.js"></script>
+  <script src="../js/common_js/side_nav_box.js"></script>
+  <script src="../js/sub_js/sub_common.js"></script>
 </html>

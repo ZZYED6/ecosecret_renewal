@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import "./reset.css";
-@import "./common.css";
+@import "./common_css/reset.css";
+@import "./common_css/common.css";
 
 /* 메인 영역 */
 #main_box {
@@ -76,7 +76,7 @@ section {
   position: relative;
   top: 7px;
   margin-left: 10px;
-  background: url(../img/icon/web_icons/es_sprites.png) no-repeat -10px -349px;
+  background: url(../../img/icon/web_icons/es_sprites.png) no-repeat -10px -349px;
 }
 .more_btn:hover {
   background-color: #373c22;
@@ -87,7 +87,7 @@ section {
 .more_btn:hover > a::after {
   width: 24px;
   height: 24px;
-  background: url(../img/icon/web_icons/es_sprites.png) no-repeat -10px -305px;
+  background: url(../../img/icon/web_icons/es_sprites.png) no-repeat -10px -305px;
 }
 .main_img {
   width: 100%;

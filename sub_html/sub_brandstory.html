@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEAUTY SECRET? Here, ecosecret</title>
-    <link rel="icon" href="./img/icon/favicon_io/favicon.ico" />
+    <link rel="icon" href="../img/icon/favicon_io/favicon.ico" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/sub_event.css" />
+    <link rel="stylesheet" href="../css/sub_css/sub_brandstory.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <!-- AOS 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrap">
@@ -111,7 +117,7 @@
                   <input
                     type="image"
                     class="search_img"
-                    src="./img/icon/web_icons/Search.png"
+                    src="../img/icon/web_icons/Search.png"
                   />
                 </label>
               </div>
@@ -185,82 +191,127 @@
           </div>
         </div>
       </header>
-      <main id="event_con">
-        <div class="con_wrap">
-          <!-- 이벤트별 타이틀 -->
-          <ul class="con_title t_2row">
-            <li class="title_box_1">
-              <a href="#">진행중 이벤트</a>
-            </li>
-            <li class="title_box_2">
-              <a href="#">종료된 이벤트</a>
-            </li>
-          </ul>
-          <ul class="con_detail">
-            <!-- 진행중 이벤트 -->
-            <li class="detail_1">
-              <div class="event_list">
-                <div class="event_box">
-                  <a href="#">
-                    <img
-                      src="./img/contents/event/이벤트배너_공식몰.jpg"
-                      width="780"
-                      height="448"
-                      alt="공식몰 이벤트"
-                  /></a>
-                  <div>
-                    <span class="event_period">상시 이벤트</span>
-                    <h3 class="event_title">리뷰 포인트와 쿠폰팩 증정!</h3>
-                  </div>
-                </div>
-                <div class="event_box">
-                  <img
-                    src="./img/contents/event/이벤트배너_카카오.jpg"
-                    width="780"
-                    height="448"
-                    alt="카카오 플친 이벤트"
-                  />
-                  <div>
-                    <span class="event_period">24.07.11(목)~24.07.31(수)</span>
-                    <h3 class="event_title">
-                      카카오 플러스친구 쿠폰 증정 이벤트
-                    </h3>
-                  </div>
-                </div>
+      <!-- 메인 영역 -->
+      <main id="main_box">
+        <section id="our_story">
+          <div class="con_wrap">
+            <div class="text_wrap">
+              <h2 data-aos="fade-down" data-aos-duration="500">Our story.</h2>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                에코시크릿은 한국의 건강한 자연 원료에서 영감을 얻어, 2013년도
+                창립되었습니다.
+                <br />
+                세계 뷰티 시장을 선도하는 K-Beauty 기술과 건강한 자연 원료의
+                만남으로 개발된 제품들을 통해 에코시크릿만의 뷰티 시크릿을
+                제공하고 있습니다.
+              </p>
+            </div>
+            <div
+              class="story_img"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <video src="../img/video/v_brand.mp4" autoplay muted loop>
+                이 비디오는 해당 브라우저를 지원하지 않습니다.
+              </video>
+            </div>
+          </div>
+        </section>
+        <section id="concept">
+          <div class="title_sec">
+            <h2 data-aos="fade-down" data-aos-duration="500">Concept.</h2>
+          </div>
+          <div class="con_wrap">
+            <div class="concept_bg">
+              <img src="../img/contents/brandstory/img_eco.jpg" alt="eco_bg" />
+            </div>
+            <div class="align_box">
+              <div class="concept_box">
+                <img
+                  id="txt_eco"
+                  src="../img/contents/brandstory/txt_eco.svg"
+                  alt="eco"
+                />
+                <span class="text_con line_1">자연에서 온 건강한 원료</span>
               </div>
-              <div class="event_list">
-                <div class="event_box">
-                  <img
-                    src="./img/contents/event/이벤트배너_공식몰.jpg"
-                    width="780"
-                    height="448"
-                    alt="공식몰 이벤트"
-                  />
-                  <div>
-                    <span class="event_period">상시 이벤트</span>
-                    <h3 class="event_title">리뷰 포인트와 쿠폰팩 증정!</h3>
-                  </div>
-                </div>
-                <div class="event_box">
-                  <img
-                    src="./img/contents/event/이벤트배너_카카오.jpg"
-                    width="780"
-                    height="448"
-                    alt="카카오 플친 이벤트"
-                  />
-                  <div>
-                    <span class="event_period">24.07.11(목)~24.07.31(수)</span>
-                    <h3 class="event_title">
-                      카카오 플러스친구 쿠폰 증정 이벤트
-                    </h3>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="con_wrap">
+            <div class="concept_bg">
+              <img
+                src="../img/contents/brandstory/img_secret.jpg"
+                alt="secret_bg"
+              />
+            </div>
+            <div class="align_box">
+              <div class="concept_box">
+                <span class="text_con line_2">뷰티 노하우</span>
+                <img
+                  id="txt_secret"
+                  src="../img/contents/brandstory/txt_secret.svg"
+                  alt="secret"
+                />
               </div>
-            </li>
-            <!-- 종료된 이벤트 -->
-            <li class="detail_2"></li>
-          </ul>
-        </div>
+            </div>
+          </div>
+        </section>
+        <section id="significant">
+          <div class="signi_bg">
+            <img
+              src="../img/contents/brandstory/signi_bg.png"
+              alt="signi_bg"
+              width="800"
+            />
+          </div>
+          <div class="signi_wrap">
+            <h3
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <img src="../img/contents/brandstory/Main_logo.svg" alt="logo" />
+            </h3>
+            <p
+              data-aos="zoom-in-down"
+              data-aos-delay="700"
+              data-aos-duration="700"
+            >
+              <b>'천연에 가장 가까운 것이 가장 이롭다'</b>라는 신조 아래,<br />
+              자연에서 얻은 원료를 바탕으로 유쾌하고 신선한 뷰티비결을
+              제공하여<br />
+              고객이 자신만의 아름다움을 표현하는데 도움을 드리고자 합니다.
+            </p>
+          </div>
+        </section>
+        <section id="keyword">
+          <div class="con_wrap">
+            <div class="key_text">
+              <h2 data-aos="fade-down" data-aos-duration="500">Keyword.</h2>
+              <div
+                class="change_text"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                <span>NATURAL & HEALTHY</span>
+                <p>
+                  자연에서 오는 원료 그대로의 효능을 담아<br />
+                  건강한 아름다움을 선사합니다.
+                </p>
+              </div>
+            </div>
+            <div class="key_img">
+              <img
+                src="../img/contents/brandstory/key_img_1.jpg"
+                alt="/key_img_1"
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <!-- footer -->
       <footer>
@@ -268,7 +319,7 @@
           <div class="footer_logo">
             <a href=""
               ><img
-                src="./img/icon/web_icons/footer-logo.png"
+                src="../img/icon/web_icons/footer-logo.png"
                 alt="footer_logo"
             /></a>
           </div>
@@ -302,17 +353,22 @@
         </div>
         <div id="floating_btn_wrap">
           <a href="#">
-            <img src="./img/icon/web_icons/Message-square.png" alt="message" />
+            <img src="../img/icon/web_icons/Message-square.png" alt="message" />
           </a>
           <a href="#">
-            <img src="./img/icon/web_icons/arrow-top.png" alt="top" />
+            <img src="../img/icon/web_icons/arrow-top.png" alt="top" />
           </a>
         </div>
       </footer>
     </div>
   </body>
   <!-- js -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/sub_common.js"></script>
-  <script src="./js/side_nav_box.js"></script>
+  <script src="../js/common_js/jquery.min.js"></script>
+  <script src="../js/sub_js/sub_brandstory.js"></script>
+  <script src="../js/common_js/side_nav_box.js"></script>
+  <!-- AOS 연결 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
