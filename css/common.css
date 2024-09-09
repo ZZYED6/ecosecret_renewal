@@ -65,8 +65,9 @@ h1 > .bg-Header_logo {
   display: block;
   width: 280px;
   height: 42px;
-  background: url("../img/icon/web_icons/es_sprites.png") no-repeat -10px -860px;
+  background: url("../img/icon/web_icons/es_sprites.png") no-repeat -10px -1058px;
 }
+/* 상단 멤버십 메뉴 */
 .top_member {
   width: fit-content;
   height: fit-content;
@@ -96,6 +97,7 @@ h1 > .bg-Header_logo {
 .top_member > a:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
+/* 메인 1차 메뉴 */
 .header_bottom-con {
   width: 100%;
   height: fit-content;
@@ -112,8 +114,6 @@ h1 > .bg-Header_logo {
   display: flex;
   column-gap: 40px;
 }
-
-/* 메인 1차 메뉴 */
 #gnb > ul > li {
   position: relative;
   text-align: center;
@@ -140,11 +140,24 @@ h1 > .bg-Header_logo {
   transform-origin: center;
   transition: transform 0.25s ease;
 }
-#gnb > ul > li:not(:first-child):hover > a::after {
+#gnb > ul > li:hover > a::after {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* 메인 2차 메뉴 */
+#gnb > ul > li:last-child > span {
+  font-weight: 800;
+  padding-top: 10px;
+  padding-left: 5px;
+  background-image: url(../img/icon/web_icons/popup_frame.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2px;
+  left: 60px;
+  width: 262px;
+  height: 40px;
+}
+
+/* 상품 2차 메뉴 */
 .submenu_box {
   width: 400px;
   height: 0;
@@ -246,23 +259,23 @@ h1 > .bg-Header_logo {
   top: 6px;
   left: 184px;
 }
-.member_action > div:not(:first-child) {
+.member_action > .ac_icons {
   width: 24px;
   height: 24px;
   margin: 6px 0;
   background-image: url(../img/icon/web_icons/es_sprites.png);
   background-repeat: no-repeat;
 }
-.member_action a {
+.member_action > div > a {
   display: block;
   width: 24px;
   height: 24px;
 }
 .user-icon {
-  background-position: -10px -618px;
+  background-position: -10px -701px;
 }
 .shopping-icon {
-  background-position: -10px -574px;
+  background-position: -10px -173px;
   position: relative;
 }
 .shopping-icon > a::after {
@@ -282,7 +295,78 @@ h1 > .bg-Header_logo {
   line-height: 16px;
 }
 .snb_open-icon {
-  background-position: -10px -310px;
+  background-position: -10px -481px;
+}
+
+/* 메뉴 사이드 버전 */
+#side_nav_box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: flex-end;
+}
+.side_nav {
+  width: 220px;
+  height: 100vh;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.side_nav > ul {
+  box-sizing: border-box;
+  margin: 30px 0;
+}
+.side_nav ul {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.side_nav a {
+  color: #898989;
+}
+.snb_close-icon {
+  box-sizing: border-box;
+  margin-top: 88px;
+}
+.side_nav a:hover {
+  color: #373c22;
+  font-weight: 600;
+}
+.snb_close-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background: url(../img/icon/web_icons/es_sprites.png) -10px -393px no-repeat;
+}
+.nav_1 > li {
+  color: #373c22;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+}
+.nav_1 > li:hover > a {
+  color: #373c22;
+  font-weight: 800;
+}
+.nav_1 ul > div {
+  font-weight: 800;
+  margin-bottom: 5px;
+  border-bottom: 0.5px solid rgba(137, 137, 137, 0.5);
+}
+.nav_2 > li:nth-child(3) {
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #898989;
+}
+.nav_2 > li:nth-child(4) {
+  box-sizing: border-box;
+  padding-top: 10px;
 }
 
 /* 서브 페이지 공통 카테고리 */

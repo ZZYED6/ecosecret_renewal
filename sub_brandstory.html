@@ -38,13 +38,13 @@
                   <a href="./sub_brandstory.html">브랜드</a>
                 </li>
                 <li>
-                  <a href="./sub_product_list.html">상품</a>
-                  <!-- 메인 2차 메뉴 -->
+                  <a href="./sub_product_list_step.html">상품</a>
+                  <!-- 상품 2차 메뉴 -->
                   <div class="submenu_box">
                     <div class="gnb_submenu">
                       <div class="submenu_wrap">
                         <ul class="submenu_con">
-                          <div class="submenu-title">유형별</div>
+                          <div class="submenu-title">단계별</div>
                           <li>
                             <a href="#" class="submenu-detail_1">스킨/토너</a>
                           </li>
@@ -64,7 +64,7 @@
                       </div>
                       <div class="submenu_wrap">
                         <ul class="submenu_con">
-                          <div class="submenu-title">기능별</div>
+                          <div class="submenu-title">피부고민별</div>
                           <li>
                             <a href="#" class="submenu-detail_6">수분/보습</a>
                           </li>
@@ -101,6 +101,7 @@
                 </li>
                 <li>
                   <a href="./sub_membership.html">멤버십</a>
+                  <span>회원가입하고 특별한 혜택을 만나보세요</span>
                 </li>
               </ul>
             </nav>
@@ -120,9 +121,72 @@
                   />
                 </label>
               </div>
-              <div class="user-icon"><a href="#"></a></div>
-              <div class="shopping-icon"><a href="#"></a></div>
-              <div class="snb_open-icon"><a href="#"></a></div>
+              <div class="user-icon ac_icons">
+                <a href="./sub_mypage.html"></a>
+              </div>
+              <div class="shopping-icon ac_icons">
+                <a href="./sub_cart.html"></a>
+              </div>
+              <!-- 사이드 버전 메뉴 불러오기 아이콘 -->
+              <div class="snb_open-icon ac_icons"><a href="#"></a></div>
+              <!-- 사이드 버전 메뉴-->
+              <div id="side_nav_box">
+                <div class="side_nav">
+                  <a href="#" class="snb_close-icon"></a>
+                  <ul class="nav_1">
+                    <li><a href="./sub_brandstory.html">브랜드</a></li>
+                    <li>
+                      <a href="./sub_product_list_step.html">상품</a>
+                      <ul>
+                        <div>단계별</div>
+                        <li>
+                          <a href="#" class="submenu-detail_1">스킨/토너</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_2">클렌징</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_3">마스크팩</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_4">선케어</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_5">헤어/바디</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <div>피부고민별</div>
+                        <li>
+                          <a href="#" class="submenu-detail_6">수분/보습</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_7">유수분 밸런스</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_8">트러블/민감성</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_9">주름개선/미백</a>
+                        </li>
+                        <li>
+                          <a href="#" class="submenu-detail_10">자외선 차단</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="./sub_event.html">이벤트</a></li>
+                    <li><a href="./sub_review.html">고객리뷰</a></li>
+                    <li><a href="./sub_membership.html">멤버십</a></li>
+                  </ul>
+                  <ul class="nav_2">
+                    <li><a href="./sub_login.html">로그인</a></li>
+                    <li><a href="./sub_mypage.html">주문배송</a></li>
+                    <li><a href="./sub_cs_center.html">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -300,6 +364,7 @@
   <!-- js -->
   <script src="./js/jquery.min.js"></script>
   <script src="./js/sub_brandstory.js"></script>
+  <script src="./js/side_nav_box.js"></script>
   <!-- AOS 연결 -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

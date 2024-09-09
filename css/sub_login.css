@@ -55,7 +55,7 @@
   height: 60px;
   box-sizing: border-box;
   padding: 0 30px;
-  border: 2px solid rgba(137, 137, 137, 0.3);
+  border: 1px solid rgba(137, 137, 137, 0.3);
   font-size: 16px;
   color: #373c22;
 }
@@ -168,10 +168,10 @@
   background-repeat: no-repeat;
 }
 .simple_login button:first-child span:before {
-  background-position: -10px -706px;
+  background-position: -10px -789px;
 }
 .simple_login button:last-child span:before {
-  background-position: -10px -662px;
+  background-position: -10px -745px;
 }
 .kakao_btn {
   background-color: #fee500;

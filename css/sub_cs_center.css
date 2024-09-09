@@ -21,8 +21,8 @@ thead {
   width: 100%;
   height: 40px;
   line-height: 40px;
-  border-top: 0.6px solid rgba(137, 137, 137, 0.7);
-  border-bottom: 0.6px solid rgba(137, 137, 137, 0.7);
+  border-top: 1px solid rgba(137, 137, 137, 0.7);
+  border-bottom: 1px solid rgba(137, 137, 137, 0.7);
   background-color: rgba(239, 232, 225, 0.3);
 }
 tbody {
@@ -32,11 +32,12 @@ tbody {
 tbody tr {
   width: 100%;
   height: 45px;
+  font-size: 15px;
   line-height: 45px;
-  border-bottom: 0.3px solid rgba(137, 137, 137, 0.5);
+  border-bottom: 0.3px solid rgba(137, 137, 137, 0.3);
 }
 tbody tr:last-child {
-  border-bottom: 0.6px solid rgba(137, 137, 137, 0.7);
+  border-bottom: 1px solid rgba(137, 137, 137, 0.7);
 }
 tbody tr > td:nth-child(2) {
   text-align: left;
@@ -71,7 +72,7 @@ tbody > tr:first-child > td:nth-child(2) {
 }
 .pagenum {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 24px;
   text-align: center;
 }
@@ -128,11 +129,46 @@ tbody > tr:first-child > td:nth-child(2) {
 }
 
 /* 자주 묻는 질문 내용 */
-.detail_2 div {
+.detail_2 {
   width: 83vw;
   height: auto;
   margin: 0 auto;
-  background-color: beige;
+}
+.faq {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid rgba(137, 137, 137, 0.7);
+  border-bottom: 1px solid rgba(137, 137, 137, 0.7);
+}
+.faq button {
+  font-family: "SUIT Variable", sans-serif;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  padding: 10px 24px;
+  color: #676767;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  border-bottom: 0.3px solid rgba(137, 137, 137, 0.3);
+  background-color: #fff;
+  cursor: pointer;
+}
+.faq button,
+.cont b {
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+}
+.cont {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 24px;
+  color: #676767;
+  line-height: 24px;
+  background-color: rgba(239, 232, 225, 0.3);
 }
 /* 1:1 문의 방법 */
 .contact_method {
@@ -198,7 +234,7 @@ tbody > tr:first-child > td:nth-child(2) {
   height: fit-content;
 }
 .form_scope form {
-  width: 40%;
+  width: 60%;
   height: auto;
   position: relative;
 }

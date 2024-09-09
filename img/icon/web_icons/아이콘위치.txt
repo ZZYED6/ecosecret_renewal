@@ -1,0 +1,286 @@
+.bg-envelope {
+    width: 80px; height: 80px;
+    background: url('css_sprites.png') -10px -1989px;
+}
+
+x
+.bg-Heart_empty {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -10px -49px;
+}
+
+x
+.bg-Heart_full {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -10px -89px;
+}
+
+x
+.bg-phone {
+    width: 80px; height: 80px;
+    background: url('css_sprites.png') -10px -2089px;
+}
+
+x
+.bg-popup_frame {
+    width: 262px; height: 40px;
+    background: url('css_sprites.png') -10px -998px;
+}
+
+x
+.bg-Buy_now {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -129px;
+}
+
+x
+.bg-Shopping_bag {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -173px;
+}
+
+x
+.bg-arrow_top {
+    width: 36px; height: 36px;
+    background: url('css_sprites.png') -10px -886px;
+}
+
+x
+.bg-Message_square {
+    width: 36px; height: 36px;
+    background: url('css_sprites.png') -10px -942px;
+}
+
+x
+.bg-Birthday_big {
+    width: 96px; height: 96px;
+    background: url('css_sprites.png') -10px -2389px;
+}
+
+x
+.bg-Discount_coupon_big {
+    width: 96px; height: 96px;
+    background: url('css_sprites.png') -10px -2505px;
+}
+
+x
+.bg-Samples_big {
+    width: 97px; height: 96px;
+    background: url('css_sprites.png') -10px -2621px;
+}
+
+x
+.bg-Shipping_Truck_big {
+    width: 96px; height: 96px;
+    background: url('css_sprites.png') -10px -2737px;
+}
+
+x
+.bg-Discount_coupon_maincolor {
+    width: 48px; height: 48px;
+    background: url('css_sprites.png') -10px -1120px;
+}
+
+x
+.bg-Discs_maincolor {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -1256px;
+}
+
+x
+.bg-Gift_maincolor {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -1325px;
+}
+
+x
+.bg-Question_maincolor {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -1394px;
+}
+
+x
+.bg-Shipping_Truck_maincolor {
+    width: 48px; height: 48px;
+    background: url('css_sprites.png') -10px -1188px;
+}
+
+x
+.bg-Shopping_tag_maincolor {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -1463px;
+}
+
+x
+.bg-Text_maincolor {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -1532px;
+}
+
+x
+.bg-User_round_maincolor {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -1601px;
+}
+
+x
+.bg-Grade_Blue {
+    width: 120px; height: 120px;
+    background: url('css_sprites.png') -10px -2853px;
+}
+
+x
+.bg-Grade_Gold {
+    width: 120px; height: 120px;
+    background: url('css_sprites.png') -10px -2993px;
+}
+
+x
+.bg-Grade_Red {
+    width: 120px; height: 120px;
+    background: url('css_sprites.png') -10px -3133px;
+}
+
+x
+.bg-Grade_White {
+    width: 120px; height: 120px;
+    background: url('css_sprites.png') -10px -3273px;
+}
+
+x
+.bg-star_s {
+    width: 18px; height: 19px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-thumbs_up {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -217px;
+}
+
+x
+.bg-star {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -261px;
+}
+
+x
+.bg-arrow_right_hover {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -305px;
+}
+
+x
+.bg-main_logo {
+    width: 280px; height: 42px;
+    background: url('css_sprites.png') -10px -1058px;
+}
+
+x
+.bg-arrow_right {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -349px;
+}
+
+x
+.bg-close {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -393px;
+}
+
+x
+.bg-Heart_empty_2 {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -437px;
+}
+
+x
+.bg-Icon_menu {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -481px;
+}
+
+x
+.bg-left {
+    width: 80px; height: 80px;
+    background: url('css_sprites.png') -10px -2189px;
+}
+
+x
+.bg-Minus {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -525px;
+}
+
+x
+.bg-Plus {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -569px;
+}
+
+x
+.bg-right {
+    width: 80px; height: 80px;
+    background: url('css_sprites.png') -10px -2289px;
+}
+
+x
+.bg-Search {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -613px;
+}
+
+x
+.bg-Share {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -657px;
+}
+
+x
+.bg-User {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -701px;
+}
+
+x
+.bg-네이버로고 {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -745px;
+}
+
+x
+.bg-카카오톡로고 {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -789px;
+}
+
+x
+.bg-footer_logo {
+    width: 220px; height: 33px;
+    background: url('css_sprites.png') -10px -833px;
+}
+
+x
+.bg-Cake__Streamline_Plump_svg {
+    width: 60px; height: 60px;
+    background: url('css_sprites.png') -10px -1749px;
+}
+
+x
+.bg-samples_icon {
+    width: 60px; height: 60px;
+    background: url('css_sprites.png') -10px -1829px;
+}
+
+x
+.bg-Shipping_Truck__Streamline_Plump_svg {
+    width: 60px; height: 60px;
+    background: url('css_sprites.png') -10px -1909px;
+}
+
+x
+.bg-Ticket_2__Streamline_Core_svg {
+    width: 60px; height: 59px;
+    background: url('css_sprites.png') -10px -1670px;
+}
