@@ -49,14 +49,12 @@
     margin-bottom: 20px;
     color: #fff;
   }
-  .more_btn {
+  .main_title > .more_btn {
     display: none;
   }
 
   /* 섹션_타입별추천 */
-
   .sec_title {
-    width: 88vw;
     height: fit-content;
     margin: 30px 0;
   }
@@ -128,6 +126,12 @@
     height: 570px;
   }
   .prd_list > li > div:not(:first-child) {
+    display: none;
+  }
+  .prd_item.item_4row:hover {
+    border-radius: 0;
+  }
+  .prd_item.item_4row:hover .choice_btn_box {
     display: none;
   }
   /*  제품 리스트 3열 배열 디테일 */
@@ -227,5 +231,18 @@
   }
   .brand_img {
     width: 100%;
+  }
+  .brand_text_wrap > .more_btn {
+    border-bottom: 1px solid #373c22;
+    background-color: #373c22;
+  }
+
+  .brand_text_wrap > .more_btn > a {
+    color: #efe8e1;
+  }
+  .brand_text_wrap > .more_btn > a::after {
+    width: 24px;
+    height: 24px;
+    background: url(../../img/icon/web_icons/es_sprites.png) no-repeat -10px -305px;
   }
 }
