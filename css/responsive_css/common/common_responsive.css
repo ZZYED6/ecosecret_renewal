@@ -36,7 +36,7 @@
   }
   h1 {
     width: fit-content;
-    height: 36px;
+    height: 32px;
   }
   /* 상단 멤버십 메뉴 */
   .top_member {
@@ -63,11 +63,15 @@
   /* 메뉴 사이드 버전 */
   .side_nav {
     width: 180px;
-    padding: 30px;
+    padding: 28px;
   }
   .side_nav > ul {
     box-sizing: border-box;
-    margin: 30px 0;
+    margin: 10px 0;
+    line-height: 32px;
+  }
+  .nav_1 > li {
+    line-height: 36px;
   }
   .snb_close-icon {
     margin-top: 0px;
