@@ -68,10 +68,10 @@
   .side_nav > ul {
     box-sizing: border-box;
     margin: 10px 0;
-    line-height: 32px;
+    line-height: 3vh;
   }
   .nav_1 > li {
-    line-height: 36px;
+    line-height: 4vh;
   }
   .snb_close-icon {
     margin-top: 0px;

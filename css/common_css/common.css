@@ -327,17 +327,19 @@ h1 > a img {
   font-weight: 400;
   line-height: 32px;
 }
-.side_nav a {
+.side_nav > ul > li > ul div,
+a {
   color: #898989;
+}
+.side_nav > ul > li > ul a:hover {
+  color: #373c22;
+  font-weight: 600;
 }
 .snb_close-icon {
   box-sizing: border-box;
   margin-top: 88px;
 }
-.side_nav a:hover {
-  color: #373c22;
-  font-weight: 600;
-}
+
 .snb_close-icon {
   display: block;
   width: 24px;
@@ -356,6 +358,11 @@ h1 > a img {
   color: #373c22;
   font-weight: 800;
 }
+.nav_1 > li > ul:hover div {
+  color: #373c22;
+  font-weight: 800;
+}
+
 .nav_1 ul > div {
   font-weight: 800;
   margin-bottom: 5px;
