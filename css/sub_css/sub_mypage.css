@@ -86,7 +86,7 @@ b {
   position: relative;
   top: 7px;
   margin-left: 10px;
-  background: url(../img/icon/web_icons/es_sprites.png) no-repeat -10px -134px;
+  background: url(../../img/icon/web_icons/es_sprites.png) no-repeat -10px -349px;
 }
 .more_btn:hover {
   background-color: #373c22;
@@ -97,7 +97,7 @@ b {
 .more_btn:hover > a::after {
   width: 24px;
   height: 24px;
-  background: url(../img/icon/web_icons/es_sprites.png) no-repeat -10px -90px;
+  background: url(../../img/icon/web_icons/es_sprites.png) no-repeat -10px -305px;
 }
 .box_wrap {
   width: 60%;

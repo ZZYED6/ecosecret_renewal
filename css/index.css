@@ -25,7 +25,7 @@ section {
   position: relative;
 }
 .main_title {
-  width: 84vw;
+  width: 83vw;
   top: 40%;
   left: 160px;
   z-index: 10;
@@ -34,6 +34,13 @@ section {
 .main_img {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.main_img img {
+  height: auto; /* 비율에 맞게 높이 조정 */
+  max-height: 100%; /*부모 박스의 높이를 넘지 않도록 설정*/
 }
 .main_txt {
   width: 45%;
@@ -167,11 +174,13 @@ section {
   /* 타입별 추천 리스트 적용 */
   display: flex;
   justify-content: space-between;
+  width: 83vw;
 }
 .prd_list > .best_list {
   /* 베스트 아이템 리스트 적용 */
   display: flex;
   justify-content: space-between;
+  width: 83vw;
 }
 .prd_item {
   border: 1px solid #efe8e1;
@@ -186,7 +195,6 @@ section {
   display: block;
   position: absolute;
   top: 0;
-  filter: brightness(1);
   transition: 0.3s;
 }
 .prd_item:hover .img_thumbnail > a {
@@ -428,6 +436,11 @@ em {
   height: fit-content;
   overflow: hidden;
   position: absolute;
+}
+.event_img img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
 }
 /* 브랜드 스토리 */
 #brand_story {

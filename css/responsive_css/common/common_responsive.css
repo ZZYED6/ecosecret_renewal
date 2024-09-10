@@ -1,0 +1,95 @@
+/* 선택자명 반드시 동일하게 작성하기(순서도 웬만하면 맞추기) */
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+}
+
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+}
+
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  main {
+    margin: 20px auto;
+  }
+  .con_wrap {
+    width: 88vw;
+  }
+
+  /* 헤더 */
+  #main_header {
+    height: 60px;
+  }
+  .header_wrap {
+    width: 88vw;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  h1 {
+    width: fit-content;
+    height: 36px;
+  }
+  /* 상단 멤버십 메뉴 */
+  .top_member {
+    display: none;
+  }
+  #gnb {
+    display: none;
+  }
+  /* 메인 1차 메뉴 */
+  .header_bottom-con {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* 우측 아이콘 액션 */
+  .product_search {
+    display: none;
+  }
+  .user-icon {
+    display: none;
+  }
+  /* 메뉴 사이드 버전 */
+  .side_nav {
+    width: 180px;
+    padding: 30px;
+  }
+  .side_nav > ul {
+    box-sizing: border-box;
+    margin: 30px 0;
+  }
+  .snb_close-icon {
+    margin-top: 0px;
+  }
+
+  /* footer */
+  .footer_inner {
+    width: 88vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 0;
+    color: #898989;
+  }
+  .footer_logo {
+    display: none;
+  }
+  .footer_con {
+    font-size: 12px;
+  }
+
+  /* floating_btn */
+  #floating_btn_wrap {
+    display: none;
+  }
+}
