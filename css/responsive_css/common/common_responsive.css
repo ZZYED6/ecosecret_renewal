@@ -66,12 +66,13 @@
     padding: 28px;
   }
   .side_nav > ul {
-    box-sizing: border-box;
     margin: 10px 0;
-    line-height: 3vh;
+  }
+  .side_nav ul {
+    line-height: 3.5vh;
   }
   .nav_1 > li {
-    line-height: 4vh;
+    line-height: 4.5vh;
   }
   .snb_close-icon {
     margin-top: 0px;
