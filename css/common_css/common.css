@@ -466,22 +466,23 @@ footer {
   width: fit-content;
   height: fit-content;
   position: fixed;
-  bottom: 50px;
+  bottom: 15px;
   right: 30px;
+  z-index: 500;
 }
 #floating_btn_wrap a {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
   background-color: #efe8e1;
   border-radius: 40px;
   text-align: center;
   box-sizing: border-box;
 }
 #floating_btn_wrap a:first-child {
-  padding: 14px 0;
+  padding: 10px 0;
   margin-bottom: 10px;
 }
 #floating_btn_wrap a:last-child {
-  padding: 12px 0;
+  padding: 8px 0;
 }

@@ -233,13 +233,22 @@
               <span>배송비</span>
               <span>3,000원(30,000원 이상 구매 시 무료)</span>
             </div>
+            <!-- 구매 수량 선택 -->
             <div class="quantity">
               <span>수량</span>
-              <div><span>수량체크</span></div>
+              <div class="count_box">
+                <span id="down_btn"
+                  ><img src="../../img/icon/web_icons/Minus.png" alt="down"
+                /></span>
+                <p class="count_num">0</p>
+                <span id="up_btn"
+                  ><img src="../../img/icon/web_icons/Plus.png" alt="up"
+                /></span>
+              </div>
             </div>
-            <div class="total_cost">
-              <span>총 구매금액</span>
-              <span>구매금액</span>
+            <div class="total_cost_wrap">
+              <span>총 상품 금액</span>
+              <span><b id="total_cost">0</b>원</span>
             </div>
             <div class="sales_btn_wrap">
               <button type="button">
@@ -419,4 +428,5 @@
   <script src="../../js/common_js/jquery.min.js"></script>
   <script src="../../js/common_js/side_nav_box.js"></script>
   <script src="../../js/sub_js/sub_common.js"></script>
+  <script src="../../js/sub_js/sub_prd_info.js"></script>
 </html>
