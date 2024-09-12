@@ -1,27 +1,86 @@
 /* 선택자명 반드시 동일하게 작성하기(순서도 웬만하면 맞추기) */
 /* 노트북 */
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
+  main {
+    margin-top: 30px;
+  }
 }
 
 /* 노트북 medium */
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
+  main {
+    margin-top: 30px;
+  }
+  #main_header {
+    height: 160px;
+  }
+  .header_bottom-con {
+    margin-top: 30px;
+  }
+  #gnb > ul > li:last-child > span {
+    display: none;
+  }
+  .footer_inner {
+    padding: 30px 73px 30px 0;
+  }
 }
 
 /* 태블릿 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  main {
+    margin-top: 10px;
+  }
+  /* 헤더 */
+  #main_header {
+    height: 100px;
+  }
+  .header_wrap {
+    width: 88vw;
+    padding: 30px 0;
+    display: flex;
+    align-items: end;
+  }
+  /* 상단 멤버십 메뉴 */
+  .top_member {
+    display: none;
+  }
+  #gnb {
+    display: none;
+  }
+  /* 메인 1차 메뉴 */
+  .header_bottom-con {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* 메뉴 사이드 버전 */
+  .side_nav {
+    width: 180px;
+    padding: 28px;
+  }
+  .side_nav > ul {
+    margin: 10px 0;
+  }
+  .side_nav ul {
+    line-height: 3.5vh;
+  }
+  .nav_1 > li {
+    line-height: 4.5vh;
+  }
+  .snb_close-icon {
+    margin-top: 0px;
+  }
+  .footer_inner {
+    padding: 30px 73px 30px 0;
+  }
 }
 
 /* 모바일 large */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-}
-
-/* 기본 모바일 */
-@media screen and (max-width: 480px) {
   main {
-    margin: 20px auto;
-  }
-  .con_wrap {
-    width: 88vw;
+    margin-top: 20px;
   }
 
   /* 헤더 */
@@ -32,7 +91,92 @@
     width: 88vw;
     padding: 20px 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
+  }
+  h1 {
+    width: fit-content;
+    height: 32px;
+  }
+  /* 상단 멤버십 메뉴 */
+  .top_member {
+    display: none;
+  }
+  #gnb {
+    display: none;
+  }
+  /* 메인 1차 메뉴 */
+  .header_bottom-con {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* 우측 아이콘 액션 */
+  .product_search {
+    display: none;
+  }
+  .user-icon {
+    display: none;
+  }
+  /* 메뉴 사이드 버전 */
+  .side_nav {
+    width: 180px;
+    padding: 28px;
+  }
+  .side_nav > ul {
+    margin: 10px 0;
+  }
+  .side_nav ul {
+    line-height: 3.5vh;
+  }
+  .nav_1 > li {
+    line-height: 4.5vh;
+  }
+  .snb_close-icon {
+    margin-top: 0px;
+  }
+
+  /* footer */
+  footer {
+    position: relative;
+  }
+  .footer_inner {
+    width: 88vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 53px 30px 0;
+    color: #898989;
+  }
+  .footer_logo {
+    display: none;
+  }
+  .footer_con {
+    font-size: 12px;
+  }
+
+  /* floating_btn */
+  #floating_btn_wrap {
+    position: absolute;
+    bottom: 32px;
+    right: 16px;
+  }
+}
+
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 20px;
+  }
+
+  /* 헤더 */
+  #main_header {
+    height: 60px;
+  }
+  .header_wrap {
+    width: 88vw;
+    padding: 20px 0;
+    display: flex;
   }
   h1 {
     width: fit-content;

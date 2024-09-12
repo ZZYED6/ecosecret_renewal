@@ -27,7 +27,7 @@ section {
 .main_title {
   width: 83vw;
   top: 40%;
-  left: 160px;
+  left: 8%;
   z-index: 10;
   position: absolute;
 }
@@ -40,10 +40,10 @@ section {
 }
 .main_img img {
   height: auto; /* 비율에 맞게 높이 조정 */
-  max-height: 100%; /*부모 박스의 높이를 넘지 않도록 설정*/
+  width: 100%;
 }
 .main_txt {
-  width: 45%;
+  width: 50%;
   height: auto;
 }
 .main_txt > span {
@@ -109,12 +109,12 @@ section {
   width: 83vw;
   height: auto;
   margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 .sec_title {
   width: 83vw;
   height: fit-content;
-  margin: 100px auto 50px;
-  margin-top: 140px;
   text-align: center;
 }
 .con_top_title {
@@ -129,9 +129,10 @@ section {
   line-height: 32px;
 }
 .type_btn_group {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   overflow: hidden;
+  margin-top: 40px;
 }
 .type_btn_list {
   text-align: center;
@@ -168,19 +169,22 @@ section {
 .prd_list {
   width: 100%;
   height: fit-content;
-  margin: 70px 0 100px 0;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 .prd_list > li {
   /* 타입별 추천 리스트 적용 */
   display: flex;
   justify-content: space-between;
   width: 83vw;
+  height: 570px;
 }
 .prd_list > .best_list {
   /* 베스트 아이템 리스트 적용 */
   display: flex;
   justify-content: space-between;
   width: 83vw;
+  height: 680px;
 }
 .prd_item {
   border: 1px solid #efe8e1;
@@ -208,6 +212,11 @@ section {
 .img_thumbnail:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.choice_btn_box {
+  width: fit-content;
+  height: fit-content;
+  display: none;
+}
 .choice_btn span {
   display: inline-block;
   width: 40px;
@@ -225,7 +234,7 @@ section {
 }
 .prd_txt_wrap {
   width: 100%;
-  height: 34%;
+  /* height: 34%; */
   padding: 24px;
   box-sizing: border-box;
 }
@@ -251,11 +260,6 @@ em {
   border-radius: 14px 0 14px 0;
   background-color: #efe8e1;
 }
-.choice_btn_box {
-  width: fit-content;
-  height: fit-content;
-  display: none;
-}
 .item_name {
   width: fit-content;
   height: 53px;
@@ -270,7 +274,6 @@ em {
 /*  제품 리스트 4열 배열 디테일 */
 .item_4row {
   width: 19vw;
-  height: 570px;
 }
 .prd_item.item_4row:hover {
   border-radius: 15vh 0 0 0;
@@ -325,7 +328,6 @@ em {
 /*  제품 리스트 3열 배열 디테일 */
 .item_3row {
   width: 26vw;
-  height: 680px;
 }
 .prd_item.item_3row:hover {
   border-radius: 22vh 0 0 0;

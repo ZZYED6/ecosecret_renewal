@@ -219,7 +219,15 @@ b {
   text-align: center;
   margin-top: 20px;
   margin-left: auto;
+  cursor: pointer;
+}
+.logout_btn:hover {
+  background-color: #373c22;
+  border: 1px solid #373c22;
 }
 .logout_btn > a {
   color: #898989;
+}
+.logout_btn:hover > a {
+  color: #efe8e1;
 }
