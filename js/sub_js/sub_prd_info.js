@@ -37,4 +37,17 @@ $(document).ready(function () {
       $productBox.find("#total_cost").text(totalCost.toLocaleString()); // 총 금액 업데이트
     }
   });
+
+  //제품 썸네일에 마우스 오버됬을 때 뜨는 하트(찜하기)를 누르면 채워진 하트로 바뀐다.
+  $(".choice_icon1 img").on("click", function () {
+    // 현재 클릭한 span 내의 img 요소를 선택
+    const img = $(this);
+
+    // 이미지 소스를 변경
+    if (img.attr("src") === "../../img/icon/web_icons/Heart-empty-2.png") {
+      img.attr("src", "../../img/icon/web_icons/Heart-full-24px.png");
+    } else {
+      img.attr("src", "../../img/icon/web_icons/Heart-empty-2.png");
+    }
+  });
 });

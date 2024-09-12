@@ -35,20 +35,23 @@
   padding: 40px 0;
   border-bottom: 1px solid rgba(137, 137, 137, 0.3);
 }
-.product_detail_wrap .item_EN {
+.product_name {
+  border-bottom: 1px solid rgba(137, 137, 137, 0.3);
+}
+.product_name .item_EN {
   font-size: 20px;
   line-height: 20px;
   font-weight: 600;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
-.product_detail_wrap .item_KR {
+.product_name .item_KR {
   font-size: 32px;
   line-height: 32px;
   font-weight: 800;
   box-sizing: border-box;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .product_detail {
   width: 100%;
@@ -56,7 +59,7 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-bottom: 40px;
+  padding: 40px 0 30px 0;
 }
 .product_detail .item_price {
   width: 330px;
@@ -90,23 +93,13 @@
   display: flex;
   gap: 10px;
 }
-.product_detail .item_icons a {
+.product_detail .item_icons span {
   font-size: 0;
   display: block;
   width: 24px;
   height: 24px;
 }
-.product_detail .item_icons > div {
-  background-image: url(../../img/icon/web_icons/es_sprites.png);
-  background-repeat: no-repeat;
-}
-.product_detail .item_icons .wish_icon {
-  background-position: -10px -437px;
-}
-.product_detail .item_icons .share_icon {
-  background-position: -10px -657px;
-}
-.product_detail_wrap > p {
+.product_detail_text {
   font-size: 16px;
   line-height: 24px;
   color: #676767;
