@@ -104,7 +104,7 @@ $(function () {
   ScrollTrigger.create({
     trigger: "#keyword",
     scrub: true,
-    // markers: true,
+    markers: true,
     pin: true,
     start: () => "top top",
     end: () => "+=" + (images.length + 1) * window.innerHeight,

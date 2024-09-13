@@ -1,3 +1,6 @@
+@charset "utf-8";
+@import "./common/common_resp.css";
+
 /* 선택자명 반드시 동일하게 작성하기(순서도 웬만하면 맞추기) */
 /* 메인 비주얼만 조정 */
 @media screen and (min-width: 1601px) and (max-width: 1724px) {
@@ -223,22 +226,19 @@
   .item_4row {
     width: 40vw;
   }
+  .prd_item.item_4row:hover {
+    border-radius: 17vh 0 0 0;
+  }
 
   /*  제품 리스트 3열 배열 디테일 */
   .prd_list > .best_list {
     /* 베스트 아이템 리스트 적용 */
     display: block;
   }
-  .prd_item:hover .img_thumbnail > a {
-    filter: brightness(1);
-  }
   .img_3row .thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .img_thumbnail:hover {
-    background-color: rgba(0, 0, 0, 0);
   }
   .item_3row .prd_txt_wrap {
     padding: 28px;
