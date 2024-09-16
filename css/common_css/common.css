@@ -327,11 +327,11 @@ h1 > a img {
   font-weight: 400;
   line-height: 32px;
 }
-.side_nav > ul > li > ul div,
+.side_nav > .nav_1 > li > ul div,
 a {
   color: #898989;
 }
-.side_nav > ul > li > ul a:hover {
+.side_nav > .nav_1 > li > ul a:hover {
   color: #373c22;
   font-weight: 600;
 }
@@ -347,6 +347,9 @@ a {
   font-size: 0;
   background: url(../../img/icon/web_icons/es_sprites.png) -10px -393px
     no-repeat;
+}
+.list_type {
+  display: none;
 }
 .nav_1 > li {
   color: #373c22;

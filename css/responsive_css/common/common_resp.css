@@ -62,9 +62,7 @@
     width: 180px;
     padding: 28px;
   }
-  .side_nav > ul {
-    margin: 10px 0;
-  }
+
   .side_nav ul {
     line-height: 3.5vh;
   }
@@ -136,9 +134,6 @@
   .side_nav {
     width: 180px;
     padding: 28px;
-  }
-  .side_nav > ul {
-    margin: 10px 0;
   }
   .side_nav ul {
     line-height: 3.5vh;
@@ -221,9 +216,6 @@
   .side_nav {
     width: 180px;
     padding: 28px;
-  }
-  .side_nav > ul {
-    margin: 10px 0;
   }
   .side_nav ul {
     line-height: 3.5vh;
