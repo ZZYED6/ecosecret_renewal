@@ -123,6 +123,7 @@
   }
   .item_info > div {
     margin-bottom: 0;
+    font-size: 12px;
   }
   .item_info > button {
     margin-top: 0;

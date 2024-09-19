@@ -45,6 +45,9 @@
 }
 /* 모바일 large */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .select_wrap {
+    justify-content: center;
+  }
   .con_detail {
     display: block;
   }
@@ -79,6 +82,9 @@
 }
 /* 기본 모바일 */
 @media screen and (max-width: 480px) {
+  .select_wrap {
+    justify-content: center;
+  }
   .con_detail {
     display: block;
   }
