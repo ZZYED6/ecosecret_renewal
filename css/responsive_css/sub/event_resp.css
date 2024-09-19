@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import "../common/common_resp.css";
+
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+}
+
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .event_list {
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  .event_title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .event_list {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .event_box {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .event_list {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .event_box {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  .event_list {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .event_box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .event_box > div {
+    margin-top: 5px;
+  }
+  .event_period {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .event_title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}

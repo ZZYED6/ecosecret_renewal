@@ -6,6 +6,11 @@
   main {
     margin-top: 30px;
   }
+
+  /* 서브 페이지 공통 카테고리 */
+  .con_title {
+    margin-bottom: 40px;
+  }
 }
 
 /* 노트북 medium */
@@ -22,6 +27,12 @@
   #gnb > ul > li:last-child > span {
     display: none;
   }
+
+  /* 서브 페이지 공통 카테고리 */
+  .con_title {
+    margin-bottom: 40px;
+  }
+  /* 푸터 */
   .footer_inner {
     padding: 30px 73px 30px 0;
   }
@@ -30,7 +41,7 @@
 /* 태블릿 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   main {
-    margin-top: 10px;
+    margin-top: 30px;
   }
   /* 헤더 */
   #main_header {
@@ -72,7 +83,12 @@
   .snb_close-icon {
     margin-top: 0px;
   }
+  /* 서브 페이지 공통 카테고리 */
+  .con_title {
+    margin-bottom: 40px;
+  }
 
+  /* 푸터 */
   footer {
     position: relative;
   }
@@ -143,6 +159,14 @@
   }
   .snb_close-icon {
     margin-top: 0px;
+  }
+
+  /* 서브 페이지 공통 카테고리 */
+  .con_title.t_2row {
+    width: 340px;
+  }
+  .con_title {
+    margin-bottom: 20px;
   }
 
   /* footer */
@@ -225,6 +249,14 @@
   }
   .snb_close-icon {
     margin-top: 0px;
+  }
+
+  /* 서브 페이지 공통 카테고리 */
+  .con_title {
+    margin-bottom: 20px;
+  }
+  .con_title.t_2row {
+    width: 340px;
   }
 
   /* footer */

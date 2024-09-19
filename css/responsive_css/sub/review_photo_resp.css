@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "../common/common_resp.css";
+
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .photo_item_info {
+    padding: 12px 18px;
+  }
+  .photo_txt span {
+    font-size: 12px;
+  }
+  .photo_txt p {
+    font-size: 14px;
+  }
+  .photo_name {
+    margin-top: 10px;
+  }
+  .photo_name > img {
+    display: none;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .con_detail {
+    display: block;
+  }
+  .photo_item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .photo_item a {
+    display: flex;
+    width: 100%;
+  }
+  .photo_item > a > img {
+    width: 225px;
+  }
+  .photo_txt p {
+    -webkit-line-clamp: 2;
+    line-height: 24px;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .con_detail {
+    display: block;
+  }
+  .photo_item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .photo_item a {
+    display: flex;
+    width: 100%;
+  }
+  .photo_item > a > img {
+    width: 155px;
+  }
+  .photo_item_info {
+    padding: 10px 20px;
+  }
+  .photo_txt p {
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .photo_name > img {
+    display: none;
+  }
+  .rating_box_s h4 {
+    font-size: 12px;
+  }
+  .rating_box_s .star {
+    margin-top: 0;
+  }
+}
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  .con_detail {
+    display: block;
+  }
+  .photo_item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .photo_item a {
+    display: flex;
+    width: 100%;
+  }
+  .photo_item > a > img {
+    width: 155px;
+  }
+  .photo_item_info {
+    padding: 10px 20px;
+  }
+  .photo_txt p {
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .photo_name > img {
+    display: none;
+  }
+  .rating_box_s h4 {
+    font-size: 12px;
+  }
+  .rating_box_s .star {
+    margin-top: 0;
+  }
+}

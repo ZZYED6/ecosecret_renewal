@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import "../common/common_resp.css";
+
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .item > div {
+    padding: 10px 20px;
+  }
+  .item_img {
+    width: 28%;
+  }
+  .item_rating {
+    margin-right: 0;
+  }
+  .item_info {
+    width: 20%;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .review_list .item {
+    height: 160px;
+  }
+  .item > div {
+    padding: 10px 20px;
+  }
+  .item_img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .item_name {
+    font-size: 12px;
+  }
+  .item_img {
+    width: 20%;
+  }
+  .item_rating {
+    margin-right: 0;
+  }
+  .item_info {
+    width: 27%;
+  }
+  .item_info > button {
+    margin-top: 20px;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .select_wrap {
+    justify-content: center;
+  }
+  .review_list .item {
+    height: fit-content;
+    display: block;
+  }
+  .item > div {
+    padding: 10px;
+  }
+  .item_img {
+    width: 100%;
+  }
+  .item_name {
+    text-align: left;
+    font-size: 16px;
+  }
+  .item_img > a {
+    display: none;
+  }
+  .item_rating {
+    width: 100%;
+    margin-right: 0;
+  }
+  .item_info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 0;
+    border-top: 1px solid rgba(137, 137, 137, 0.2);
+  }
+  .item_info > button {
+    margin-top: 0;
+  }
+}
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  .select_wrap {
+    justify-content: center;
+  }
+  .review_list .item {
+    height: fit-content;
+    display: block;
+  }
+  .item > div {
+    padding: 10px;
+  }
+  .item_img {
+    width: 100%;
+  }
+  .item_name {
+    text-align: left;
+    font-size: 16px;
+  }
+  .item_img > a {
+    display: none;
+  }
+  .item_rating {
+    width: 100%;
+    margin-right: 0;
+  }
+  .item_info {
+    width: 100%;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 0;
+    border-top: 1px solid rgba(137, 137, 137, 0.2);
+    line-height: 14px;
+  }
+  .item_info > div {
+    margin-bottom: 0;
+  }
+  .item_info > button {
+    margin-top: 0;
+  }
+}
