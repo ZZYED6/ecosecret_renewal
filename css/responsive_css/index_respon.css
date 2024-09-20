@@ -4,18 +4,20 @@
 /* 선택자명 반드시 동일하게 작성하기(순서도 웬만하면 맞추기) */
 /* 메인 비주얼만 조정 */
 @media screen and (min-width: 1601px) and (max-width: 1724px) {
-  .main_img img {
-    width: 108%;
-  }
 }
 /* 노트북 */
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
   /* 메인 비주얼 */
+  #main_visual_slide {
+    height: 800px;
+    border-radius: 360px 0;
+  }
   .main_img {
     justify-content: center;
   }
   .main_img img {
-    width: 122%;
+    position: relative;
+    top: -28px;
   }
   /* 섹션_타입별추천 */
   .sec_inner_wrap {
@@ -49,16 +51,25 @@
 /* 노트북 medium */
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   /* 메인 비주얼 */
+  #main_visual_slide {
+    height: 750px;
+    border-radius: 320px 0;
+  }
   .main_img {
     justify-content: center;
   }
   .main_img img {
-    width: 168%;
-    margin-right: 162px;
+    position: relative;
+    top: -62px;
+    left: -177px;
+  }
+  .main_title {
+    top: 60%;
   }
   .main_txt {
     width: 60%;
     height: auto;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
   }
   .main_txt > span {
     font-size: 20px;
@@ -190,7 +201,6 @@
     justify-content: center;
   }
   .main_img img {
-    width: 226%;
     margin-right: 460px;
   }
   .main_txt {
@@ -344,7 +354,6 @@
     justify-content: center;
   }
   .main_img img {
-    width: 320%;
     margin-right: 350px;
   }
   .main_txt {
@@ -604,7 +613,7 @@
 @media screen and (max-width: 480px) {
   /* 메인 비주얼 */
   #main_visual_slide {
-    height: 62vh;
+    height: 670px;
     border-radius: 0;
   }
   .slick-dotted.slick-slider {
@@ -618,7 +627,6 @@
     justify-content: center;
   }
   .main_img img {
-    width: 265%;
     margin-right: 350px;
   }
   .main_txt {

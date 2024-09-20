@@ -1,0 +1,249 @@
+@charset "utf-8";
+@import "../common/common_resp.css";
+
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .user_info {
+    width: 50%;
+  }
+  .user_info > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .user_info > div {
+    margin-left: 20px;
+  }
+  .user_info span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .more_btn {
+    font-size: 13px;
+    padding: 0 10px;
+    margin-top: 8px;
+  }
+  .benefit_box {
+    padding: 20px 0;
+  }
+  .issue_box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .info_wrap {
+    height: 260px;
+  }
+  .user_info {
+    width: 34%;
+    display: block;
+  }
+  .user_info > img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  .user_info > div {
+    margin-left: 0;
+  }
+  .user_info span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .more_btn {
+    font-size: 13px;
+    padding: 0 10px;
+    margin-top: 8px;
+  }
+  .benefit_box {
+    padding: 20px 0;
+  }
+  .benefit_box > a {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .issue_box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .info_wrap {
+    display: block;
+    height: 395px;
+  }
+  #myinfo .box_wrap {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .user_info {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .user_info > img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 5px;
+  }
+  .user_info > div {
+    margin-left: 20px;
+  }
+  .user_info span {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .more_btn {
+    margin-top: 10px;
+  }
+  #myshop .box_wrap:last-child {
+    display: block;
+  }
+  .benefit_box {
+    padding: 20px 0;
+  }
+  .benefit_box > a {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  /* 주문 처리 현황 */
+  #myshop .box_wrap:nth-of-type(2) {
+    flex-direction: column;
+  }
+  .myshop_box {
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1 0 18%;
+    height: 100px;
+  }
+  .myshop_box:last-child {
+    height: 50px;
+  }
+  .issue_box {
+    display: flex;
+    width: 100%;
+  }
+  /* 나의 정보 관리 */
+  .myshop_box > .modi {
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: start;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 20px;
+  }
+  .myshop_box > .modi > img {
+    margin-bottom: 0;
+  }
+  .query_arrow {
+    display: block;
+    margin-left: auto;
+  }
+  .logout_btn {
+    width: 20vw;
+  }
+}
+
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  .info_wrap {
+    display: block;
+    height: 350px;
+  }
+  #myinfo .box_wrap {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .user_info {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .user_info > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+  .user_info > div {
+    margin-left: 20px;
+  }
+  .user_info span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .more_btn {
+    margin-top: 10px;
+  }
+  #myshop h3 {
+    margin-top: 40px;
+  }
+  #myshop .box_wrap {
+    gap: 10px;
+  }
+  #myshop .box_wrap:last-child {
+    display: block;
+  }
+  .benefit_box {
+    padding: 15px 0;
+  }
+  .benefit_box > img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+  .benefit_box .bf_name {
+    font-size: 14px;
+  }
+  .benefit_box > a {
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  /* 주문 처리 현황 */
+  #myshop .box_wrap:nth-of-type(2) {
+    flex-direction: column;
+  }
+  .myshop_box {
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1 0 18%;
+    height: 100px;
+  }
+  .myshop_box:last-child {
+    height: 50px;
+  }
+  .issue_box {
+    display: flex;
+    width: 100%;
+  }
+  /* 나의 정보 관리 */
+  .myshop_box > .modi {
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: start;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  .myshop_box > .modi > img {
+    margin-bottom: 0;
+  }
+  .query_arrow {
+    display: block;
+    margin-left: auto;
+  }
+  .logout_btn {
+    width: 20vw;
+  }
+}

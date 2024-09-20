@@ -3,7 +3,9 @@
 @import "../common_css/common.css";
 
 /* 장바구니 섹션 */
-
+.con_wrap {
+  margin-bottom: 100px;
+}
 .con_title_wrap {
   width: 200px;
   height: fit-content;
@@ -52,6 +54,7 @@ section {
   box-sizing: border-box;
   margin-top: 50px;
   display: flex;
+  justify-content: space-between;
   position: relative;
 }
 .btn_wrap button {
@@ -65,7 +68,6 @@ section {
 .order_btn_wrap {
   width: fit-content;
   height: fit-content;
-  margin: 0 auto;
 }
 .order_btn_wrap > button:nth-child(1) {
   background-color: #373c22;

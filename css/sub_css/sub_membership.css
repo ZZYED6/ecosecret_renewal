@@ -2,8 +2,12 @@
 @import "../common_css/reset.css";
 @import "../common_css/common.css";
 
-/* 메인 */
-
+.con_wrap {
+  margin-bottom: 100px;
+}
+/* .con_detail {
+  background-color: #efe8e1;
+} */
 /* 신규회원가입 혜택 */
 #member_benefit {
   width: 100%;
@@ -13,16 +17,17 @@
   box-sizing: border-box;
 }
 #member_benefit h2 {
-  font-size: 40px;
+  height: 100px;
+  font-size: 32px;
   font-weight: 800;
   text-align: center;
-  line-height: 80px;
-  background-color: #efe8e1;
+  line-height: 100px;
+  color: #898989;
+  /* background-color: #efe8e1; */
 }
 .wrap_box {
   width: fit-content;
   margin: 0 auto;
-  padding: 56px 0;
   display: flex;
 }
 .new_benefit_wrap {
@@ -31,14 +36,16 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 40px;
 }
 .benefit_item {
-  flex: 1 1 0;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 20px 10px;
 }
 .benefit_item > img,
 strong,
@@ -48,7 +55,8 @@ span {
 .benefit_item > strong {
   font-size: 24px;
   font-weight: 800;
-  margin-top: 10px;
+  margin-top: 20px;
+  text-align: center;
 }
 .benefit_item > span {
   font-size: 16px;
@@ -58,14 +66,22 @@ span {
   width: 100%;
   height: fit-content;
   margin: 0 auto;
-  background-color: #efe8e1;
+}
+#membership_info > .wrap_box {
+  margin-top: 40px;
 }
 .grade_wrap {
-  width: 53vw;
+  width: 60vw;
+  padding: 50px 60px;
   display: flex;
+  gap: 30px;
+  justify-content: center;
+  background-color: #efe8e1;
 }
-.grade_item {
-  flex: 1 1 0;
+.query_group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 .grade_box {
   width: fit-content;
@@ -105,6 +121,10 @@ span {
 .grade_info.gold_box {
   border-left: 3px solid #e5b508;
 }
+.grade_info b {
+  font-size: 22px;
+  font-weight: 800;
+}
 .grade_info span {
   font-size: 18px;
   line-height: 24px;
@@ -113,18 +133,14 @@ span {
 .grade_info span:last-child {
   margin-bottom: 0;
 }
-.grade_info b {
-  font-size: 22px;
-  font-weight: 800;
-}
 .issue_info {
-  width: 100%;
+  width: 60vw;
   margin: 0 auto;
-  padding: 30px 0;
-  background-color: #fff;
 }
 .issue_info > ul {
-  width: 53vw;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
   margin: 0 auto;
   color: #898989;
   font-size: 14px;

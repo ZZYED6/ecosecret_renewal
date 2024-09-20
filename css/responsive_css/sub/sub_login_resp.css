@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "../common/common_resp.css";
+
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .con_title {
+    margin-bottom: 40px;
+  }
+  .con_wrap {
+    width: 340px;
+    margin-bottom: 80px;
+  }
+  .user_info {
+    margin-bottom: 10px;
+  }
+  .user_state {
+    margin: 30px 0;
+  }
+  .user_check {
+    padding-left: 0px;
+  }
+  .simple_login {
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .simple_login button {
+    padding-right: 14px;
+  }
+  .simple_login button span::before {
+    left: 14px;
+  }
+  .member_benefit {
+    margin-top: 40px;
+  }
+  .benefit_wrap {
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .benefit_wrap img {
+    width: 40px;
+  }
+}
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  .con_title {
+    margin-bottom: 40px;
+  }
+  .con_wrap {
+    width: 340px;
+    margin-bottom: 80px;
+  }
+  .user_info {
+    margin-bottom: 10px;
+  }
+  .user_state {
+    margin: 30px 0;
+  }
+  .user_check {
+    padding-left: 0px;
+  }
+  .simple_login {
+    margin: 10px 0;
+    gap: 10px;
+  }
+  .simple_login button {
+    padding-right: 14px;
+  }
+  .simple_login button span::before {
+    left: 14px;
+  }
+  .member_benefit {
+    margin-top: 40px;
+  }
+  .benefit_wrap {
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .benefit_wrap img {
+    width: 40px;
+  }
+}

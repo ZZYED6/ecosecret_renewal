@@ -10,8 +10,9 @@
     <!-- 반응형 css -->
     <link
       rel="stylesheet"
-      href="../css/responsive_css/common/common_responsive.css"
+      href="../css/responsive_css/sub/sub_cs_center_resp.css"
     />
+    <!-- 폰트 연결 -->
     <link
       href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
       rel="stylesheet"
@@ -224,11 +225,11 @@
               <div class="cs_notice_board">
                 <table>
                   <colgroup>
-                    <col width="8%" />
-                    <col width="*" />
-                    <col width="8%" />
-                    <col width="13%" />
-                    <col width="8%" />
+                    <col class="col1" />
+                    <col class="col2" />
+                    <col class="col3" />
+                    <col class="col4" />
+                    <col class="col5" />
                   </colgroup>
                   <!-- 표 제목 영역 -->
                   <thead>
@@ -271,7 +272,12 @@
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td><a href="#">2024 2분기 적립금 소멸 안내</a></td>
+                      <td>
+                        <a href="#"
+                          >2024 2분기 적립금 소멸 안내2024 2분기 적립금 소멸
+                          안내2024 2분기 적립금 소멸 안내</a
+                        >
+                      </td>
                       <td>mandrin6</td>
                       <td>2024-06-19</td>
                       <td>20</td>
@@ -520,12 +526,7 @@
                     </div>
                     <div class="input_box">
                       <label for="user_email"><span>이메일</span></label>
-                      <input
-                        type="email"
-                        name="user_email"
-                        id="user_email"
-                        placeholder="메일을 입력하세요"
-                      />
+                      <input type="email" name="user_email" id="user_email" />
                     </div>
                     <div class="input_box">
                       <label for="item_name"><span>제품명</span></label>

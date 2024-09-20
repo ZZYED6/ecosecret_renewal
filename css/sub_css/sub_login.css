@@ -7,6 +7,7 @@
 .con_wrap {
   width: 400px;
   height: fit-content;
+  margin-bottom: 100px;
 }
 
 /* 일반회원 로그인 */
@@ -75,17 +76,19 @@
 }
 .user_check_box {
   width: fit-content;
-  height: fit-content;
+  height: 22px;
+  line-height: 22px;
 }
 .user_check {
-  color: #373c22;
+  color: #898989;
   font-size: 14px;
   font-weight: 600;
   padding-left: 6px;
 }
 .user_find {
   width: fit-content;
-  height: fit-content;
+  height: 22px;
+  line-height: 22px;
   font-size: 11px;
   box-sizing: border-box;
   position: relative;

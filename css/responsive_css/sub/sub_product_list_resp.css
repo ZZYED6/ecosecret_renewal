@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import "../common/common_resp.css";
+
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+}

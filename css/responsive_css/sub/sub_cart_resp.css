@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import "../common/common_resp.css";
+
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1750px) {
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #shopping_info {
+    padding: 20px;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #cart_list {
+    margin-bottom: 200px;
+  }
+  .con_wrap {
+    margin-bottom: 80px;
+  }
+  .btn_wrap button {
+    width: 110px;
+    font-size: 15px;
+  }
+  #shopping_info {
+    padding: 20px;
+  }
+  #shopping_info ul {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 10px;
+  }
+  #shopping_info h3 {
+    font-size: 14px;
+  }
+}
+/* 기본 모바일 */
+@media screen and (max-width: 480px) {
+  #cart_list {
+    margin-bottom: 200px;
+  }
+  .con_wrap {
+    margin-bottom: 80px;
+  }
+  .btn_wrap button {
+    width: 110px;
+    font-size: 15px;
+  }
+  #shopping_info {
+    padding: 20px;
+  }
+  #shopping_info ul {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 10px;
+  }
+  #shopping_info h3 {
+    font-size: 14px;
+  }
+}

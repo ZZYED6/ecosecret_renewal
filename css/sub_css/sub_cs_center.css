@@ -2,20 +2,42 @@
 @import "../common_css/reset.css";
 @import "../common_css/common.css";
 
+.con_wrap {
+  margin-bottom: 100px;
+}
 /* cs 카테고리 내용 섹션 */
 /* 공지사항 게시판 */
 .cs_notice_board {
-  width: 83vw;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
 }
 .cs_notice_board > table {
   width: 100%;
   height: auto;
+  table-layout: fixed;
   border-collapse: collapse;
   text-align: center;
   font-size: 14px;
   color: #676767;
+}
+colgroup col {
+  width: auto; /* 기본값으로 설정 */
+}
+.col1 {
+  width: 10%;
+}
+.col2 {
+  width: 1fr; /* 유동적으로 설정 */
+}
+.col3 {
+  width: 10%;
+}
+.col4 {
+  width: 12%;
+}
+.col5 {
+  width: 8%;
 }
 thead {
   width: 100%;
@@ -41,7 +63,6 @@ tbody tr:last-child {
 }
 tbody tr > td:nth-child(2) {
   text-align: left;
-  padding-left: 20px;
 }
 tbody tr > td:nth-child(2) > a {
   color: #676767;
@@ -98,7 +119,7 @@ tbody > tr:first-child > td:nth-child(2) {
 .search_box select {
   font-family: "SUIT Variable", sans-serif;
   width: 5vw;
-  height: 4vh;
+  height: 36px;
   font-size: 14px;
   font-weight: 600;
   color: #676767;
@@ -109,7 +130,7 @@ tbody > tr:first-child > td:nth-child(2) {
 .search_box input {
   font-family: "SUIT Variable", sans-serif;
   width: 15vw;
-  height: 4vh;
+  height: 36px;
   font-size: 14px;
   font-weight: 600;
   color: #676767;
@@ -123,14 +144,14 @@ tbody > tr:first-child > td:nth-child(2) {
   width: 4vw;
   height: 100%;
   font-size: 14px;
-  line-height: 4vh;
+  line-height: 36px;
   background-color: #676767;
   color: #fff;
 }
 
 /* 자주 묻는 질문 내용 */
 .detail_2 {
-  width: 83vw;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -196,7 +217,7 @@ tbody > tr:first-child > td:nth-child(2) {
   position: relative;
 }
 .info_wrap {
-  width: 83vw;
+  width: 100%;
   height: 220px;
   margin: 0 auto;
   display: flex;
@@ -214,20 +235,19 @@ tbody > tr:first-child > td:nth-child(2) {
   width: 80px;
   height: 80px;
 }
-.contact_info span {
-  display: block;
-  line-height: 28px;
-  font-size: 16px;
-}
-/* .contact_info:last-child > div span:last-child {
-  text-decoration: underline;
-} */
-
 .contact_info span > strong {
   font-size: 20px;
   line-height: 36px;
   font-weight: 800;
 }
+.contact_info span {
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
+}
+/* .contact_info:last-child > div span:last-child {
+  text-decoration: underline;
+} */
 .contact_method form {
   width: 40%;
   height: auto;
