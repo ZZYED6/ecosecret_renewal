@@ -277,7 +277,7 @@ em {
   width: 19vw;
 }
 .prd_item.item_4row:hover {
-  border-radius: 15vh 0 0 0;
+  border-radius: 165px 0 0 0;
 }
 .img_4row {
   width: 100%;
@@ -331,7 +331,7 @@ em {
   width: 26vw;
 }
 .prd_item.item_3row:hover {
-  border-radius: 22vh 0 0 0;
+  border-radius: 238px 0 0 0;
 }
 .img_3row {
   width: 100%;
@@ -485,7 +485,7 @@ em {
 .brand_img {
   width: 50%;
   height: 100%;
-  border-radius: 25vh 0;
+  border-radius: 270px 0;
   overflow: hidden;
   filter: brightness(0.8);
   transition: 0.5s;

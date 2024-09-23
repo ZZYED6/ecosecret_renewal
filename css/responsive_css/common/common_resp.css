@@ -68,6 +68,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .user-icon {
+    display: none;
+  }
   /* 메뉴 사이드 버전 */
   .side_nav {
     width: 180px;

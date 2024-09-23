@@ -2,9 +2,6 @@
 @import "./common/common_resp.css";
 
 /* 선택자명 반드시 동일하게 작성하기(순서도 웬만하면 맞추기) */
-/* 메인 비주얼만 조정 */
-@media screen and (min-width: 1601px) and (max-width: 1724px) {
-}
 /* 노트북 */
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
   /* 메인 비주얼 */
@@ -24,9 +21,25 @@
     margin-top: 100px;
     margin-bottom: 70px;
   }
-
+  .prd_list > li {
+    /* 타입별 추천 리스트 적용 */
+    height: 500px;
+  }
+  .prd_list > .best_list {
+    /* 베스트 아이템 리스트 적용 */
+    height: 570px;
+  }
+  .item_price_box.i_p_4row {
+    margin-top: 10px;
+  }
+  .item_price_box.i_p_3row {
+    margin-top: 10px;
+  }
   /*  제품 리스트 4열 배열 디테일 */
   /* 텍스트 사이즈 및 gap 수정 */
+  .prd_item.item_4row:hover {
+    border-radius: 135px 0 0 0;
+  }
   .name_4row {
     font-size: 18px;
   }
@@ -41,6 +54,25 @@
   }
   .price_dc_4row em {
     font-size: 22px;
+  }
+
+  /*  제품 리스트 3열 배열 디테일 */
+  .prd_item.item_3row:hover {
+    border-radius: 190px 0 0 0;
+  }
+  .name_3row {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .price_detail_3row strong {
+    font-size: 24px;
+  }
+  .price_detail_3row span {
+    font-size: 16px;
+  }
+  .price_dc_3row em {
+    font-size: 24px;
+    color: #db4f00;
   }
   /* 브랜드 스토리 */
   #brand_story {
@@ -64,7 +96,7 @@
     left: -177px;
   }
   .main_title {
-    top: 60%;
+    top: 50%;
   }
   .main_txt {
     width: 60%;
@@ -94,7 +126,7 @@
     height: 442px;
   }
   .prd_list > .best_list {
-    height: 492px;
+    height: 468px;
   }
   .prd_txt_wrap {
     padding: 14px;
@@ -115,17 +147,18 @@
   .item_price_box.i_p_4row {
     margin-top: 5px;
   }
+  .item_price_box.i_p_3row {
+    margin-top: 15px;
+  }
   .item_name.i_n_3row {
     height: 46px;
     margin-top: 16px;
   }
-  .item_price_box.i_p_3row {
-    margin-top: 22px;
-  }
+
   /*  제품 리스트 4열 배열 디테일 */
   /* 텍스트 사이즈 및 gap 수정 */
   .prd_item.item_4row:hover {
-    border-radius: 12vh 0 0 0;
+    border-radius: 120px 0 0 0;
   }
   .img_4row {
     height: 66%;
@@ -152,7 +185,7 @@
   }
   /*  제품 리스트 3열 배열 디테일 */
   .prd_item.item_3row:hover {
-    border-radius: 16vh 0 0 0;
+    border-radius: 140px 0 0 0;
   }
   .img_3row {
     height: 67%;
@@ -161,8 +194,8 @@
     margin: 12px 12px;
   }
   .name_3row {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .price_detail_3row {
     display: flex;
@@ -171,7 +204,7 @@
     font-size: 24px;
   }
   .price_detail_3row span {
-    font-size: 18px;
+    font-size: 16px;
   }
   .price_dc_3row em {
     font-size: 24px;
@@ -190,9 +223,13 @@
 /* 태블릿 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* 메인 비주얼 */
+  #main_visual_slide {
+    height: 750px;
+    border-radius: 320px 0;
+  }
   .main_title {
     width: 88vw;
-    top: 45%;
+    top: 65%;
   }
   .main_title > .more_btn {
     display: none;
@@ -201,12 +238,14 @@
     justify-content: center;
   }
   .main_img img {
-    margin-right: 460px;
+    position: relative;
+    top: -62px;
+    left: -267px;
   }
   .main_txt {
     width: 75%;
     height: auto;
-    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
   }
   .main_txt > span {
     font-size: 20px;
@@ -227,17 +266,19 @@
   .type_btn_group {
     width: 90%;
   }
-  .prd_list > li > div:nth-child(3),
-  div:nth-child(4) {
-    display: none;
+  .prd_list > li {
+    flex-wrap: wrap;
+    height: 1140px;
   }
 
   /*  제품 리스트 4열 배열 디테일 */
   .item_4row {
     width: 40vw;
+    box-sizing: border-box;
+    margin-bottom: 20px;
   }
   .prd_item.item_4row:hover {
-    border-radius: 17vh 0 0 0;
+    border-radius: 160px 0 0 0;
   }
 
   /*  제품 리스트 3열 배열 디테일 */
@@ -324,6 +365,7 @@
   }
   .brand_img {
     width: 100%;
+    border-radius: 230px 0;
   }
   .brand_text_wrap > .more_btn {
     border-bottom: 1px solid #373c22;
@@ -343,33 +385,40 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* 메인 비주얼 */
   #main_visual_slide {
-    height: 70vh;
-    border-radius: 25vh 0;
+    height: 600px;
+    border-radius: 200px 0;
   }
   .main_title {
     width: 88vw;
-    top: 60%;
+    top: 70%;
+  }
+  .main_title > .more_btn {
+    display: none;
   }
   .main_img {
     justify-content: center;
   }
   .main_img img {
-    margin-right: 350px;
+    width: 1400px;
+    position: relative;
+    top: -10px;
+    left: -183px;
   }
   .main_txt {
-    width: 100%;
-    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6); /* 흐린 그림자 */
+    width: 94%;
+    height: auto;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
   }
   .main_txt > span {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
   }
   .main_txt > h2 {
     font-size: 22px;
     line-height: 32px;
-  }
-  .main_title > .more_btn {
-    display: none;
   }
   .slick-dots {
     display: none !important;
@@ -391,6 +440,7 @@
   }
   .type_btn_group {
     width: 100%;
+    margin-top: 30px;
   }
 
   .type_btn_list li a {
@@ -468,7 +518,7 @@
     width: 40vw;
   }
   .prd_item.item_4row:hover {
-    border-radius: 12vh 0 0 0;
+    border-radius: 110px 0 0 0;
   }
   .img_4row {
     height: 64%;
@@ -593,6 +643,7 @@
   }
   .brand_img {
     width: 100%;
+    border-radius: 220px 0;
   }
   .brand_text_wrap > .more_btn {
     border-bottom: 1px solid #373c22;
@@ -613,36 +664,40 @@
 @media screen and (max-width: 480px) {
   /* 메인 비주얼 */
   #main_visual_slide {
-    height: 670px;
-    border-radius: 0;
-  }
-  .slick-dotted.slick-slider {
-    margin-bottom: 0px !important;
+    height: 600px;
+    border-radius: 200px 0;
   }
   .main_title {
     width: 88vw;
-    top: 78%;
+    top: 70%;
+  }
+  .main_title > .more_btn {
+    display: none;
   }
   .main_img {
     justify-content: center;
   }
   .main_img img {
-    margin-right: 350px;
+    width: 1380px;
+    position: relative;
+    top: -10px;
+    left: -143px;
   }
   .main_txt {
-    width: 100%;
-    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6); /* 흐린 그림자 */
+    width: 83%;
+    height: auto;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
   }
   .main_txt > span {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
   }
   .main_txt > h2 {
     font-size: 20px;
     line-height: 28px;
-  }
-  .main_title > .more_btn {
-    display: none;
   }
   .slick-dots {
     display: none !important;
@@ -667,6 +722,7 @@
   }
   .type_btn_group {
     width: 100%;
+    margin-top: 30px;
   }
   .type_btn_list li a {
     /* 클릭 전 버튼의 폰트컬러 */
@@ -838,6 +894,7 @@
   }
   .brand_img {
     width: 100%;
+    border-radius: 200px 0;
   }
   .brand_text_wrap > .more_btn {
     border-bottom: 1px solid #373c22;
