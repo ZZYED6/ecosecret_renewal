@@ -300,6 +300,18 @@ h1 > a img {
 }
 
 /* 메뉴 사이드 버전 */
+.overlay {
+  display: none; /* 초기 상태는 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1; /* 사이드 네비보다 아래 */
+  opacity: 0; /* 초기 불투명도 */
+  transition: opacity 0.3s ease; /* 불투명도 변화에 대한 전환 효과 */
+}
 #side_nav_box {
   width: 100%;
   height: 100vh;
@@ -307,9 +319,11 @@ h1 > a img {
   z-index: 99;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
   justify-content: flex-end;
+  display: none;
+  opacity: 0; /* 초기 불투명도 */
+  transform: translateX(100%); /* 오른쪽으로 이동 */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* 위치와 불투명도 변화에 대한 전환 효과 */
 }
 .side_nav {
   width: 300px;

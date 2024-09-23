@@ -3,22 +3,34 @@
 const openIcon = document.querySelector(".snb_open-icon");
 const closeIcon = document.querySelector(".snb_close-icon");
 const sideNav = document.querySelector("#side_nav_box");
+const overlay = document.querySelector("#overlay");
 
 function clickSideNav() {
-  // .snb_open-icon 클릭하면 showSideNav 실행
   openIcon.addEventListener("click", showSideNav);
 }
 
 clickSideNav();
 
 function showSideNav() {
-  // #side_nav_box를 나타내기
-  sideNav.style.display = "flex";
+  overlay.style.display = "block"; // 배경 즉시 나타나기
+  setTimeout(() => {
+    overlay.style.opacity = "1"; // 배경 불투명도 변경
+  }, 10);
+  sideNav.style.display = "flex"; // 사이드 네비 설정
+  setTimeout(() => {
+    sideNav.style.opacity = "1"; // 불투명도 변경
+    sideNav.style.transform = "translateX(0)"; // 원래 위치로 이동
+  }, 10);
 }
 
 closeIcon.onclick = function () {
-  //.snb_close-icon 클릭하면  #side_nav_box 숨기기
-  sideNav.style.display = "none";
+  sideNav.style.opacity = "0"; // 불투명도 줄이기
+  sideNav.style.transform = "translateX(100%)"; // 오른쪽으로 이동
+  overlay.style.opacity = "0"; // 배경 불투명도 줄이기
+  setTimeout(() => {
+    sideNav.style.display = "none"; // 잠시 후에 사이드 네비 숨기기
+    overlay.style.display = "none"; // 배경 숨기기
+  }, 300); // transition 시간과 동일하게 설정
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -28,10 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
   sidePrdList.addEventListener("click", function (event) {
     event.preventDefault(); // 기본 링크 클릭 동작 방지
     listTypes.forEach(function (list) {
-      if (list.style.display === "block") {
-        list.style.display = "none"; // 닫기
+      if (list.classList.contains("open")) {
+        list.classList.remove("open"); // 닫기
+        setTimeout(() => {
+          list.style.display = "none"; // 일정 시간 후에 display : none으로 설정
+        }, 300); // transition 시간과 동일하게 설정
       } else {
         list.style.display = "block"; // 열기
+        setTimeout(() => {
+          list.classList.add("open"); // open 클래스 추가하여 불투명도 변경
+        }, 10); // display가 적용된 후에 불투명도 변경
       }
     });
   });
