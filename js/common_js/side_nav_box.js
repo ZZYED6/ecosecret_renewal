@@ -40,16 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
   sidePrdList.addEventListener("click", function (event) {
     event.preventDefault(); // 기본 링크 클릭 동작 방지
     listTypes.forEach(function (list) {
-      if (list.classList.contains("open")) {
-        list.classList.remove("open"); // 닫기
-        setTimeout(() => {
-          list.style.display = "none"; // 일정 시간 후에 display : none으로 설정
-        }, 300); // transition 시간과 동일하게 설정
+      if (list.style.display === "block") {
+        list.style.display = "none"; // 닫기
       } else {
         list.style.display = "block"; // 열기
-        setTimeout(() => {
-          list.classList.add("open"); // open 클래스 추가하여 불투명도 변경
-        }, 10); // display가 적용된 후에 불투명도 변경
       }
     });
   });

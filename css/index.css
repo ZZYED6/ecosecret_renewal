@@ -156,11 +156,13 @@ section {
 .type_btn_list li:hover a {
   border: 0.5px solid #efe8e1;
   background-color: #efe8e1;
+  font-weight: 600;
   color: #373c22;
 }
 .type_btn_list li.active a {
   border-radius: 22px 0;
   background-color: #efe8e1;
+  font-weight: 600;
   color: #373c22;
 }
 

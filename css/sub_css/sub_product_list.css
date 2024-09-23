@@ -19,22 +19,33 @@
   justify-content: center;
   gap: 40px;
   text-align: center;
-  background-color: #efe8e1;
   margin-bottom: 20px;
 }
 .type_btn_group > ul li a {
   /* 클릭 전 버튼의 폰트컬러 */
   display: block;
   float: left;
-  line-height: 44px;
+  line-height: 32px;
   font-size: 16px;
   box-sizing: border-box;
   color: #898989;
   transition: 0.3s;
+  position: relative;
 }
+/* 선택 되었을 때 카테고리 스타일 */
 .type_btn_group > ul li.active a {
   font-weight: 800;
   color: #373c22;
+}
+.type_btn_group > ul li.active a::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #373c22;
+  position: absolute;
+  top: 2px;
+  left: -8px;
 }
 
 /* 정렬 */
