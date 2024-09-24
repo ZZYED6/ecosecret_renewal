@@ -244,10 +244,6 @@ section {
   height: 100%;
   position: relative;
 }
-.signi_bg {
-  position: absolute;
-  top: 0px;
-}
 .signi_wrap {
   width: 100%;
   height: 100%;
