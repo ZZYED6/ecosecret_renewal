@@ -258,7 +258,7 @@
   .con_title {
     width: 83vw;
   }
-  .con_title li {
+  .con_title li a {
     font-size: 14px;
     line-height: 38px;
   }

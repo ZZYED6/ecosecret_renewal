@@ -94,10 +94,10 @@ $(function () {
       },
     });
 
-    tl.to(text, { duration: 0.33, opacity: 1, y: "50%" }).to(
+    tl.to(text, { duration: 0.2, opacity: 1, y: "50%" }).to(
       text,
-      { duration: 0.33, opacity: 0, y: "0%" },
-      0.66
+      { duration: 0.2, opacity: 0, y: "0%" },
+      0.3
     );
   });
 
