@@ -25,7 +25,7 @@ colgroup col {
   width: auto; /* 기본값으로 설정 */
 }
 .col1 {
-  width: 10%;
+  width: 9%;
 }
 .col2 {
   width: 1fr; /* 유동적으로 설정 */

@@ -156,6 +156,15 @@ h1 > a img {
   left: 60px;
   width: 262px;
   height: 40px;
+  animation: popupMove 0.8s 0s infinite alternate;
+}
+@keyframes popupMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
 }
 
 /* 상품 2차 메뉴 */

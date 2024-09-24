@@ -17,6 +17,8 @@
     <!-- slickslide CSS -->
     <link rel="stylesheet" href="./css/common_css/slick.css" />
     <link rel="stylesheet" href="./css/common_css/slick-theme.css" />
+    <!-- AOS 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrap">
@@ -182,7 +184,6 @@
                         href="./sub_html/sub_product_list_group/sub_product_list_skincare.html"
                         >상품</a
                       >
-                      <!-- 2차메뉴 => 단계별 -->
                       <ul class="list_type">
                         <div>단계별</div>
                         <li>
@@ -221,7 +222,6 @@
                           >
                         </li>
                       </ul>
-                      <!-- 2차메뉴 => 피부고민별 -->
                       <ul class="list_type">
                         <div>피부고민별</div>
                         <li>
@@ -269,7 +269,7 @@
                   </ul>
                   <ul class="nav_2">
                     <li><a href="./sub_html/sub_login.html">로그인</a></li>
-                    <li><a href="./sub_html/sub_mypage.html">주문배송</a></li>
+                    <li><a href="./sub_html/sub_cart.html">주문배송</a></li>
                     <li>
                       <a href="./sub_html/sub_cs_center.html">고객센터</a>
                     </li>
@@ -349,7 +349,7 @@
           </div>
         </section>
         <!-- 섹션_타입별추천 -->
-        <section id="whatyouneed">
+        <section id="whatyouneed" data-aos="fade-up" data-aos-duration="500">
           <div class="sec_inner_wrap">
             <!-- 섹션 타이틀 -->
             <div class="sec_title">
@@ -1220,7 +1220,7 @@
           </div>
         </section>
         <!-- 섹션_베스트아이템 -->
-        <section id="best_item">
+        <section id="best_item" data-aos="fade-up" data-aos-duration="500">
           <div class="sec_inner_wrap">
             <!-- 섹션 타이틀 -->
             <div class="sec_title">
@@ -1378,7 +1378,7 @@
           </div>
         </section>
         <!-- 섹션_브랜드스토리 -->
-        <section id="brand_story">
+        <section id="brand_story" data-aos="fade-left" data-aos-duration="500">
           <div class="sec_inner">
             <div class="brand_text_wrap">
               <div class="brand_txt">
@@ -1405,7 +1405,7 @@
       <footer>
         <div class="footer_inner">
           <div class="footer_logo">
-            <a href=""
+            <a href="/"
               ><img
                 src="./img/icon/web_icons/footer-logo.png"
                 alt="footer_logo"
@@ -1455,4 +1455,9 @@
   <script src="./js/common_js/slick.min.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/common_js/side_nav_box.js"></script>
+  <!-- AOS 연결 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

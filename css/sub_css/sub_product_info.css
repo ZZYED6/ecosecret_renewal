@@ -8,9 +8,10 @@
 /* 상품 디테일 페이지 */
 #product_info_wrap {
   width: 83vw;
-  height: 78vh;
+  height: 850px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   gap: 80px;
 }
 .product_img {
@@ -166,10 +167,6 @@
 .sales_btn_wrap {
   width: 100%;
   height: fit-content;
-}
-.sales_btn_wrap {
-  width: 100%;
-  height: fit-content;
   gap: 10px;
   display: flex;
   justify-content: space-between;
@@ -215,7 +212,6 @@
 /* 쇼핑 정보 4개 카테고리 */
 .con_title {
   width: 83vw;
-  height: 60px;
   height: fit-content;
   display: flex;
   box-sizing: border-box;
@@ -223,9 +219,9 @@
 }
 .con_title li {
   flex: 1 1 0;
-  line-height: 60px;
   text-align: center;
   font-size: 20px;
+  line-height: 60px;
   font-weight: 800;
 }
 .con_title li {
@@ -302,7 +298,6 @@
 .payment_info div {
   box-sizing: border-box;
   margin: 20px;
-  line-height: 24px;
 }
 .payment_info div:not(:last-child) {
   padding-bottom: 20px;
@@ -315,6 +310,7 @@
 }
 .payment_info span {
   color: #676767;
+  line-height: 24px;
 }
 .payment_info b {
   font-weight: 800;

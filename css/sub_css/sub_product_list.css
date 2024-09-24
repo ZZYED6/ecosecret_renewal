@@ -76,7 +76,6 @@
   display: flex;
   justify-content: space-between;
   width: 83vw;
-  height: 570px;
 }
 .prd_item {
   border: 1px solid #efe8e1;
@@ -166,6 +165,7 @@ em {
 /*  제품 리스트 4열 배열 디테일 */
 .item_4row {
   width: 19vw;
+  height: 570px;
 }
 .prd_item.item_4row:hover {
   border-radius: 15vh 0 0 0;
