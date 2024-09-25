@@ -1,4 +1,9 @@
 "use strict";
+//로딩 화면
+const loading = document.getElementById("loading");
+window.onload = function () {
+  loading.style.display = "none";
+};
 
 const openIcon = document.querySelector(".snb_open-icon");
 const closeIcon = document.querySelector(".snb_close-icon");
