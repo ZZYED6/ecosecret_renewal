@@ -36,12 +36,13 @@
     padding: 14px;
   }
   .hash_tag_box {
-    gap: 5px;
+    gap: 6px;
   }
   .hash_tag_box span {
-    font-size: 10px;
-    height: 24px;
-    line-height: 24px;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
     border-radius: 12px 0 12px 0;
   }
   .item_name.i_n_4row {
@@ -96,12 +97,12 @@
   /*  제품 리스트 4열 배열 디테일 */
   .item_4row {
     width: 40vw;
-    height: 600px;
+    height: 542px;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .img_4row {
-    height: 70%;
+    height: 68%;
   }
   .prd_item.item_4row:hover {
     border-radius: 160px 0 0 0;
@@ -139,38 +140,62 @@
   .item_price_box.i_p_4row {
     margin-top: 5px;
   }
+
   /*  제품 리스트 4열 배열 디테일 */
   /* 텍스트 사이즈 및 gap 수정 */
+  .item_4row .prd_txt_wrap {
+    height: 34%;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .item_4row .hash_tag_box {
+    gap: 6px;
+  }
+  .item_4row .hash_tag_box span {
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
+    border-radius: 12px 0 12px 0;
+  }
   .item_4row {
     width: 40vw;
-    height: 420px;
+    height: 432px;
     margin-bottom: 25px;
   }
   .prd_item.item_4row:hover {
     border-radius: 110px 0 0 0;
   }
   .img_4row {
-    height: 64%;
+    height: 66%;
   }
   .btn_4row {
     gap: 5px;
     margin: 10px 10px;
   }
+  .item_name.i_n_4row {
+    margin-top: 6px;
+  }
+  .item_price_box.i_p_4row {
+    margin-top: 10px;
+  }
   .name_4row {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 17px;
   }
   .price_detail_4row {
     display: block;
   }
   .price_detail_4row strong {
-    font-size: 20px;
+    font-size: 21px;
   }
   .price_detail_4row span {
     font-size: 14px;
   }
   .price_dc_4row em {
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 /* 기본 모바일 */
@@ -197,9 +222,6 @@
     height: 100%;
     object-fit: cover;
   }
-  .img_thumbnail:hover {
-    background-color: rgba(0, 0, 0, 0);
-  }
   .item_4row .prd_txt_wrap {
     padding: 18px;
   }
@@ -207,45 +229,47 @@
     gap: 6px;
   }
   .item_4row .hash_tag_box span {
-    font-size: 10px;
-    height: 20px;
-    line-height: 20px;
-    padding: 0 6px;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
     border-radius: 12px 0 12px 0;
   }
   .item_4row .item_name {
     width: fit-content;
-    height: 12px;
-    margin-top: 5px;
-    margin-bottom: 32px;
+    height: fit-content;
+    margin: 12px 0;
   }
   .item_4row {
     width: 100%;
-    height: 426px;
     height: fit-content;
     display: flex;
+    align-items: center;
     margin-bottom: 15px;
   }
   .prd_item.item_4row:hover {
     border-radius: 0;
   }
   .img_4row {
-    width: 50%;
-    height: 130px;
+    width: 40%;
+    height: 140px;
   }
   .prd_item.item_4row:hover .choice_btn_box {
     display: none;
   }
   .name_4row {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
+  }
+  .item_price_box {
+    margin-top: 0;
   }
   .price_detail_4row {
     display: flex;
-    gap: 5px;
+    gap: 10px;
   }
   .price_detail_4row strong {
-    font-size: 18px;
+    font-size: 20px;
   }
   .price_detail_4row span {
     font-size: 14px;

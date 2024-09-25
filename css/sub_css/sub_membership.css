@@ -26,7 +26,7 @@
   /* background-color: #efe8e1; */
 }
 .wrap_box {
-  width: fit-content;
+  width: 83vw;
   margin: 0 auto;
   display: flex;
 }
@@ -69,19 +69,14 @@ span {
 }
 #membership_info > .wrap_box {
   margin-top: 40px;
-}
-.grade_wrap {
-  width: 60vw;
-  padding: 50px 60px;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
   background-color: #efe8e1;
 }
-.query_group {
+.grade_wrap {
+  width: 100%;
+  padding: 50px 60px;
   display: flex;
+  gap: 70px;
   justify-content: center;
-  gap: 30px;
 }
 .grade_box {
   width: fit-content;

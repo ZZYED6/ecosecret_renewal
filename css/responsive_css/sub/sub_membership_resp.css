@@ -3,6 +3,9 @@
 
 /* 노트북 */
 @media screen and (min-width: 1440px) and (max-width: 1750px) {
+  .new_benefit_wrap {
+    width: 60vw;
+  }
   .benefit_item > img {
     width: 70px;
   }
@@ -11,7 +14,7 @@
     margin-top: 10px;
   }
   .benefit_item > span {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 8px;
   }
   .grade_box > img {
@@ -33,7 +36,7 @@
     line-height: 80px;
   }
   .new_benefit_wrap {
-    width: 70vw;
+    width: 83vw;
     gap: 20px;
   }
   .benefit_item > img {
@@ -44,7 +47,7 @@
     margin-top: 10px;
   }
   .benefit_item > span {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 8px;
   }
   #membership_info > .wrap_box {
@@ -52,9 +55,6 @@
   }
   .grade_wrap {
     width: 83vw;
-    gap: 20px;
-  }
-  .query_group {
     gap: 20px;
   }
   .grade_box > img {
@@ -86,7 +86,7 @@
     line-height: 60px;
   }
   .new_benefit_wrap {
-    width: 70vw;
+    width: 83vw;
     gap: 14px;
   }
   .benefit_item > img {
@@ -111,26 +111,18 @@
     padding: 30px 30px;
     gap: 20px;
   }
-  .query_group {
-    gap: 20px;
-  }
   .grade_box > img {
-    width: 80px;
-  }
-  .grade_box > span {
-    font-size: 12px;
+    width: 100px;
   }
   .grade_info b {
-    font-size: 14px;
+    font-size: 20px;
   }
   .grade_info span {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .issue_info {
     width: 83vw;
-    margin: 0 auto;
   }
   .issue_info > ul {
     font-size: 12px;
@@ -159,48 +151,46 @@
     margin-top: 5px;
   }
   .benefit_item > span {
-    font-size: 14px;
-    margin-top: 6px;
+    font-size: 18px;
+    margin-top: 10px;
     text-align: center;
   }
   #membership_info > .wrap_box {
     margin-top: 30px;
+    justify-content: center;
   }
   .grade_wrap {
-    width: 83vw;
+    width: fit-content;
     padding: 30px 30px;
-    padding-left: 47px;
-    display: block;
+    gap: 40px;
+    flex-direction: column;
   }
-  .query_group:nth-child(1) {
-    gap: 16vw;
-    margin-bottom: 40px;
-  }
-  .query_group:nth-child(2) {
-    gap: 11vw;
+  .grade_item {
+    display: flex;
+    gap: 20px;
   }
   .grade_box > img {
-    width: 80px;
+    width: 100px;
   }
-  .grade_box > span {
-    font-size: 12px;
+  .grade_info {
+    margin-top: 0;
   }
   .grade_info b {
-    font-size: 14px;
+    font-size: 20px;
   }
   .grade_info span {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
   }
   .issue_info {
     width: 83vw;
     margin: 0 auto;
   }
   .issue_info > ul {
-    padding: 10px;
-    font-size: 10px;
-    line-height: 18px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 /* 기본 모바일 */
@@ -225,47 +215,46 @@
     margin-top: 5px;
   }
   .benefit_item > span {
-    font-size: 14px;
-    margin-top: 6px;
+    font-size: 18px;
+    margin-top: 10px;
     text-align: center;
   }
   #membership_info > .wrap_box {
     margin-top: 30px;
+    justify-content: center;
   }
   .grade_wrap {
-    width: 83vw;
+    width: fit-content;
     padding: 30px 30px;
-    padding-left: 47px;
-    display: block;
+    gap: 40px;
+    flex-direction: column;
   }
-  .query_group:nth-child(1) {
-    gap: 16vw;
-    margin-bottom: 40px;
-  }
-  .query_group:nth-child(2) {
-    gap: 11vw;
+  .grade_item {
+    display: flex;
+    gap: 20px;
   }
   .grade_box > img {
-    width: 80px;
+    width: 100px;
   }
-  .grade_box > span {
-    font-size: 12px;
+  .grade_info {
+    margin-top: 0;
   }
   .grade_info b {
-    font-size: 14px;
+    font-size: 20px;
   }
   .grade_info span {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
   }
+
   .issue_info {
     width: 83vw;
     margin: 0 auto;
   }
   .issue_info > ul {
-    padding: 10px;
-    font-size: 10px;
-    line-height: 18px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }

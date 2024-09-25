@@ -177,7 +177,18 @@
     padding: 30px 53px 30px 0;
   }
   .footer_con {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .footer_inner a {
+    font-size: 14px;
+  }
+  .footer_menu .policy_list > li {
+    gap: 10px;
+  }
+  .footer_menu .policy_list > li > a:not(:last-child)::after {
+    right: -6px;
   }
 
   /* floating_btn */
@@ -185,6 +196,13 @@
     position: absolute;
     bottom: 32px;
     right: 16px;
+  }
+  #floating_btn_wrap a {
+    width: 46px;
+    height: 46px;
+  }
+  #floating_btn_wrap a img {
+    width: 28px;
   }
 }
 
@@ -265,7 +283,18 @@
     padding: 30px 50px 30px 0;
   }
   .footer_con {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .footer_inner a {
+    font-size: 14px;
+  }
+  .footer_menu .policy_list > li {
+    gap: 10px;
+  }
+  .footer_menu .policy_list > li > a:not(:last-child)::after {
+    right: -6px;
   }
 
   /* floating_btn */
@@ -273,6 +302,13 @@
     position: absolute;
     bottom: 32px;
     right: 16px;
+  }
+  #floating_btn_wrap a {
+    width: 46px;
+    height: 46px;
+  }
+  #floating_btn_wrap a img {
+    width: 28px;
   }
 }
 /* 최소 모바일 */
@@ -350,18 +386,31 @@
     padding: 30px 50px 30px 0;
   }
   .footer_con {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
   }
   .footer_inner a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .footer_menu .policy_list > li {
-    gap: 17px;
+    gap: 10px;
   }
+  .footer_menu .policy_list > li > a:not(:last-child)::after {
+    right: -6px;
+  }
+
   /* floating_btn */
   #floating_btn_wrap {
     position: absolute;
     bottom: 32px;
     right: 16px;
+  }
+  #floating_btn_wrap a {
+    width: 46px;
+    height: 46px;
+  }
+  #floating_btn_wrap a img {
+    width: 28px;
   }
 }
