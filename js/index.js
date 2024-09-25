@@ -60,10 +60,10 @@ $(document).ready(function () {
     const img = $(this);
 
     // 이미지 소스를 변경
-    if (img.attr("src") === "./img/icon/web_icons/Heart-empty.png") {
+    if (img.attr("src") === "./img/icon/web_icons_svg/Heart-empty.svg") {
       img.attr("src", "./img/icon/web_icons/Heart-full.png");
     } else {
-      img.attr("src", "./img/icon/web_icons/Heart-empty.png");
+      img.attr("src", "./img/icon/web_icons_svg/Heart-empty.svg");
     }
   });
 });

@@ -160,21 +160,18 @@
 }
 .simple_login button span::before {
   content: "";
-  display: block; /*인라인블록으로 수정
-*/
+  display: block; /*인라인블록으로 수정*/
   width: 24px;
   height: 24px;
   position: absolute;
   top: 19px;
   left: 29px;
-  background-image: url(../../img/icon/web_icons/es_sprites.png);
-  background-repeat: no-repeat;
 }
 .simple_login button:first-child span:before {
-  background-position: -10px -789px;
+  background: url(../../img/icon/web_icons_svg/kakao-logo.svg) no-repeat;
 }
 .simple_login button:last-child span:before {
-  background-position: -10px -745px;
+  background: url(../../img/icon/web_icons_svg/Naver-logo.svg) no-repeat;
 }
 .kakao_btn {
   background-color: #fee500;

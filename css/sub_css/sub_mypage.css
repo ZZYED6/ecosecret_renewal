@@ -87,7 +87,7 @@ b {
   position: relative;
   top: 7px;
   margin-left: 10px;
-  background: url(../../img/icon/web_icons/es_sprites.png) no-repeat -10px -349px;
+  background: url(../../img/icon/web_icons_svg/Arrow-right.svg) no-repeat;
 }
 .more_btn:hover {
   background-color: #373c22;
@@ -98,7 +98,7 @@ b {
 .more_btn:hover > a::after {
   width: 24px;
   height: 24px;
-  background: url(../../img/icon/web_icons/es_sprites.png) no-repeat -10px -305px;
+  background: url(../../img/icon/web_icons_svg/Arrow-right-hover.svg) no-repeat;
 }
 #myinfo .box_wrap {
   width: 60%;
