@@ -58,6 +58,7 @@ section {
   position: relative;
 }
 .btn_wrap button {
+  display: block;
   width: 150px;
   height: 50px;
   font-family: "SUIT Variable", sans-serif;
@@ -68,6 +69,11 @@ section {
 .order_btn_wrap {
   width: fit-content;
   height: fit-content;
+  display: block;
+  gap: 10px;
+}
+.btn_wrap button:hover {
+  filter: brightness(0.9);
 }
 .order_btn_wrap > button:nth-child(1) {
   background-color: #373c22;
@@ -80,12 +86,25 @@ section {
   border: none;
 }
 .continue_btn {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
   font-family: "SUIT Variable", sans-serif;
+  color: #373c22;
+  text-align: left;
   border: 1px solid #ddd;
   background-color: #fff;
+}
+.continue_btn > span {
+  margin-left: 10px;
+}
+.continue_btn > span::after {
+  content: "";
+  display: inline-block;
+  background: url(../../img/icon/web_icons_svg/Arrow-right.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 /* 하단 이용안내 섹션 */

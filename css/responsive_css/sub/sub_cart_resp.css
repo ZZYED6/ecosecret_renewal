@@ -21,9 +21,11 @@
   .con_wrap {
     margin-bottom: 80px;
   }
-  .btn_wrap button {
+  .order_btn_wrap {
+    gap: 5px;
+  }
+  .order_btn_wrap button {
     width: 110px;
-    font-size: 15px;
   }
   #shopping_info {
     padding: 20px;
@@ -45,10 +47,24 @@
   .con_wrap {
     margin-bottom: 80px;
   }
-  .btn_wrap button {
-    width: 110px;
+  .btn_wrap {
+    flex-direction: column;
+  }
+  .order_btn_wrap {
+    width: 100%;
+    gap: 5px;
+  }
+  .order_btn_wrap button {
+    width: 100%;
     font-size: 15px;
   }
+  .btn_wrap > .continue_btn {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
   #shopping_info {
     padding: 20px;
   }

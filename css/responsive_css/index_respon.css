@@ -670,12 +670,12 @@
 @media screen and (max-width: 480px) {
   /* 메인 비주얼 */
   #main_visual_slide {
-    height: 510px;
+    height: 560px;
     border-radius: 200px 0;
   }
   .main_title {
     width: 83vw;
-    top: 67%;
+    top: 70%;
   }
   .main_title > .more_btn {
     display: none;
@@ -684,10 +684,10 @@
     justify-content: center;
   }
   .main_img img {
-    width: 1204px;
+    width: 1310px;
     position: relative;
     top: -10px;
-    left: -170px;
+    left: -164px;
   }
   .main_txt {
     width: 90%;
