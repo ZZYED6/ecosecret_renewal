@@ -99,6 +99,7 @@
   display: block;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 .product_detail_text {
   font-size: 16px;

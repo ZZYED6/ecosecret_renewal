@@ -297,8 +297,18 @@
     width: 14vw;
   }
   /* 자주 묻는 질문 */
+
   .faq button {
     font-size: 14px;
+    padding: 0 10px;
+  }
+  .faq button > span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
   .faq_ans {
     font-size: 13px;

@@ -167,7 +167,7 @@ tbody > tr:first-child > td:nth-child(2) {
   height: 45px;
   line-height: 45px;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 24px;
   color: #676767;
   font-size: 15px;
   font-weight: 600;
@@ -326,9 +326,13 @@ input[type="file"] {
   width: 100px;
   height: 34px;
   border: none;
-  background-color: #373c22;
-  color: #efe8e1;
+  background-color: #efe8e1;
+  color: #373c22;
   font-weight: 800;
   cursor: pointer;
   float: right;
+}
+.form_scope form button:hover {
+  background-color: #373c22;
+  color: #efe8e1;
 }

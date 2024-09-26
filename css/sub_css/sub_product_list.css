@@ -63,6 +63,7 @@
   padding: 5px 10px;
   color: #898989;
   border: 1px solid rgba(137, 137, 137, 0.5);
+  cursor: pointer;
 }
 
 /* 제품 리스트 내용 중 공통 속성 */
