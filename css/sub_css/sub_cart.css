@@ -69,7 +69,7 @@ section {
 .order_btn_wrap {
   width: fit-content;
   height: fit-content;
-  display: block;
+  display: flex;
   gap: 10px;
 }
 .btn_wrap button:hover {
