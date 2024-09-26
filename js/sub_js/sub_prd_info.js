@@ -45,7 +45,7 @@ $(document).ready(function () {
 
     // 이미지 소스를 변경
     if (img.attr("src") === "../../img/icon/web_icons_svg/Heart-empty_gr.svg") {
-      img.attr("src", "../../img/icon/web_icons/Heart-full-24px.png");
+      img.attr("src", "../../img/icon/web_icons_svg/Heart-full-24px.svg");
     } else {
       img.attr("src", "../../img/icon/web_icons_svg/Heart-empty_gr.svg");
     }
