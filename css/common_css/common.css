@@ -225,7 +225,7 @@ h1 > a img {
   padding: 20px 30px;
 }
 #gnb > ul > li:nth-child(2):hover > .submenu_box {
-  height: 261px;
+  height: 293px;
 }
 .submenu_wrap {
   width: fit-content;
@@ -255,8 +255,8 @@ h1 > a img {
 .submenu_con > li {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
-  padding: 0px 10px;
+  width: 150px;
+  padding: 4px 10px;
 }
 .submenu_con :nth-child(2) {
   padding-top: 8px;
