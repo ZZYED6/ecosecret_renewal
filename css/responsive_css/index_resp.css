@@ -382,7 +382,7 @@
   .brand_text_wrap > .more_btn > a::after {
     width: 24px;
     height: 24px;
-    background: url(../../img/icon/web_icons_svg/Arrow-right-hover.svg)
+    background: url(../../img/icon/web_icons_svg/arrow-right-hover.svg)
       no-repeat;
   }
 }
@@ -663,7 +663,7 @@
   .brand_text_wrap > .more_btn > a::after {
     width: 24px;
     height: 24px;
-    background: url(../../img/icon/web_icons_svg/Arrow-right-hover.svg)
+    background: url(../../img/icon/web_icons_svg/arrow-right-hover.svg)
       no-repeat;
   }
 }
@@ -972,6 +972,6 @@
   .brand_text_wrap > .more_btn > a::after {
     width: 24px;
     height: 24px;
-    background: url(../../img/icon/web_icons_svg/Arrow-right-hover.svg);
+    background: url(../../img/icon/web_icons_svg/arrow-right-hover.svg);
   }
 }

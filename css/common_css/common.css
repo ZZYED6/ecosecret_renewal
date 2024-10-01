@@ -319,10 +319,10 @@ h1 > a img {
   height: 24px;
 }
 .user-icon {
-  background: url(../../img/icon/web_icons_svg/User.svg) no-repeat;
+  background: url(../../img/icon/web_icons_svg/user.svg) no-repeat;
 }
 .shopping-icon {
-  background: url(../../img/icon/web_icons_svg/Shopping-bag.svg) no-repeat;
+  background: url(../../img/icon/web_icons_svg/shopping-bag.svg) no-repeat;
   position: relative;
 }
 .shopping-icon > a::after {
@@ -342,7 +342,7 @@ h1 > a img {
   line-height: 16px;
 }
 .snb_open-icon {
-  background: url(../../img/icon/web_icons_svg/Icon_menu.svg) no-repeat;
+  background: url(../../img/icon/web_icons_svg/icon_menu.svg) no-repeat;
 }
 
 /* 사이드 버전 메뉴 버전 */
@@ -405,7 +405,7 @@ a {
   width: 24px;
   height: 24px;
   font-size: 0;
-  background: url(../../img/icon/web_icons_svg/Close.svg) no-repeat;
+  background: url(../../img/icon/web_icons_svg/close.svg) no-repeat;
 }
 .list_type {
   display: none;

@@ -44,10 +44,10 @@ $(document).ready(function () {
     const img = $(this);
 
     // 이미지 소스를 변경
-    if (img.attr("src") === "../../img/icon/web_icons_svg/Heart-empty_gr.svg") {
-      img.attr("src", "../../img/icon/web_icons_svg/Heart-full-24px.svg");
+    if (img.attr("src") === "../../img/icon/web_icons_svg/heart-empty_gr.svg") {
+      img.attr("src", "../../img/icon/web_icons_svg/heart-full-24px.svg");
     } else {
-      img.attr("src", "../../img/icon/web_icons_svg/Heart-empty_gr.svg");
+      img.attr("src", "../../img/icon/web_icons_svg/heart-empty_gr.svg");
     }
   });
   //상세정보
