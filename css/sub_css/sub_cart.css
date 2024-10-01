@@ -99,7 +99,7 @@ section {
 .continue_btn > span::after {
   content: "";
   display: inline-block;
-  background: url(../../img/icon/web_icons_svg/arrow-right.svg) no-repeat;
+  background: url(../../img/icon/web_icons/arrow-right.svg) no-repeat;
   width: 24px;
   height: 24px;
   position: absolute;

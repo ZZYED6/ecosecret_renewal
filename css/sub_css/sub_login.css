@@ -168,10 +168,10 @@
   left: 29px;
 }
 .simple_login button:first-child span:before {
-  background: url(../../img/icon/web_icons_svg/Kakao-logo.svg) no-repeat;
+  background: url(../../img/icon/web_icons/Kakao-logo.svg) no-repeat;
 }
 .simple_login button:last-child span:before {
-  background: url(../../img/icon/web_icons_svg/naver-logo.svg) no-repeat;
+  background: url(../../img/icon/web_icons/naver-logo.svg) no-repeat;
 }
 .kakao_btn {
   background-color: #fee500;
