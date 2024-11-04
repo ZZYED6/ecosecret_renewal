@@ -408,12 +408,12 @@ em {
   width: 100%;
   height: 190px;
 }
-#event_con {
+.event_con {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.event_text_wrap {
+.event_text_wrap_1 {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -422,6 +422,16 @@ em {
   top: 54px;
   z-index: 10;
   color: #fff;
+}
+.event_text_wrap_2 {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  top: 54px;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.9);
 }
 .event_title {
   font-size: 44px;
