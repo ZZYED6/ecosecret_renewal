@@ -595,17 +595,11 @@
   .arrow_wrap {
     display: none;
   }
-  .event_text_wrap {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    position: absolute;
-    top: 54px;
-    z-index: 10;
-    color: #fff;
+
+  .event_text_wrap_1 {
+    top: 34px;
   }
-  .event_text_wrap {
+  .event_text_wrap_2 {
     top: 34px;
   }
   .event_title {
@@ -906,17 +900,11 @@
   .arrow_wrap {
     display: none;
   }
-  .event_text_wrap {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    position: absolute;
-    top: 54px;
-    z-index: 10;
-    color: #fff;
+
+  .event_text_wrap_1 {
+    top: 34px;
   }
-  .event_text_wrap {
+  .event_text_wrap_2 {
     top: 34px;
   }
   .event_title {
