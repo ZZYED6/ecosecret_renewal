@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEAUTY SECRET? Here, ecosecret</title>
+    <link rel="icon" href="../../img/icon/favicon_io/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/sub_css/sub_product_info.css" />
+    <!-- 반응형 css -->
+    <link
+      rel="stylesheet"
+      href="../../css/responsive_css/sub/sub_product_info_resp.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="loading">
+      <div class="loading_simbol"></div>
+    </div>
+    <header id="main_header">
+      <div class="header_wrap">
+        <div class="header_top-con">
+          <!-- 상단 로고 -->
+          <h1>
+            <a href="/" class="bg-Header_logo">
+              <img
+                src="../../img/icon/web_icons/main-logo.svg"
+                alt="main-logo"
+              />
+            </a>
+          </h1>
+          <!-- 상단 멤버십 메뉴 -->
+          <div class="top_member">
+            <a href="../sub_login.html">로그인</a>
+            <a href="../sub_mypage.html">주문배송</a>
+            <a href="../sub_cs_center.html">고객센터</a>
+          </div>
+        </div>
+        <div class="header_bottom-con">
+          <!-- 메인 1차 메뉴 -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="../sub_brandstory.html">브랜드</a>
+              </li>
+              <li>
+                <a
+                  href="../sub_product_list_group/sub_product_list_skincare.html"
+                  >상품</a
+                >
+                <!-- 상품 2차 메뉴 -->
+                <div class="submenu_box">
+                  <div class="gnb_submenu">
+                    <div class="submenu_wrap">
+                      <ul class="submenu_con">
+                        <li class="submenu-title">단계별</li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_skincare.html"
+                            class="submenu-detail_1"
+                            >스킨케어</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_cleansing.html"
+                            class="submenu-detail_2"
+                            >클렌징</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="./sub_product_list_group/sub_product_list_intensive.html"
+                            class="submenu-detail_3"
+                            >집중케어</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_mask.html"
+                            class="submenu-detail_4"
+                            >마스크팩</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_hairbody.html"
+                            class="submenu-detail_5"
+                            >헤어/바디</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu_wrap">
+                      <ul class="submenu_con">
+                        <li class="submenu-title">피부고민별</li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_moisture.html"
+                            class="submenu-detail_6"
+                            >수분/보습</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_balance.html"
+                            class="submenu-detail_7"
+                            >유수분 밸런스</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_sensitive.html"
+                            class="submenu-detail_8"
+                            >트러블/민감성</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_functional.html"
+                            class="submenu-detail_9"
+                            >주름개선/미백</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="../sub_product_list_group/sub_product_list_uv.html"
+                            class="submenu-detail_10"
+                            >자외선 차단</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="../sub_event.html">이벤트</a>
+              </li>
+              <li>
+                <a href="../sub_review_text.html">고객리뷰</a>
+              </li>
+              <li>
+                <a href="../sub_membership.html">멤버십</a>
+                <span>회원가입하고 특별한 혜택을 만나보세요</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="member_action">
+            <div class="product_search">
+              <label for="search" class="search_bar">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="검색어를 입력하세요."
+                />
+                <input
+                  type="image"
+                  class="search_img"
+                  src="../../img/icon/web_icons/search.svg"
+                />
+              </label>
+            </div>
+            <div class="user-icon ac_icons">
+              <a href="../sub_mypage.html"></a>
+            </div>
+            <div class="shopping-icon ac_icons">
+              <a href="../sub_cart.html"></a>
+            </div>
+            <!-- 사이드 버전 메뉴 불러오기 아이콘 -->
+            <div class="snb_open-icon ac_icons"><a href="#"></a></div>
+            <!-- 사이드 버전 메뉴-->
+            <div id="overlay" class="overlay"></div>
+            <div id="side_nav_box">
+              <div class="side_nav">
+                <a href="#" class="snb_close-icon"></a>
+                <ul class="nav_1">
+                  <li><a href="../sub_brandstory.html">브랜드</a></li>
+                  <li class="side_prd_list">
+                    <a
+                      href="../sub_product_list_group/sub_product_list_skincare.html"
+                      >상품</a
+                    >
+                    <ul class="list_type">
+                      <li>단계별</li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_skincare.html"
+                          class="submenu-detail_1"
+                          >스킨케어</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_cleansing.html"
+                          class="submenu-detail_2"
+                          >클렌징</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_intensive.html"
+                          class="submenu-detail_3"
+                          >집중케어</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_mask.html"
+                          class="submenu-detail_4"
+                          >마스크팩</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_hairbody.html"
+                          class="submenu-detail_5"
+                          >헤어/바디</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="list_type">
+                      <li>피부고민별</li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_moisture.html"
+                          class="submenu-detail_6"
+                          >수분/보습</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_balance.html"
+                          class="submenu-detail_7"
+                          >유수분 밸런스</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_sensitive.html"
+                          class="submenu-detail_8"
+                          >트러블/민감성</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_functional.html"
+                          class="submenu-detail_9"
+                          >주름개선/미백</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../sub_product_list_group/sub_product_list_uv.html"
+                          class="submenu-detail_10"
+                          >자외선 차단</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="../sub_event.html">이벤트</a></li>
+                  <li>
+                    <a href="../sub_review_text.html">고객리뷰</a>
+                  </li>
+                  <li><a href="../sub_membership.html">멤버십</a></li>
+                </ul>
+                <ul class="nav_2">
+                  <li><a href="../sub_login.html">로그인</a></li>
+                  <li><a href="../sub_mypage.html">주문배송</a></li>
+                  <li>
+                    <a href="../sub_cs_center.html">고객센터</a>
+                  </li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">개인정보 취급방침</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="product_info">
+      <section id="product_info_wrap">
+        <div class="product_img">
+          <img
+            src="../../img/product/product_1000/대표_알로에젤_1000.jpg"
+            alt="알로에젤"
+            width="800"
+            height="800"
+          />
+        </div>
+        <div class="product_detail_box">
+          <div class="product_detail_wrap">
+            <div class="product_name">
+              <h4 class="item_EN">fresh me aloe gel</h4>
+              <h3 class="item_KR">프레시 미 알로에 젤 200ml</h3>
+            </div>
+            <div class="product_detail">
+              <div class="item_price">
+                <strong>7,600원</strong>
+                <span>9,500원</span>
+                <div class="item_dc"><em>20%</em></div>
+              </div>
+              <div class="item_icons">
+                <span class="choice_icon1">
+                  <img
+                    src="../../img/icon/web_icons/heart-empty_gr.svg"
+                    alt="찜하기전"
+                  />
+                </span>
+                <span class="choice_icon2">
+                  <img
+                    src="../../img/icon/web_icons/share_gr.svg"
+                    alt="공유하기"
+                  />
+                </span>
+              </div>
+            </div>
+            <p class="product_detail_text">
+              청정 제주산 알로에베라잎추출물이 함유되어 피부손상을 개선하는데
+              도움을 주는 수딩 젤
+            </p>
+          </div>
+          <div class="product_sales">
+            <div class="delivery_charge">
+              <span>배송비</span>
+              <span>3,000원(30,000원 이상 구매 시 무료)</span>
+            </div>
+            <!-- 구매 수량 선택 -->
+            <div class="quantity">
+              <span>수량</span>
+              <div class="count_box">
+                <span id="down_btn"
+                  ><img src="../../img/icon/web_icons/minus.svg" alt="down"
+                /></span>
+                <p class="count_num">0</p>
+                <span id="up_btn"
+                  ><img src="../../img/icon/web_icons/plus.svg" alt="up"
+                /></span>
+              </div>
+            </div>
+            <div class="total_cost_wrap">
+              <span>총 상품 금액</span>
+              <span><b id="total_cost">0</b>원</span>
+            </div>
+            <div class="sales_btn_wrap">
+              <button type="button">
+                <img
+                  src="../../img/icon/web_icons/shopping-bag.svg"
+                  alt="장바구니담기"
+                /><span>장바구니 담기</span>
+              </button>
+              <button type="button">
+                <img
+                  src="../../img/icon/web_icons/buy-now.svg"
+                  alt="바로구매하기"
+                />
+                <span>바로 구매하기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="shopping_info_wrap">
+        <ul class="con_title">
+          <li class="title_box_1">
+            <a href="#">상세 정보</a>
+          </li>
+          <li class="title_box_2">
+            <a href="#">리뷰(0)</a>
+          </li>
+          <li class="title_box_3">
+            <a href="#">쇼핑 가이드</a>
+          </li>
+          <li class="title_box_4">
+            <a href="#">상품 문의(0)</a>
+          </li>
+        </ul>
+        <ul class="con_detail">
+          <li class="detail_1">
+            <div class="product_detail_view">
+              <div class="texture_img">
+                <img
+                  src="../../img/product/texture/freshmealoe_gel_texture.jpg"
+                  alt="texture"
+                />
+              </div>
+              <div class="detail_info">
+                <ul>
+                  <li class="info_start">
+                    <span class="info_title">
+                      이런 분들에게 추천 드립니다!</span
+                    >
+                    <p>
+                      &#35;&nbsp;메마른 피부에 촉촉한 수분 부스팅이 필요하신 분
+                    </p>
+                    <p>&#35;&nbsp;끈적임 없이 산뜻한 스킨 제품을 원하시는 분</p>
+                    <p>&#35;&nbsp;피부가 민감하여 순한 제품을 원하시는 분</p>
+                    <p>
+                      &#35;&nbsp;외부 환경으로부터 자극 받아 진정관리가 필요하신
+                      분
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <button>
+                        <span class="info_title">사용효과</span>
+                        <img
+                          src="../../img/icon/web_icons/plus.svg"
+                          data-original-src="../../img/icon/web_icons/plus.svg"
+                          data-new-src="../../img/icon/web_icons/minus.svg"
+                          alt="toggle_img"
+                        />
+                      </button>
+                    </p>
+                    <div>
+                      <div class="info_text">
+                        <p>&#183;&nbsp;자극 받은 피부에 탁월 수딩 효과</p>
+                        <p>&#183;&nbsp;수분 공급 및 피부결 정돈</p>
+                        <p>
+                          &#183;&nbsp;4무첨가 - 파라벤, 인공색소. 동물성 원료,
+                          GMO원료
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <button>
+                        <span class="info_title">주요성분</span>
+                        <img
+                          src="../../img/icon/web_icons/plus.svg"
+                          data-original-src="../../img/icon/web_icons/plus.svg"
+                          data-new-src="../../img/icon/web_icons/minus.svg"
+                          alt="toggle_img"
+                        />
+                      </button>
+                    </p>
+                    <div>
+                      <div class="info_text">
+                        <p>&#183;&nbsp;알로에 베라</p>
+                        <p>&#183;&nbsp;소듐하이알루로네이트</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <button>
+                        <span class="info_title">사용방법</span>
+                        <img
+                          src="../../img/icon/web_icons/plus.svg"
+                          data-original-src="../../img/icon/web_icons/plus.svg"
+                          data-new-src="../../img/icon/web_icons/minus.svg"
+                          alt="toggle_img"
+                        />
+                      </button>
+                    </p>
+                    <div>
+                      <div class="info_text">
+                        <em
+                          >적당량을 손에 덜어 얼굴과 몸에 부드럽게 펴 발라
+                          흡수시킵니다.</em
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      <button>
+                        <span class="info_title"> 상품정보 제공고시</span>
+                        <img
+                          src="../../img/icon/web_icons/plus.svg"
+                          data-original-src="../../img/icon/web_icons/plus.svg"
+                          data-new-src="../../img/icon/web_icons/minus.svg"
+                          alt="toggle_img"
+                        />
+                      </button>
+                    </p>
+                    <div>
+                      <div class="info_graph">
+                        <table>
+                          <colgroup>
+                            <col class="col1" />
+                            <col class="col2" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td>내용물의 용량 및 중량</td>
+                              <td>200ml</td>
+                            </tr>
+                            <tr>
+                              <td>제품 주요사양</td>
+                              <td>모든 피부용</td>
+                            </tr>
+                            <tr>
+                              <td>사용기간 또는 개봉 후 사용기간</td>
+                              <td>제조일로부터 36개월</td>
+                            </tr>
+                            <tr>
+                              <td>사용방법</td>
+                              <td>
+                                적당량을 손에 덜어 얼굴과 몸에 부드럽게 펴 발라
+                                흡수시킵니다.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>화장품제조업자</td>
+                              <td>(주)위노바</td>
+                            </tr>
+                            <tr>
+                              <td>제조국</td>
+                              <td>대한민국</td>
+                            </tr>
+                            <tr>
+                              <td>화장품책임판매업자</td>
+                              <td>(주)콜더마</td>
+                            </tr>
+                            <tr>
+                              <td>맞춤형 화장품판매업자</td>
+                              <td>해당사항 없음</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                [화장품법]에 따라 기재 표시하여야 하는 모든성분
+                              </td>
+                              <td>
+                                정제수, 디프로필렌글라이콜, 변성알코올,
+                                프로필렌글라이콜, 글리세린, 알로에베라잎추출물,
+                                카보머, 트리에탄올아민, 클로페네신,
+                                피이지-60하이드로제네이티드캐스터오일, 베타인,
+                                글리세릴폴리아크릴레이트, 향료,
+                                디소듐이디티에이, 소듐하이알루로네이트,
+                                페녹시에탄올
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                [화장품법]에 따른 기능성 화장품(미백, 주름개선,
+                                자외선차단제품 등)의 경우
+                              </td>
+                              <td>해당사항 없음</td>
+                            </tr>
+                            <tr>
+                              <td>사용할 때의 주의사항</td>
+                              <td>
+                                1. 화장품을 사용하여 다음과 같은 이상이 있는
+                                경우에는 사용을 중지하여야 하며, 계속 사용하면
+                                증상이 악화되므로 피부과 전문의 등에게 상담할
+                                것. 1&#41; 사용 중 붉은 반점, 부어오름,
+                                가려움증, 자극 등의 이상이 있는 경우 2&#41;
+                                적용부위가 직사광선에 의하여 위와 같은 이상이
+                                있는 경우 2. 상처가 있는 부위, 습진 및 피부염
+                                등의 이상이 있는 부위에는 사용을 하지 말 것 3.
+                                보관 및 취급 시의 주의사항 1&#41; 유아, 소아의
+                                손이 닿지 않는 곳에 보관할 것 2&#41; 고온 또는
+                                저온의 장소 및 직사광선이 닿는 곳에는 보관하지
+                                말 것
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>품질보증기준</td>
+                              <td>
+                                공정거래위원회 고시(소비자분쟁해결기준)에
+                                의거하여 보상해 드립니다.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>소비자 상담 관련 전화번호</td>
+                              <td>080-000-6755</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="detail_2">
+            <ul class="review_list">
+              <span>리뷰 0건</span>
+              <li class="item">
+                <p>아직 작성된 리뷰가 없습니다.</p>
+              </li>
+            </ul>
+          </li>
+          <li class="detail_3">
+            <div class="payment_info">
+              <div class="pay_info_1">
+                <h4>결제안내</h4>
+                <span>
+                  고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도
+                  있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문등
+                  정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는
+                  취소할 수 있습니다.
+                  <br />
+                  무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹
+                  혹은 가까운 은행에서 직접 입금하시면 됩니다. 주문시 입력한
+                  입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일
+                  이내로 입금을 하셔야 하며 입금되지 않은 주문은 자동취소
+                  됩니다.
+                </span>
+              </div>
+              <div class="pay_info_2">
+                <h4>배송안내</h4>
+                <span>
+                  &#45;&nbsp;배송 방법 : 택배
+                  <br />
+                  &#45;&nbsp;배송 지역 : 전국지역
+                  <br />
+                  &#45;&nbsp;배송 비용 : 3,300원
+                  <br />
+                  &#45;&nbsp;배송 기간 : 3일 ~ 7일
+                  <br />
+                  &#45;&nbsp;배송 안내 : 산간벽지나 도서지방은 별도의 추가금액을
+                  지불하셔야 하는 경우가 있습니다. 고객님께서 주문하신 상품은
+                  입금 확인후 배송해 드립니다. 다만, 상품종류에 따라서 상품의
+                  배송이 다소 지연될 수 있습니다.
+                </span>
+              </div>
+              <div class="pay_info_3">
+                <h4>교환/반품안내</h4>
+                <span>
+                  <b>교환 및 반품이 가능한 경우</b>
+                  <br />
+                  &#45;&nbsp;상품을 공급 받으신 날로부터 7일이내 단, 가전제품의
+                  경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된
+                  경우에는 교환/반품이 불가능합니다.
+                  <br />
+                  &#45;&nbsp;공급받으신 상품 및 용역의 내용이 표시.광고 내용과
+                  다르거나 다르게 이행된 경우에는 공급받은 날로부터 3월이내,
+                  그사실을 알게 된 날로부터 30일이내
+                  <br />
+                  <b>교환 및 반품이 불가능한 경우</b>
+                  <br />
+                  &#45;&nbsp;고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된
+                  경우. 단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한
+                  경우는 제외
+                  <br />
+                  &#45;&nbsp;포장을 개봉하였거나 포장이 훼손되어 상품가치가
+                  상실된 경우 (예 : 가전제품, 식품, 음반 등, 단 액정화면이
+                  부착된 노트북, LCD모니터, 디지털 카메라 등의 불량화소에 따른
+                  반품/교환은 제조사 기준에 따릅니다.)
+                  <br />
+                  &#45;&nbsp;고객님의 사용 또는 일부 소비에 의하여 상품의 가치가
+                  현저히 감소한 경우 단, 화장품등의 경우 시용제품을 제공한
+                  경우에 한 합니다.
+                  <br />
+                  &#45;&nbsp;시간의 경과에 의하여 재판매가 곤란할 정도로
+                  상품등의 가치가 현저히 감소한 경우
+                  <br />
+                  &#45;&nbsp;복제가 가능한 상품등의 포장을 훼손한 경우 (자세한
+                  내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)
+                  <br />
+                  <br />
+                  &#x203B;&nbsp;고객님의 마음이 바뀌어 교환, 반품을 하실 경우
+                  상품반송 비용은 고객님께서 부담하셔야 합니다. (색상 교환,
+                  사이즈 교환 등 포함)
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="detail_4">
+            <ul class="qna_list">
+              <li class="q_item">
+                <p>작성된 상품 문의가 없습니다.</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_inner">
+        <div class="footer_logo">
+          <a href="/"
+            ><img
+              src="../../img/icon/web_icons/footer-logo.svg"
+              alt="footer_logo"
+          /></a>
+        </div>
+        <div class="footer_con">
+          <span>(주)콜더마</span>
+          <p>
+            대표자: 이현경 | 개인정보관리책임자 : 이현경 | 주소 : 서울특별시
+            송파구 석촌호수로 268 콜더마 | 사업자등록번호 : 132-86-05932 |
+            통신판매업신고 : 제2018-서울서대문-0873호
+            <a href="#">[사업자정보확인]</a>
+          </p>
+        </div>
+        <div class="footer_con">
+          <p>
+            안전거래를 위해 페이먼트 구매안전(에스크로)에 가입하여 서비스를
+            제공하고 있습니다.<br />
+            COPYRIGHT &copy; ECOSECRET ALL RIGHTS RESERVED.
+          </p>
+        </div>
+        <div class="footer_menu">
+          <ul class="policy_list">
+            <li>
+              <a href="#">개인정보 처리방침</a>
+              <a href="#">이용약관</a>
+              <a href="#">이용안내</a>
+              <a href="#">사이트맵</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="floating_btn_wrap">
+        <a href="#">
+          <img
+            src="../../img/icon/web_icons/message-square.svg"
+            alt="message"
+          />
+        </a>
+        <a href="#">
+          <img src="../../img/icon/web_icons/arrow-top.svg" alt="top" />
+        </a>
+      </div>
+    </footer>
+  </body>
+  <!-- js -->
+  <script src="../../js/common_js/jquery.min.js"></script>
+  <script src="../../js/common_js/side_nav_box.js"></script>
+  <script src="../../js/sub_js/sub_common.js"></script>
+  <script src="../../js/sub_js/sub_prd_info.js"></script>
+</html>
