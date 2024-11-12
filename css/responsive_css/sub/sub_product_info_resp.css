@@ -43,14 +43,14 @@
     width: 230px;
   }
   .product_detail .item_price > strong {
-    font-size: 26px;
+    font-size: 24px;
   }
   .product_detail .item_price > span {
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 8px;
   }
   .product_detail .item_price > .item_dc > em {
-    font-size: 26px;
+    font-size: 24px;
   }
   .product_detail_text {
     font-size: 15px;
